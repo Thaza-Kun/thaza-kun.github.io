@@ -1,8 +1,5 @@
 ---
 title: Home
-menu:
-  - main
-  - sidebar
 weight: -270
 date: 2021-02-09
 ---
