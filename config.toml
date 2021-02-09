@@ -19,8 +19,8 @@ url = "https://github.com/MunifTanjim/minimo"
 [blackfriday]
 hrefTargetBlank = true
 
-# disqusShortname = ""
-# googleAnalytics = ""
+disqusShortname = ""
+googleAnalytics = ""
 
 Paginate = 10
 preserveTaxonomyNames = true
@@ -91,29 +91,29 @@ twitter = "Thaza_Kun"
 [params.comments]
 enable = false
 
-# Isso: https://posativ.org/isso/
-#[params.comments.isso]
-#enable = false
-#scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
-#dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
+Isso: https://posativ.org/isso/
+[params.comments.isso]
+enable = false
+scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
+dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
 
-#[params.comments.staticman]
-#enable = true
-#apiEndpoint = "https://api.staticman.net/v2/entry"
-#maxDepth = 2
-#username = "MunifTanjim"
-#repository = "minimo"
+[params.comments.staticman]
+enable = true
+apiEndpoint = "https://api.staticman.net/v2/entry"
+maxDepth = 2
+username = "MunifTanjim"
+repository = "minimo"
 
-# Utterances: https://utteranc.es
-#[params.comments.utterances]
-#enable = false
-#issueTerm = "pathname" # pathname / url / title / og:title / <string>
-#label = ""
-#theme = "github-light"
+Utterances: https://utteranc.es
+[params.comments.utterances]
+enable = false
+issueTerm = "pathname" # pathname / url / title / og:title / <string>
+label = ""
+theme = "github-light"
 
-#[params.comments.utterances.github]
-#username = "MunifTanjim"
-#repository = "minimo"
+[params.comments.utterances.github]
+username = "MunifTanjim"
+repository = "minimo"
 
 
 # SEARCH FUNCTIONS
