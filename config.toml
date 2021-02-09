@@ -1,0 +1,150 @@
+baseURL = "http://www.thaza-kun.github.io/"
+title = "Murthadza Aznam"
+# for smart copyright line, leave this blank and check [params.copyright]
+copyright = ""
+enableRobotsTXT = true # generate robots.txt
+theme = "minimo"
+
+[params.info]
+description = "Laman Portfolio ini masih sedang dicuba-cuba."
+title404 = "Tiada apa dijumpai!"
+
+# MENU
+[[menu.main]]
+name = "Repo"
+weight = -10
+identifier = "repository"
+url = "https://github.com/MunifTanjim/minimo"
+
+[blackfriday]
+hrefTargetBlank = true
+
+# disqusShortname = ""
+# googleAnalytics = ""
+
+Paginate = 10
+preserveTaxonomyNames = true
+
+# Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
+pygmentsCodefences = true
+
+enableEmoji = true
+
+[params.assets]
+favicon = "favicon.ico"
+customCSS = ["css/custom.css"]
+customJS = ["js/custom.js"]
+gopher = "" # used in 404 template ( Generator: https://gopherize.me )
+
+[params.copyright]
+prefix = ""
+holder = "Murthadza Aznam"
+startYear = "2021"
+suffix = ""
+
+[params.settings]
+# date & time format: https://golang.org/pkg/time/
+dateFormat = "2006, Jan 02"
+listDateFormat = "2006, Jan 02"
+archiveDateFormat = "Jan 02"
+hideEntryNavigation = ["page"] # boolean / array of sections
+hideEntryMeta = ["page"] # boolean / array of sections
+showReadingTime = true
+showLastmod = true
+taxonomyCloudShuffle = true
+accentColor = "#ffcd00"
+hideMainMenu = true
+
+[params.sidebar]
+enable = true
+
+[params.widgets]
+enable = true
+header = ["breadcrumbs"]
+homepage = ["recent_posts"]
+sidebar = ["about","search","sidebar_menu","taxonomy_cloud"]
+footer = ["social_menu"]
+
+[params.opengraph.facebook]
+admins = [] # array of Facebook IDs
+appID = ""
+pageID = ""
+
+[params.opengraph.twitter]
+page = "" # Twitter page username
+
+[params.seo]
+# Title Separator: - – — · • * ⋆ | ~ « » < >
+titleSeparator = "•"
+
+[params.social]
+email = "tazaaznam@gmail.com"
+facebook = "tazaaznam"
+github = "Thaza-Kun"
+instagram = "thaza_kun"
+# linkedin = ""
+twitter = "Thaza_Kun"
+# telegram = ""
+# google_scholar = ""
+# youtube = ""
+
+[params.comments]
+enable = false
+
+# Isso: https://posativ.org/isso/
+#[params.comments.isso]
+#enable = false
+#scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
+#dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
+
+#[params.comments.staticman]
+#enable = true
+#apiEndpoint = "https://api.staticman.net/v2/entry"
+#maxDepth = 2
+#username = "MunifTanjim"
+#repository = "minimo"
+
+# Utterances: https://utteranc.es
+#[params.comments.utterances]
+#enable = false
+#issueTerm = "pathname" # pathname / url / title / og:title / <string>
+#label = ""
+#theme = "github-light"
+
+#[params.comments.utterances.github]
+#username = "MunifTanjim"
+#repository = "minimo"
+
+
+# SEARCH FUNCTIONS
+[params.search]
+client = "fuse" # algolia / fuse / lunr
+
+[params.search.algolia]
+appId = ""
+indexName = ""
+searchApiKey = ""
+
+[taxonomies]
+author = "authors"
+category = "categories"
+series = "series"
+tag = "tags"
+
+[permalinks]
+page = "/:slug/"
+
+# BAHASA
+defaultContentLanguage = "ms"
+
+[languages]
+# edit this block for your own language
+[languages.ms]
+lang = "ms"
+languageName = "Bahasa Melayu"
+weight = 1
+
+[languages.en]
+lang = "en"
+languageName = "English"
+weight = 2
