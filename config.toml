@@ -104,7 +104,7 @@ maxDepth = 2
 username = "MunifTanjim"
 repository = "minimo"
 
-Utterances: https://utteranc.es
+# Utterances: https://utteranc.es
 [params.comments.utterances]
 enable = false
 issueTerm = "pathname" # pathname / url / title / og:title / <string>
