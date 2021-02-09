@@ -91,7 +91,7 @@ twitter = "Thaza_Kun"
 [params.comments]
 enable = false
 
-Isso: https://posativ.org/isso/
+# Isso: https://posativ.org/isso/
 [params.comments.isso]
 enable = false
 scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
