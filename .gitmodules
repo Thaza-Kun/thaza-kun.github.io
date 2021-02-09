@@ -1,5 +1,5 @@
 [submodule "minimo"]
-	path = themes/minimo
+	path = minimo
 	url = https://github.com/MunifTanjim/minimo.git
 
 [submodule "public"]
