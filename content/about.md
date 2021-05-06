@@ -1,7 +1,7 @@
 +++
 title = "Perkenalan"
 date = "2021-05-03"
-author = "Murthadza"
+author = "Murthadza bin Aznam"
 +++
 
 # Qamar Suria
