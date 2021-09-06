@@ -1,0 +1,34 @@
+@use 'colors';
+
+.nav_bar {
+    width: auto;
+    height: 28px;
+    padding: 20px;
+    background-color: colors.$primary-06;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    align-items: center;
+}
+
+.nav_inner {
+    margin: 0px auto;
+    width: 30rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_identity {
+    justify-self: flex-start;
+    align-self: center;
+}
+
+.nav_menu {
+    justify-self: flex-end;
+    align-self: center;
+    a {
+        margin-left: 25px;
+    }
+}
