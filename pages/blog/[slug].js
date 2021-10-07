@@ -51,7 +51,6 @@ export default function BlogPage({ source, frontmatter }) {
 
 export async function getStaticProps ({ params }) {
   const { post, frontmatter } = getFileBySlug('blog', params.slug);
-
   const mdxSource = await serialize(post, {
     // Optionally pass remark/rehype plugins
     mdxOptions: {
@@ -65,6 +64,7 @@ export async function getStaticProps ({ params }) {
     props: {
       source: mdxSource,
       frontmatter,
+      slug: params.slug
     },
   }
 }
