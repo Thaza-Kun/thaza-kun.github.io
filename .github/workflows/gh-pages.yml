@@ -1,6 +1,5 @@
 name: Deploy to GitHub Pages
 
-
 on:
   push:
     branches: [main]
@@ -9,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    env:
+      NEXT_PUBLIC_BASE_PATH: /thaza-kun.github.io
 
     strategy:
       matrix:
