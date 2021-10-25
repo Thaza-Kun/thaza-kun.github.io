@@ -56,7 +56,7 @@ Satu sebab je kenapa Matahari berada di tengah dan tak berpusing seperti Bumi ia
 
 <figure>
 
-![](../../images/sistem-pluto-charon.gif)
+![](/images/sistem-pluto-charon.gif)
 
 <figcaption>
 
@@ -93,7 +93,7 @@ Perkara ini betul kalau bumi adalah sfera yang sempurna. Malangnya, Bumi mempuny
 
 <figure>
 
-![](../../images/anomali-graviti_DA_wiki.jpg)
+![](/images/anomali-graviti_DA_wiki.jpg)
 <figcaption>
 
 Daya graviti Bumi yang diukur oleh satelit kembar GRACE. Merah maknanya kuat dan Biru maknanya lemah. - Ihsan Wikipedia

@@ -314,7 +314,14 @@ video {
 }
 
 // Images
+// TODO Center image
 img {
   height: auto;
   max-width: 100%;
+}
+
+figcaption {
+  text-align: center;
+  color: _palette(charcoal-light-40);
+
 }

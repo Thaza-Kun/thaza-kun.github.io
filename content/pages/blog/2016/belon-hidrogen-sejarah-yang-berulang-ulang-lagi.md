@@ -55,7 +55,7 @@ Kedua-dua gas Hidrogen dan Helium terapung di udara maka kedua-duanya sesuai dim
 
 <figure>
 
-![](../../images/Jadual-berkala_DA_wiki.png)
+![](/images/Jadual-berkala_DA_wiki.png)
 <figcaption>
 
 Jadual berkala unsur kimia. (Lesen [Domain Awam](https://commons.wikimedia.org/wiki/File:Simple_Periodic_Table_Chart-en.svg))
@@ -82,7 +82,7 @@ Setelah membandingkan kedua-dua unsur ini, maka logiklah untuk mengatakan yang b
 ## Kejadian Kapal Udara LZ-129 Hindenburg
 <figure>
 
-![](../../images/Zeppelin-Hindenburg_DA_wiki.jpg)
+![](/images/Zeppelin-Hindenburg_DA_wiki.jpg)
 <figcaption>
 
 Gambar kapal udara LZ-129 Hindenburg di Stesen Udara Tentera Laut AS pada tahun 1936. (Imej [Domain Awam](https://commons.wikimedia.org/wiki/File:Hindenburg_at_lakehurst.jpg))

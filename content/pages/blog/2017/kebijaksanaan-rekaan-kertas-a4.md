@@ -53,7 +53,7 @@ Rakyat Malaysia secara umumnya menggunakan kertas bersaiz A4 untuk menulis, melu
 
 <figure>
 
-![](../../images/Bandingan-kertas-A4.png)
+![](/images/Bandingan-kertas-A4.png)
 <figcaption>
 
 Ilustrasi pembahagian sekata kertas siri A. Perhatikan bagaimana nisbah sisi:panjang dikekalkan (Imej milik [Sven](https://commons.wikimedia.org/wiki/File:A_size_illustration.svg), Lesen [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.en))
@@ -66,7 +66,7 @@ Umum mengetahui kalau kita bahagikan kertas A3 kepada dua akan menjadi A4 dan 
 Kertas siri A (A0-A10) menggunakan nisbah sisi:panjang yang sama iaitu 1:√2. Malah, itu sahajalah satu-satu nisbah yang membolehkan kertas A4 mempunyai sifat yang diterangkan di atas. Berikut ialah pembuktian matematik:
 <figure>
 
-![](../../images/kertas-A4-bukti.jpg)
+![](/images/kertas-A4-bukti.jpg)
 <figcaption>
 
 Dengan nisbah ini sahajalah kertas A4 mampu mempunyai sifat istimewa ini.
@@ -85,7 +85,7 @@ Nombor √2 adalah nombor tiada nisbah seperti π (pi) dan e (nombor Euler). Sep
 
 <figure>
 
-![](../../images/2-punca-kuasa-dua.jpg)
+![](/images/2-punca-kuasa-dua.jpg)
 <figcaption>
 
 Taktik yang sama boleh digunakan untuk mencari √3, √4, √5, √6, dan seterusnya.
