@@ -7,8 +7,9 @@
     "dev": "next dev",
     "develop": "next dev",
     "fetch": "sourcebit fetch",
-    "build": "next build && next export",
-    "start": "next start"
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
