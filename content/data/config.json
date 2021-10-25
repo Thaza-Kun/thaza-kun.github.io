@@ -1,0 +1,48 @@
+{
+    "title": "Qamar Suria",
+    "path_prefix": "/",
+    "color_scheme": "light",
+    "accent_color": "pink",
+    "header": {
+        "title": "Q Suria",
+        "has_nav": true,
+        "nav_links": [
+            {
+                "label": "Home",
+                "url": "/",
+                "style": "link"
+            },
+            {
+                "label": "Blog",
+                "url": "/blog/",
+                "style": "link"
+            },
+            {
+                "label": "About",
+                "url": "/about/",
+                "style": "link"
+            }
+        ]
+    },
+    "footer": {
+        "content": "&copy; Murthadza bin Aznam. Hakcipta dipelihara. Laman ini dihasilkan dengan bantuan <a href=\"https://www.stackbit.com/?utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">Stackbit</a> dalam tema Exto.",
+        "has_social": true,
+        "social_links": [
+            {
+                "label": "Twitter",
+                "url": "https://twitter.com/Thaza_Kun",
+                "style": "icon",
+                "icon": "twitter",
+                "new_window": true
+            },
+            {
+                "label": "Discord",
+                "url": "https://discord.com/invite/9c6cWVwdEJ",
+                "style": "icon",
+                "icon": "discord",
+                "new_window": true
+            }
+        ]
+    },
+    "domain": "https://qamar-suria.netlify.app"
+}
