@@ -71,6 +71,10 @@ export default class Body extends React.Component {
                     {!_.isEmpty(seoRobots) && <meta name="robots" content={seoRobots} />}
                     {seoExtra}
                     <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet" />
+                    
+                    {/* Analytics */}
+                    <script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
+                    
                     {favicon && <link rel="icon" href={withPrefix(favicon)} />}
                     <body className={classNames(`palette-${colorScheme}`, `accent-${accentColor}`)} />
                 </Helmet>
