@@ -1,8 +1,8 @@
 ---
 title: "Gerhana Matahari 1919: Mencerap Buah Fikiran Einstein"
-subtitle: Pusat PERMATA ditubuhkan kerana tidak mahu negara kerugian bakat anak-anak pintar dan berbakat
+subtitle: Gerhana matahari adalah calon yang sesuai untuk mencerap kanta graviti
 excerpt: >-
-  Pusat PERMATA ditubuhkan kerana tidak mahu negara kerugian bakat anak-anak pintar dan berbakat
+  Pada tahun itu, Arthur Eddington telah mengetuai ekspedisi mencerap gerhana matahari untuk mengesahkan idea Einstein.
 date: '2017-08-18'
 thumb_image: images/artikel-gerhana-2017.jpg
 thumb_image_alt: Gambar tajuk gerhana matahari 1919
@@ -11,7 +11,7 @@ image_alt: Gambar tajuk gerhana matahari 1919
 seo:
   title: "Gerhana Matahari 1919: Mencerap Buah Fikiran Einstein"
   description: >-
-    Pusat PERMATA ditubuhkan kerana tidak mahu negara kerugian bakat anak-anak pintar dan berbakat 
+    Pada tahun itu, Arthur Eddington telah mengetuai ekspedisi mencerap gerhana matahari untuk mengesahkan idea Einstein. 
   extra:
     - name: 'og:type'
       value: article
@@ -21,7 +21,7 @@ seo:
       keyName: property
     - name: 'og:description'
       value: >-
-        Pusat PERMATA ditubuhkan kerana tidak mahu negara kerugian bakat anak-anak pintar dan berbakat 
+        Pada tahun itu, Arthur Eddington telah mengetuai ekspedisi mencerap gerhana matahari untuk mengesahkan idea Einstein. 
       keyName: property
     - name: 'og:image'
       value: images/artikel-gerhana-2017.jpg
@@ -33,7 +33,7 @@ seo:
       value: "Gerhana Matahari 1919: Mencerap Buah Fikiran Einstein"
     - name: 'twitter:description'
       value: >-
-        Pusat PERMATA ditubuhkan kerana tidak mahu negara kerugian bakat anak-anak pintar dan berbakat 
+        Pada tahun itu, Arthur Eddington telah mengetuai ekspedisi mencerap gerhana matahari untuk mengesahkan idea Einstein. 
     - name: 'twitter:image'
       value: images/artikel-gerhana-2017.jpg
       relativeUrl: true
