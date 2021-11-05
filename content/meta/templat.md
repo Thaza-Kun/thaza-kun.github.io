@@ -1,5 +1,5 @@
 ---
-title: Title
+title: "Title"
 subtitle: Subtitle
 excerpt: >-
   Multiline
@@ -9,7 +9,7 @@ thumb_image_alt: Alt text
 image: images/{{img}}.jpg
 image_alt: Alt text
 seo:
-  title: Title
+  title: "Title"
   description: >-
     Description (Multiline)
   extra:
@@ -17,7 +17,7 @@ seo:
       value: article
       keyName: property
     - name: 'og:title'
-      value: Title
+      value: "Title"
       keyName: property
     - name: 'og:description'
       value: >-
@@ -30,7 +30,7 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Title
+      value: "Title"
     - name: 'twitter:description'
       value: >-
         Description (Multiline)
@@ -39,6 +39,7 @@ seo:
       relativeUrl: true
 layout: post
 ---
+
 
 <aside class="changelog">
 
