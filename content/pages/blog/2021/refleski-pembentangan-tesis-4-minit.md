@@ -1,6 +1,6 @@
 ---
 title: "Cabaran Pembentangan Tesis 4 Minit"
-subtitle: Macam mana nak bentang tesis kalau tiba-tiba terjumpa pensyarah dalam lif?
+subtitle: Keputusan pihak pensyarah memendekkan masa pembentangan membuatkan aku terfikir
 excerpt: >-
   Macam mana nak bentang tesis kalau tiba-tiba terjumpa pensyarah dalam lif?
 date: '2021-11-05'
