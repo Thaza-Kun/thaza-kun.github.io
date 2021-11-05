@@ -41,7 +41,9 @@ layout: post
 ---
 
 <aside class="changelog">
+
 - Isi-isi dalam ini aku jumpa semasa aku dalam nota lama aku bertarikh 4 Mac 2021, jadi aku ambil keputusan untuk tulisnya semula di sini. Nota itu ditulis sejurus selepas habis sesi pembentangan tapi bukan hari yang sama.
+
 </aside>
 
 Seorang pelajar fizik akan perlu menulis tesis membuktikan dirinya mampu telaah dan bawa topik-topik berat berkait kefizikan. Hasil penat lelah ini akan dibentangka di hadapan para pensyarahnya di penghujung pengajiannya. Begitulah yang aku perlu hadapi pada bulan Mac 2021.
