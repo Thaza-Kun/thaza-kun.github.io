@@ -63,7 +63,7 @@ Kemudian, kita perlu terangkan bagaimana kita wujudkan graf itu dan kenapa graf 
 
 Yang itu baru ambil kira satu graf. Bagaimana pula kalau ada lagi beberapa dapatan lain? Jaranglah ada pembentangan tesis yang hanya akan ada satu data sahaja yang perlu ditonjolkan. Selalunya akan ada beberapa lagi graf atau jadual.
 
-Kalau kita ada tiga graf, maka cuba bahagikan masa ikut tiga hasil kajian tersebut, bukan ikut bab tesis. Lalu, susun pembentangan kita ikut bagaimana kita ingin menceritakan hasil kajian tersebut. Boleh jadi ia disusun begini: Objektif -> Hasil Kajian -> Kaedah, atau Objektif -> Kaedah -> Hasil Kajian, atau Objektif -> Hasil Kajian <-(berselang-seli)-> Kaedah
+Kalau kita ada tiga graf, maka cuba bahagikan masa ikut tiga hasil kajian tersebut, bukan ikut bab tesis. Kemudian, susunlah pembentangan kita ikut bagaimana kita ingin menceritakan hasil kajian tersebut. Boleh jadi ia disusun begini: Objektif -> Hasil Kajian -> Kaedah, atau Objektif -> Kaedah -> Hasil Kajian, atau Objektif -> Hasil Kajian <-(berselang-seli)-> Kaedah
 
 ## Saranan: Kita Tak Perlu Bahagian Kesimpulan
 Seperti yang aku sebutkan tadi, susunan yang mengikut isi kandungan tesis itu boleh dibuat kalau masa pembentangannya panjang. Masa yang pendek memerlukan susunan sendiri. Begitulah juga, ia tidak perlu bahagian kesimpulan.
