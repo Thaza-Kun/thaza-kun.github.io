@@ -40,7 +40,11 @@ seo:
 layout: post
 ---
 
-Seorang pelajar fizik akan perlu menulis tesis membuktikan dirinya mampu telaah dan bawa topik-topik berat berkait kefizikan. Hasil penat lelah ini akan dibentangka di hadapan para pensyarahnya di penghujung pengajiannya. Begitulah yang aku perlu hadapi pada 4 Mac 2021 sebelum aku masuk berlatihan industri.
+<aside class="changelog">
+- Isi-isi dalam ini aku jumpa semasa aku dalam nota lama aku bertarikh 4 Mac 2021, jadi aku ambil keputusan untuk tulisnya semula di sini. Nota itu ditulis sejurus selepas habis sesi pembentangan.
+</aside>
+
+Seorang pelajar fizik akan perlu menulis tesis membuktikan dirinya mampu telaah dan bawa topik-topik berat berkait kefizikan. Hasil penat lelah ini akan dibentangka di hadapan para pensyarahnya di penghujung pengajiannya. Begitulah yang aku perlu hadapi pada bulan Mac 2021.
 
 Namun begitu, wabak penyakit KOVID-19 yang melanda dunia menyebabkan kita semua terpisah dan pertemuan secara langsung tidak digalakkan. Oleh itu, pembentangan dibuat secara dalam talian, dan masa yang biasanya diberikan 15 minit pada tahun-tahun sebelumnya kini dipendekkan menjadi 4 minit untuk tahun ini. Barangkali keputusan had 4 minit setiap pembentang itu dipengaruhi juga oleh jumlah pelajar fizik UKM seangkatan yang ada 60 lebih orang.
 
