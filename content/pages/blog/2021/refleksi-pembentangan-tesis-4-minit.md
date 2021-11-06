@@ -2,12 +2,12 @@
 title: "Cabaran Pembentangan Tesis 4 Minit"
 subtitle: Keputusan pihak pensyarah memendekkan masa pembentangan membuatkan aku terfikir
 excerpt: >-
-  Macam mana nak bentang tesis kalau tiba-tiba terjumpa pensyarah dalam lif?
+  Pensyarah berikan aku masa 4 minit untuk membentangkan tesis berbanding 15 minit untuk tahun-tahun sebelumnya. Ini adalah refleksi aku selepas sesi pembentangan.
 date: '2021-11-05'
-thumb_image: images/generic-shutterstock-presentation.jpg
-thumb_image_alt: Generic presentation image
-image: images/generic-shutterstock-presentation.jpg
-image_alt: Generic presentation image
+thumb_image: images/meme_Pepe-Silvia.jpg
+thumb_image_alt: Gambar meme Pepe Silvia
+image: images/meme_Pepe-Silvia.jpg
+image_alt: Gambar meme Pepe Silvia
 seo:
   title: "Cabaran Pembentangan Tesis 4 Minit"
   description: >-
@@ -24,7 +24,7 @@ seo:
         Macam mana nak bentang tesis kalau tiba-tiba terjumpa pensyarah dalam lif?
       keyName: property
     - name: 'og:image'
-      value: images/generic-shutterstock-presentation.jpg
+      value: images/meme_Pepe-Silvia.jpg
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -35,7 +35,7 @@ seo:
       value: >-
         Macam mana nak bentang tesis kalau tiba-tiba terjumpa pensyarah dalam lif?
     - name: 'twitter:image'
-      value: images/generic-shutterstock-presentation.jpg
+      value: images/meme_Pepe-Silvia.jpg
       relativeUrl: true
 layout: post
 ---
