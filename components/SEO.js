@@ -149,7 +149,8 @@ export const BlogSEO = ({
         {lastmod && <meta property="article:modified_time" content={modifiedAt} />}
         {canonical && <link rel="canonical" href={canonical.link} />}
         {/* Authorized reposts */}
-        {reposts && reposts.map((repost) => <link rel="canonical" href={repost.link} />)}
+        {reposts &&
+          reposts.map((repost, index) => <link key={index} rel="canonical" href={repost.link} />)}
 
         <link rel="canonical" href={`${siteMetadata.siteUrl}${router.asPath}`} />
         <script

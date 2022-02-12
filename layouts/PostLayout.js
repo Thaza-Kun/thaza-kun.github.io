@@ -113,8 +113,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                       <div>
                         <p>Rencana ini juga ada disiarkan di:</p>
                         <ul className="list-outside list-disc pl-6">
-                          {reposts.map((repost) => (
-                            <li>
+                          {reposts.map((repost, index) => (
+                            <li key={index}>
                               {repost.type} {repost.source} dengan tajuk "
                               <CustomLink href={repost.link}>{repost.title}</CustomLink>" pada{' '}
                               <time dateTime={repost.date}>
