@@ -1,0 +1,67 @@
+---
+draft: false
+title: Choe Mal-Li Membantah Tulisan Hangeul Kerana Ia Tidak Bertamadun
+subtitle: Choe Mal-Li membantah tindakan Raja Sejong membangunkan tulisan jati orang Korea
+summary: >-
+  Ada tiga aspek hujah-hujah Choe Mal-Li membantah Raja Sejong menyerupai hujah-hujah pendukung PPSMI.
+date: '2019-03-30'
+tags: ['isu semasa']
+images: ['/images/sincheon-malam_CC-BY-SA_David.jpg']
+authors: ['default']
+canonical:
+  date: '2019-01-19'
+  link: 'https://www.thepatriots.asia/kisah-raja-sejong-melawan-ppsmi-versi-tamadun-korea-purba/'
+  title: 'Choe Mal-Li: "Hangeul ialah Tulisan Orang Tak Bertamadun"'
+  source: 'The Patriots Asia'
+  type: 'portal'
+  comment: 'Penyunting portal menaikkan semula tulisan ini pada tarikh 17 Julai 2019 dengan tajuk baharu: "Kisah Raja Sejong Melawan PPSMI Versi Tamadun Korea Purba"'
+---
+
+Raja Sejong yang memerintah Joseon pada tahun 1419-1450 pasti sahaja dikenali oleh mana-mana rakyat Korea. Dalam banyak-banyak sumbangan baginda, sumbangan yang mungkin paling penting adalah penciptaan tulisan Hangeul. Kedua-dua tanah Korea: Korea Selatan dan Korea Utara, menyambut Hari Hangeul pada tarikh masing-masing 9 Oktober dan 15 Januari setiap tahun.
+
+Pada zaman sebelum pemerintahan Raja Sejong, masyarakat tanah itu menyerap kaedah tulisan yang digunakan oleh orang Cina, iaitu tulisan Hanja sebagaimana tanah Melayu menyerap kaedah tulisan Arab-Parsi: tulisan Jawi. Penyerapan kaedah tulisan tamadun lain ke dalam tamadun sendiri bukanlah suatu masalah. Masalahnya ialah apabila sistem tulisan tersebut sangat tidak sesuai dengan bahasa sendiri.
+
+Dalam rencana bertajuk "[Sejujurnya Aku Lebih Suka Kawi Berbanding Jawi](https://www.thepatriots.asia/sejujurnya-aku-lebih-suka-kawi-berbanding-jawi/)", aku ada gariskan kelemahan-kelemahan Abjad Jawi dalam Bahasa Melayu yang tidak muncul dalam Bahasa Arab. Namun, kelemahan Abjad Jawi tidaklah begitu berat sehinggakan ia langsung tidak boleh digunakan dalam Bahasa Melayu. Malah, sedikit demi sedikit pembetulan telah diberikan agar ia lebih sesuai dengan Bahasa Melayu.
+
+Namun, hal sedemikian tidak berlaku dalam Hanja di tanah Korea. Cubaan memuatkan tulisan Hanja dalam Bahasa Korea memang bermasalah. Masalah pertama yang paling ketara ialah Bahasa Cina langsung tidak sama dengan Bahasa Korea. Kata-kata fungsi dan imbuhan-imbuhan yang hanya wujud dalam Bahasa Korea tidak mampu diterjemahkan dalam Ideogram Hanja.
+
+Hanja ialah sejenis tulisan yang memberikan lambang pada setiap makna. Menulis kata-kata fungsi bahasa Korea memerlukan lambang mereka yang sendiri. Masalah ini cuba diselesaikan oleh seorang sarjana pada zaman Silla bernama Seol Cheong dengan pengenalan kaedah Idu untuk menulis kata-kata fungsi serta imbuhan Bahasa Korea.
+
+Namun, wujud pula masalah kedua yang lebih membimbangkan. Hanja itu sangat sukar untuk dipelajari. Jumlah lambang Hanja bukan sahaja seratus atau seribu, malah lebih banyak daripada itu. Ditambah pula dengan lambang-lambang khas untuk tatabahasa Korea! Kaedah Idu juga bukanlah tulisan yang mudah dipakai.
+
+Disebabkan itu, ramai daripada kalangan masyarakat marhaen buta huruf. Yang boleh membaca dan menulis adalah daripada golongan yang berkemampuan mendapatkan pendidikan terutamanya golongan bangsawan. Raja Sejong sangat prihatin akan hakikat ini maka mengarahkan sebahagian ahli Dewan Sarjana Dirajanya untuk mencipta sejenis tulisan yang sesuai dengan Bahasa Korea dan mudah dipelajari. Dengan itu, beliau berharap rakyatnya semakin celik huruf.
+
+Namun, sementara Hangeul masih dalam pembikinan, ada segolongan lain daripada Dewan Sarjana Diraja yang membantah penciptaan tulisan baru. Bantahan itu diwakili oleh Choe Mal-Li dan dicatat dalam _Sejong Sillok_ [Catatan Sejong] pada 1444. Tiga alasan dikemukakan oleh beliau: Yang pertama ialah berkaitan kehormatan mereka terhadap Cina. Yang kedua ialah mengatakan bahawa bangsa yang mempunyai tulisan sendiri selain yang digunakan oleh Cina adalah bangsa yang tidak bertamadun. Contoh-contoh yang diberikan ialah bangsa Mongol, Tangut, Jurchen, Jepun, dan Tibet.
+
+Alasan yang ketiga ialah sebab ilmu-ilmu yang wujud pada waktu itu semuanya ditulis dalam tulisan Cina: “Sekiranya tulisan ciptaan ini digunakan dengan meluas, para kerani hanya akan mempelajarinya sahaja dan akan mengabaikan karya-karya kesarjanaan. [...] Mungkin mereka mampu meneruskan kerja-kerja kerani mereka menggunakan tulisan ini, namun sekiranya mereka tidak mempelajari tulisan para sarjana, sesungguhnya mereka akan jahil dan tidak tahu membezakan antara yang hak dan yang batil.”
+
+Walau bagaimanapun, Raja Sejong tetap meneruskan usahanya. Baginda menerbitkan _Hunmin Jeongeum_ [Bunyi Tepat untuk Mengajar Rakyat] pada tahun 1446 untuk memperkenalkan kaedah tulisan yang baru itu. Nak bayangkan betapa mudahnya mempelajari Hangeul ini, seorang lagi ahli Dewan Sarjana Diraja, Cheong In-Ji menulis dalam penutup kata _Hunmin Jeongeum_: "Mereka yang bijak boleh mempelajarinya dalam satu siang manakala mereka yang lembab mungkin akan mengambil masa sepuluh hari."
+
+Kerja-kerja menulis dan menterjemah karya-karya digiatkan dengan rancak. Buku-buku yang dipilih untuk ditulis dan diterjemah itu mencerminkan pegangan sarjana pada waktu itu. Choe Se-Jin menterjemah buku-buku berkaitan adab, agama (ajaran Konfusius) dan Bahasa Cina. Raja Sejong pula mengarahkan buku petua pertanian ditulis untuk meningkatkan hasil tani. 85 jilid ensiklopedia perubatan yang mengandungi penawar untuk 959 penyakit juga ditulis.
+
+Baginda Raja Sejong juga menggiatkan pembudayaan keilmuan seni, muzik, perbintangan, sains dan kejuruteraan dalam kalangan rakyatnya. Hal ini tidak menghairankan pun. Baginda Raja Sejong memang seorang yang meminati ilmu sejak kecil. Usaha baginda membawa tanah pemerintahannya kepada suatu Zaman Keemasan atas dasar kemajuan ilmu.
+
+Hujah Choe Mal-Li ini mengingatkan aku kepada keadaan yang sedang dihadapi Malaysia pada masa ini. Ada segolongan sarjana yang menyokong dasar Pengajaran dan Pembelajaran Sains dan Matematik dalam Bahasa Inggeris (PPSMI) manakala segolongan yang lain membantahnya. Hujah para penyokong dasar PPSMI ini serupa dengan hujah yang dikemukakan oleh Choe Mal-Li sekurang-kurangnya dalam dua bentuk.
+
+Bentuk hujah pertama ialah bagaimana mereka merendahkan kebolehan bahasa ibunda/tulisan tempatan untuk mengajarkan ilmu-ilmu penting yang diperlukan untuk membina tamadun ataupun negara. Bagi Choe Mal-Li, bangsa yang tidak mengikuti kaedah Cina, termasuk kaedah tulisannya, adalah tidak bertamadun dan bagi penyokong PPSMI, bahasa Melayu adalah bahasa kampung yang hanya sesuai untuk digunakan dalam perihal kesusasteraan, kemanusiaan dan bidang-bidang yang bukan dalam aliran teras.
+
+Bentuk hujah kedua ialah bagaimana mereka menekankan lambakan sumber ilmu yang ditulis dalam sesuatu bahasa itu dan bagaimana ilmu tersebut itu harus diajarkan dalam bahasa karya-karya ilmiah tersebut. Dalam menyokong PPSMI, golongan ini menyandarkan kewajaran PPSMI dengan hakikat bahawa banyak karya ilmiah ditulis dalam Bahasa Inggeris.
+
+Golongan ini juga berpendapat bahawa mereka yang mempelajari sains dan matematik dalam Bahasa Melayu akan ketinggalan kerana tidak mampu membaca laporan penemuan-penemuan baru serta lambakan karya-karya ilmiah yang ditulis dalam Bahasa Inggeris. Begitulah juga Choe Mal-Li yang berpendapat mereka yang berjinak dengan Hangeul akan tidak mampu membaca karya-karya ilmiah yang ditulis dalam Hanja.
+
+Namun, kisah Raja Sejong ini mengajar kita bahawa tahap keilmuan masyarakat itu akan naik sekiranya ilmu itu mudah dicapai oleh masyarakat tersebut, terutamanya masyarakat marhaen. Tulisan Hangeul itu mudah dibaca berbanding Hanja maka mana-mana anak bangsa Korea boleh terus sahaja merujuk mana-mana buku tempatan yang terkandung ilmu sekiranya berkeinginan menimba ilmu tanpa perlu mempelajari bahasa asing.
+
+Hal ini juga bermakna, tidak kiralah wujud ataupun tidak lambakan karya ilmiah dalam bahasa asing, sekiranya kita ingin mengajarkan apa sahaja ilmu kepada anak-anak tempatan kita, ia haruslah diajarkan dalam bahasa ibunda mereka ataupun bahasa percakapan mereka setiap hari. Soal boleh ataupun tidak mereka menelaah lambakan karya ilmiah bahasa asing itu kurang pentingnya berbanding soal boleh ataupun tidak mereka memahami bahan ajaran yang sedang kita bentangkan.
+
+## DAFTAR RAJAH
+
+- Gambar Utama: David (2009) Sincheon @ Night, dipetik dari Flickr https://www.flickr.com/photos/randomwire/3944485166/in/photostream/ (Lesen CC: BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/2.0/)
+
+## RUJUKAN:
+
+- Henthorn, W.E. 1971. A History of Korea. New York: The Free Press.
+- Lee, P. H. (ed.), Baker, D., Choe, Yong-Ho, Kang, H.H.W., & Kim, Han-Kyo. 1929. Sourcebook of Korean Civilization Vol. 1: From Early Times to the Sixteenth Century. New York: Columbia University Press.
+- Murthadza Aznam. 2018. Sejujurnya Aku Lebih Suka Kawi Berbanding Kawi. The Patriots. https://www.thepatriots.asia/sejujurnya-aku-lebih-suka-kawi-berbanding-jawi/ [19 Jan 2018]
+- Tae, Hung-Ha. 1958. Korea: Forty-Three Centuries. Seoul: Yonsei University Press.
+- New World Encyclopedia. 2018, 27 Julai. Joseon Dynasty. www.newworldencyclopedia.org/entry/Joseon_Dynasty [20 Okt 2018]
+- Saccone, R. 1993. Koreans to Remember: 50 Famous People Who Helped Shape Korea. Seoul: Hollym Corp.

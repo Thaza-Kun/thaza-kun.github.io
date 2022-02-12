@@ -1,0 +1,120 @@
+---
+draft: false
+title: 'Agak Saintifik Tapi Belum Cukup: A Certain Scientific Railgun'
+subtitle: Kita cuba selami bagaimana cerita rekaan ini menunggang sains
+summary: >-
+  Anime "A Certain Scientific Railgun" menggunakan konsep-konsep sains bagi mendorong ceritanya.
+date: '2017-07-14'
+tags: ['teroka karya']
+images: ['/images/artikel-railgun-2017.jpg']
+authors: ['default']
+canonical:
+  date: '2017-07-14'
+  link: 'https://notasains.wordpress.com/2017/07/14/agak-saintifik-railgun/'
+  title: 'Agak Saintifik Tapi Belum Cukup: A Certain Scientific Railgun'
+  source: 'NotaSAINS'
+  type: 'blog'
+  comment: 'Penggunaan "ProjekSAINS" pada gambar tajuk merupakan artifak dari sana.'
+---
+
+Baru-baru ini, portal pemandai masyarakat The Patriots Asia ada menerbitkan satu [artikel yang membincangkan idea-idea saintifik dalam siri animasi Steins;Gate](https://www.thepatriots.asia/teori-teori-saintifik-dalam-anime-steins-gate/) lalu teringat pula saya kepada siri animasi cereka sains kegemaran saya yang lagi satu: [_A Certain Scientific Railgun_](https://en.wikipedia.org/wiki/A_Certain_Scientific_Railgun). Saya sangat menggalakkan menonton kedua-dua siri ini walaupun siri Railgun tersangatlah ringan berbanding [_Steins;Gate_](https://en.wikipedia.org/wiki/Steins;Gate) dari segi plot.
+
+Mereka yang suka Railgun mungkin tidak suka Steins;Gate dan juga sebaliknya. Namun, saya sangat suka kedua-duanya! Hehe.
+
+## A Certain Scientific Railgun
+
+Siri animasi ini adalah kisah sampingan [_side-story_] kepada novel ringan dan animasi [_A Certain Magical Index_](https://en.wikipedia.org/wiki/A_Certain_Magical_Index). Tarikan utama siri ini adalah pelajar-pelajar dalam Bandar Akademi ini mempunyai kebolehan luar biasa (dikenali sebagai _esper_) seperti Mikoto Misaka mengawal elektrik dan Kuroko Shirai dengan kuasa teleportation. Lebih menarik apabila penulis Kazuma Kamachi cuba untuk mengaitkan dunia ini dengan banyak fenomena sains lalu menambah beberapa rencah fenomena rekaan (_fiction_)!
+
+## Personal Reality
+
+Konsep “Personal Reality (rekaan)” adalah asas kepada kejadian esper dalam dunia ini dan ia dikaitkan dengan dua fenomena kuantum yang popular: 1) [Prinsip Ketaktentuan Heisenberg](https://www.youtube.com/watch?v=7vc-Uvp3vwg) dan 2) Kucing Schrödinger.
+
+<figure>
+
+![](/images/prinsip-ketaktentuan-heisenberg_minutephysics.jpg)
+
+<figcaption>
+
+Gambaran Prinsip Ketaktentuan Heisenberg – Ihsan MinutePhysics
+
+</figcaption>
+</figure>
+
+**Prinsip Ketaktentuan Heisenberg** mengatakan bahawa kita tidak boleh tahu kedudukan dan halaju sesuatu zarah dengan tepat dalam masa yang sama. Lagi tepat data kita tentang halaju, kurang tepatnya data kita tentang kedudukannya; dan begitulah sebaliknya.
+
+Analoginya:
+
+1. “Kita yakin sifulan tu ada di Klang, tapi dia mungkin sedang bergerak dalam lingkungan 10 ~ 500 km sejam.”
+2. “Sifulan sedang bergerak dalam 50 ~ 55 km sejam, tapi mana kita nak cari dia di seluruh Selangor ni?”
+
+**Konsep Kucing Schrödinger** pula berasaskan [sifat zarah yang boleh berada dalam dua keadaan dalam masa yang sama](https://ms.wikipedia.org/wiki/Kembaran_zarah-gelombang). Kita letak seekor kucing dalam sebuah kotak beserta alatan yang boleh membunuhnya tapi alat itu bergantung kepada keadaan zarah tersebut; A atau B. Namun, kalau zarah itu boleh menjadi A dan B dalam masa yang sama, adakah kucing tersebut terbunuh ataupun tidak?
+
+Jawapannya, dua-dua sekali selagi mana kotak tidak terbuka. Bak kata pepatah Bahasa Inggeris: _Curiosity killed the cat!_ Kucing tu mati sejurus selepas kita membuka kotak itu untuk tahu.
+
+Tafsiran yang popular untuk menjelaskan fenomena zarah ini ialah Tafsiran Copenhagen yang mengatakan zarah akan berada dalam semua keadaan yang mungkin sehinggalah kita mengukurnya. (Baca juga [tafsiran-tafsiran lain yang ditulis oleh Fiziklah](https://www.fiziklah.com/2017/02/mentafsir-alam-kuantum/).)
+
+`(Nota kaki: Kucing Schrodinger hanyalah satu experimen bayangan [thought experiment] maknanya tiada kucing yang dibunuh dalam pembikinan Mekanik Kuantum ini)`
+
+[_Personal Reality_](http://toarumajutsunoindex.wikia.com/wiki/Personal_Reality) pula mem-bakulsampah-kan (dengan cara yang baik) prinsip Heisenberg dan memanfaatkan Kucing Schrödinger untuk menjadikan seseorang itu _esper_. Maknanya, seorang _esper_ tahu setiap data sesuatu zarah dan boleh memaksa sebuah (atau sekumpulan) zarah mengubah kebarangkaliannya supaya kucing itu boleh hidup atau boleh terhasilnya elektrik atau macam-macam fenomena yang lain untuk berlaku. Namun, mustahillah bagi kita untuk mencapainya (huhu T^T).
+
+<figure>
+
+![](/images/misaka-nama-kucing-schrodinger.jpg)
+
+<figcaption>
+
+MISAKA 10032 menamakan kucingnya Schrödinger. Sangat saintifik!
+
+</figcaption>
+</figure>
+
+## Tree Diagram
+
+<figure>
+
+![](/images/Satelit-Orihime-Tree-Diagram-raildex.png)
+
+<figcaption>
+
+Satelit Orihime yang dihuni Tree Diagram
+
+</figcaption>
+</figure>
+
+[_Tree Diagram_](http://toarumajutsunoindex.wikia.com/wiki/Tree_Diagram) adalah super-komputer paling hebat di dunia Raildex (Railgun + Index). Ia terletak dalam satelit Orihime untuk meramal cuaca dengan sebegitu tepat setiap bulan; itulah gambaran kehebatannya. Selain itu saintis juga menggunakannya untuk membuat analisis beberapa keadaan, memberikan kemungkinan-kemungkinan yang boleh jadi, dan menunjukkan penyelesaian terbaik secara matematiknya.
+
+Yang menariknya tentang komputer ini ialah _Tree Diagram_ bukanlah nama komputer semata-mata, ia merujuk kepada rajah paling popular dalam Kebarangkalian dan Teori Permainan. Ya! Itulah Rajah Pokok! Rajah pokok ini sangat berguna untuk mengira kebarangkalian rentetan kejadian.
+
+<figure>
+
+![](/images/craps_pass_tree.gif)
+
+<figcaption>
+Ini adalah contoh rajah pokok. Cuba bayangkan nak kira 20,000 rentetan kejadian sepertimana yang dilakukan oleh superkomputer Tree Diagram.
+</figcaption>
+</figure>
+
+## Synaesthesia
+
+Synaesthesia adalah keadaan apabila sesuatu rangsangan itu menimbulkan rangsangan yang lain; macam kita boleh nampak [setiap huruf mempunyai warna tertentu](https://www.sciencealert.com/new-brain-exercises-cause-people-to-experience-synaesthesia), atau [mendengar kerdipan cahaya](https://www.sciencealert.com/scientists-have-identified-a-weirdly-common-form-of-synaesthesia), ataupun [nampak kalendar dengan jelas bila memikirkan tentang hari](https://www.sciencealert.com/scientists-have-identified-a-weirdly-common-form-of-synaesthesia). Namun, hal ini tak berlaku kat semua orang, hanya orang-orang tertentu sahaja yang merasainya.
+
+<figure>
+
+![](/images/Level_Upper-raildex.png)
+
+<figcaption>
+
+Level Upper ialah sebuah lagu yang dikatakan boleh membuatkan bukan-esper menjadi esper
+
+</figcaption>
+</figure>
+
+A Certain Scientific Railgun silap dalam hal ini kerana menganggap Synaesthesia berlaku kepada semua orang. Perkara ini lebih ketara apabila ia digunakan supaya [_Level Upper_](http://toarumajutsunoindex.wikia.com/wiki/Level_Upper) boleh berfungsi.
+
+Ingat ya rakan-rakan! Synaesthasia adalah penyakit genetik.
+
+## Penutup
+
+Ada lagi konsep-konsep menarik yang penulis Kazuma Kamachi selitkan sepanjang cerita ini. Nama “Railgun” itu sendiri merujuk kepada senjata berteraskan elektrik tapi itu boleh dibawa kepada hari yang lain.
+
+Hal ini juga membuktikan bahawa sains boleh menjadi perencah dalam cerita rekaan.

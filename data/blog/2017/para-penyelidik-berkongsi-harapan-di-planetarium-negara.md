@@ -1,0 +1,61 @@
+---
+draft: false
+title: Para Penyelidik Berkongsi Harapan di Planetarium Negara
+subtitle: Laporan pendek penulis tentang perkongsian di ICONSPACE 2017
+summary: >-
+  Laporan pendek penulis tentang perkongsian di ICONSPACE 2017 yang dihadiri Dr Wayan Suparta, Dr Zahra Bouya, Dr Nur Adlyka Annuar, dan Dr Mazlan Othman.
+date: '2017-05-06'
+tags: ['akademia', 'laporan acara']
+images: ['/images/Planetarium-ICONSPACE-2917.jpg']
+authors: ['default']
+canonical:
+  date: '2017-05-06'
+  link: 'https://notasains.wordpress.com/2017/05/06/para-penyelidik-berkongsi-harapan-di-planetarium-negara/'
+  title: 'Para Penyelidik Berkongsi Harapan di Planetarium Negara'
+  source: 'NotaSAINS'
+  type: 'blog'
+---
+
+**Kuala Lumpur, 5 Mei 2017** - Empat penyelidik; Assoc. Prof. Dr Wayan Suparta, Dr Zahra Bouya, Nur Adlyka Annuar, dan Prof. Emeritus Datuk Dr Mazlan Othman, berkumpul di Planetarium Negara, Kuala Lumpur untuk berkongsi penyelidikan masing-masing dalam penerokaan angkasa dan benua Antartika sempena ICONSPACE yang dianjurkan oleh Pusat Sains Angkasa, Universiti Kebangsaan Malaysia (UKM).
+
+Perkongsian mereka turut menyelitkan harapan masing-masing terhadap negara kita Malaysia dalam bidang penyelidikan masing-masing.
+
+Dr Wayan Suparta yang membentangkan mengenai  pengalaman penyelidikan beliau di benua Antartika berkata, "Kita (Malaysia) mempunyai polisi dan akta untuk benua Antartika tapi tak jelas. Saya harap Malaysia mempunyai polisi dan akta yang jelas."
+
+Dr Mazlan Othman pula menyeru anak-anak muda untuk memandang ke arah perlombongan angkasa [_space mining_] sebagai satu potensi.
+
+<figure>
+
+![](/images/perlombongan-angkasa_Planetary-Resources.jpg)
+
+<figcaption>
+
+Bayangan ekonomi perlombongan angkasa - Ihsan Planetary Resouces
+
+</figcaption>
+</figure>
+
+"Cuba lihat syarikat startup Planetary Resources. Mereka bukan badan kerajaan; mereka adalah anak-anak muda berjiwa besar," katanya sambil memberikan beberapa contoh yang lain seperti Elon Musk dan Robert Bigelow.
+
+Cuba lihat: [6 Syarikat Startup Teratas](https://towerfast.com/press/post/top-6-aerospace-startups-to-watch-in-2017)
+
+"Banyak negara sedang meneroka potensi ini, bagaimana pula kita (Malaysia) mahu meletakkan diri kita dalam hal ini?" tambahnya lagi menyeru negara kita untuk bertindak.
+
+Nur Adlyka Annuar tidak melepaskan peluang menyatakan harapannya untuk bidang Astronomi berkembang di Malaysia. Beliau ingin melihat kursus Astronomi diajarkan di Malaysia dan ingin menjadi pensyarah dalam bidang itu.
+
+Menambah kepada harapan Adlyka, Dr Mazlan menyatakan, "Ramai anggap kita perlu memiliki teleskop dan alatan canggih sendiri untuk menjadi ahli astronomi; tapi itu tidak benar"
+
+<figure>
+
+![](/images/NuSTAR_DA_NASA.jpg)
+
+<figcaption>
+
+Gambaran satelit teleskop NuSTAR (Ihsan [NASA/JPL-CalTech](https://www.nasa.gov/mission_pages/nustar/multimedia/pia15265.html))
+
+</figcaption>
+</figure>
+
+"Seperti Adlyka, beliau menggunakan satelit NuSTAR milik NASA untuk mendapatkan data. Ada banyak data berlambak (daripada banyak alatan milik bermacam-macam pihak), kita hanya perlu dapatkannya."
+
+Kesimpulannya, para penyelidik ini sangat berharap untuk menyaksikan penerokaan luar angkasa berkembang di negara Malaysia ini.
