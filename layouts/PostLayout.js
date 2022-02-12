@@ -22,7 +22,9 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
 const inlineDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { slug, fileName, date, title, tags } = frontMatter
+  const { slug, fileName, date, title, tags, images } = frontMatter
+
+  // TODO Letak header
 
   const { canonical, reposts } = frontMatter
 

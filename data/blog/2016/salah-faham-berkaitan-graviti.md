@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: 'Lima Salah Faham Berkaitan Graviti'
 subtitle: 'Graviti adalah daya yang menarik antara mana-mana jasad berjisim'
 summary: >-
@@ -52,11 +52,11 @@ Kita mungkin mempercayai kenyataan itu sebab kita membandingkan penukul dengan b
 
 Ini eksperimen di Bulan.
 
-<iframe width="100%" style="aspect-ratio:853/480" src="https://www.youtube.com/embed/5C5_dOEyAfk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<YouTube id="5C5_dOEyAfk"/>
 
 Lihatlah juga eksperimen di Bumi dalam bilik vakuum.
 
-<iframe width="100%" style="aspect-ratio:853/480" src="https://www.youtube.com/embed/E43-CfukEgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<YouTube id="E43-CfukEgs"/>
 
 ## 4) Daya Graviti adalah Sama Di Setiap Permukaan Bumi
 

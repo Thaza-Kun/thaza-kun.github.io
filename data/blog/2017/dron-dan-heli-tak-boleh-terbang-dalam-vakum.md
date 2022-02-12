@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Dron dan Heli Tak Boleh Terbang dalam Keadaan Vakuum
 subtitle: Bilah-bilah mereka adalah seperti sayap kapal terbang yang memerlukan pergerakan udara untuk menghasilkan daya angkat.
 date: '2017-05-05'
@@ -56,7 +56,7 @@ Helikopter juga menggunakan prinsip yang sama dengan kapal terbang. Namun, apa y
 
 Maka, apa yang akan terjadi kalau dron (yang menggunakan bilah seperti helikopter) dimasukkan dalam bekas yang kekosongan udara [_vacuum_]? Tidak boleh lah terbang.
 
-<iframe width="100%" style="aspect-ratio:853/480" src="https://www.youtube.com/embed/g8-pxkaipcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<YouTube id="g8-pxkaipcg"/>
 
 Sebab itu lah roket menggunakan rembesan bahan bakar untuk terbang berbanding perbezaan tekanan. Membezakan tekanan udara sangat tidak berkesan apabila cuba terbang dekat dengan luar angkasa yang tiada udara.
 

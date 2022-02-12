@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: 'Belon Hidrogen: Sejarah yang Berulang-Ulang Lagi'
 subtitle: 'Hidrogen adalah ganti Helium yang murah tetapi berisiko tinggi'
 summary: >-
@@ -46,7 +46,7 @@ Apa yang menyebabkan letupan, kebakaran dan macam-macam tindakan kimia yang lain
 
 Hidrogen (H) terletak dalam kumpulan satu (kumpulan logam alkali). Kumpulan logam alkali sangat reaktif termasuk Hidrogen. Malah, Litium (Li), Natrium (Na) dan Kalium (K) boleh terbakar dan meletup apabila didedahkan kepada air. Lihat video ini:
 
-<iframe width="100%" style={`aspect-ratio: ${853 / 480}`} src="https://www.youtube.com/embed/HvVUtpdK7xw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<YouTube id="HvVUtpdK7xw"/>
 
 `(Nampaknya videonya telah dipadam oleh pemilik. Kalau ada contoh lain, akan dimasukkan)`
 
@@ -72,7 +72,7 @@ Pernah satu ketika pada 6 Mei 1937, kapal udara [LZ-129 Hindenburg dari Jerman t
 
 Lihat video kejadian itu:
 
-<iframe width="100%" style="aspect-ratio:853/480" src="https://www.youtube.com/embed/CgWHbpMVQ1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<YouTube id="CgWHbpMVQ1U"/>
 
 Sebenarnya, ini bukanlah satu-satunya kes kebakaran kapal udara kerana hidrogen. [Ada banyak lagi](http://www.airships.net/hydrogen-airship-accidents) yang pernah berlaku sebelumnya. Namun, kegunaan Hidrogen sebagai pengangkat kapal udara telah dikurangkan sehingga lenyap sepenuhnya pada hujung 1930-an.
 

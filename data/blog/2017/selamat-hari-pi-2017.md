@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Selamat Hari Pi 2017!
 subtitle: Hari Pi disambut pada 14 Mac setiap tahun kerana ia ditulis 3/14 mengikut format Bulan/Hari
 summary: >-
@@ -35,13 +35,13 @@ Formula Gregory&ndash;Leibniz
 
 Disebabkan pi adalah nombor tiada nisbah, maka pengiraan adalah dengan menggunakan penjumlahan berterusan sehingga n mencapai infiniti. Formula Gregory-Leibniz senang nak faham (penyebut [ _denominator_ ] setiap pecahan ialah nombor ganjil) untuk mengira tapi ia [agak lambat untuk mencapai nilai pi](https://www.csee.umbc.edu/~chang/cs104.s12/homework/ExtraCredit1.shtml) yang sebenar. Maknanya, kalau pakai tangan, ianya sangat memenatkan dan membazir banyak kertas. Pelawak Matematik Matt Parker pernah cuba guna formula ini untuk Hari Pi 2016.
 
-<iframe width="100%" style="aspect-ratio:853/480" src="https://www.youtube.com/embed/HrRMnzANHHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<YouTube id="HrRMnzANHHs"/>
 
 ## Membaling Damak
 
 Pertama sekali lukis satu segi empat sama dan satu bulatan yang sama lebarnya. Kemudian, baling damak sebanyak yang mungkin. Lagi rawak balingan lagi bagus. Jumlah balingan yang kena dalam bulatan itu adalah analogi kepada ruang bulatan dan begitu juga dengan segi empat sama. Bahagikan jumlah damak dalam bulatan dengan jumlah damak dalam segi empat sama akan mendapat π/4. Mari lihat Dianna Cowern (PhysicsGirl) dan Derek Muller (Veritasium) mencari nilai pi dengan kaedah ini.
 
-<iframe width="100%" style="aspect-ratio:853/480" src="https://www.youtube.com/embed/M34TO71SKGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<YouTube id="M34TO71SKGk"/>
 
 ## Permasalahan Jarum oleh Buffon
 
