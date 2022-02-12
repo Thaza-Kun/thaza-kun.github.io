@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: 'Belon Hidrogen: Sejarah yang Berulang-Ulang Lagi'
 subtitle: 'Hidrogen adalah ganti Helium yang murah tetapi berisiko tinggi'
 summary: >-
@@ -46,7 +46,7 @@ Apa yang menyebabkan letupan, kebakaran dan macam-macam tindakan kimia yang lain
 
 Hidrogen (H) terletak dalam kumpulan satu (kumpulan logam alkali). Kumpulan logam alkali sangat reaktif termasuk Hidrogen. Malah, Litium (Li), Natrium (Na) dan Kalium (K) boleh terbakar dan meletup apabila didedahkan kepada air. Lihat video ini:
 
-<iframe width="100%" style="aspect-ratio:853/480" src="https://www.youtube.com/embed/HvVUtpdK7xw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" style={`aspect-ratio: ${853 / 480}`} src="https://www.youtube.com/embed/HvVUtpdK7xw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 `(Nampaknya videonya telah dipadam oleh pemilik. Kalau ada contoh lain, akan dimasukkan)`
 

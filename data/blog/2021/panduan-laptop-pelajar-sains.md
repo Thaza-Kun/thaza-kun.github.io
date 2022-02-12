@@ -7,7 +7,7 @@ summary: >-
 date: '2022-02-10'
 tags: ['akademia']
 images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
-authors: 'default'
+authors: ['default']
 ---
 
 ## CPU

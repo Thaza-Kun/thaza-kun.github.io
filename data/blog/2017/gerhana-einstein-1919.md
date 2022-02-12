@@ -16,7 +16,7 @@ canonical:
   type: 'blog'
 ---
 
-Sifat gerhana matahari penuh pada 21 Ogos 2017 yang berlaku sepanjang benua Amerika Utara dari Pantai Barat sehingga Pantai Timur membuatkan para peminat gerhana menamakannya "[The Great American Eclipse](https://www.greatamericaneclipse.com/)". Kalau ada yang berminat untuk mencerap, bolehlah terbang ke Amerika Syarikat jika mampu (bagi yang tidak mampu jom kita berhuhu >~<).
+Sifat gerhana matahari penuh pada 21 Ogos 2017 yang berlaku sepanjang benua Amerika Utara dari Pantai Barat sehingga Pantai Timur membuatkan para peminat gerhana menamakannya "[The Great American Eclipse](https://www.greatamericaneclipse.com/)". Kalau ada yang berminat untuk mencerap, bolehlah terbang ke Amerika Syarikat jika mampu (bagi yang tidak mampu jom kita berhuhu \>~\<).
 
 ![](/images/great-american-eclipse-2017.png)
 

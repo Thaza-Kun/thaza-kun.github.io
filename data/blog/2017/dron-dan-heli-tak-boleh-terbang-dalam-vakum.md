@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: Dron dan Heli Tak Boleh Terbang dalam Keadaan Vakuum
 subtitle: Bilah-bilah mereka adalah seperti sayap kapal terbang yang memerlukan pergerakan udara untuk menghasilkan daya angkat.
 date: '2017-05-05'

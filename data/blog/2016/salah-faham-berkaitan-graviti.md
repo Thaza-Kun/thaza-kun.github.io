@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: 'Lima Salah Faham Berkaitan Graviti'
 subtitle: 'Graviti adalah daya yang menarik antara mana-mana jasad berjisim'
 summary: >-

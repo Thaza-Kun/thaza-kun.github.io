@@ -6,6 +6,14 @@ import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/l
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
+// TODO Buat komponen embed YouTube
+// Entri yang terjejas:
+// - belon-hidrogen
+// - salah-faham-berkaitan-graviti
+// - dron-dan-heli
+// - saluran-saintifik-youtube
+// - selamat-hari-pi-2017
+
 export async function getStaticPaths() {
   const posts = getFiles('blog')
   return {
@@ -42,8 +50,6 @@ export async function getStaticProps({ params }) {
 
 export default function Blog({ post, authorDetails, prev, next }) {
   const { mdxSource, toc, frontMatter } = post
-
-  // TODO Betulkan metadata setiap post .md dan formatkan HTMLnya
 
   return (
     <>
