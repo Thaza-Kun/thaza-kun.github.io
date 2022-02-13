@@ -8,7 +8,7 @@ const siteMetadata = {
   siteUrl: 'https://thaza-kun.vercel.app',
   siteRepo: 'https://github.com/thaza-kun/thaza-kun.github.io',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
+  image: '/static/images/avatar.jpg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'taza.aznam@gmail.com',
   github: 'https://github.com/thaza-kun/',

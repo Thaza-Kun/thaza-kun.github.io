@@ -16,7 +16,7 @@ canonical:
   type: 'blog'
 ---
 
-Dalam banyak-banyak benda yang wujud di muka bumi ini, perkara yang banyak mempengaruhi kehidupan kita adalah daya. Dalam banyak-banyak daya, daya graviti adalah yang paling membawa makna sebab tanpa graviti kita tak ada atmosfera yang memberi kita oksigen dan akan berlaku benda-benda pelik yang lain seperti api yang berbentuk sfera, dan ros yang berbau pelik. Disebabkan kewujudan graviti yang berlaku setiap masa tanpa kesedaran kita juga, banyak salah faham boleh timbul. Inilah antara salah faham yang mungkin kalian percaya:
+Dalam banyak-banyak benda yang wujud di muka bumi ini, perkara yang banyak mempengaruhi kehidupan kita adalah daya. Dalam banyak-banyak daya, daya graviti mungkin adalah yang paling dekat dengan kita sebab tanpa graviti kita tak ada atmosfera yang memberi kita oksigen dan akan berlaku benda-benda pelik yang lain seperti api yang berbentuk sfera, dan ros yang berbau pelik. Disebabkan kewujudan graviti yang berlaku setiap masa tanpa kesedaran kita juga, banyak salah faham boleh timbul. Inilah antara salah faham yang mungkin kalian percaya:
 
 ## 1) Matahari Menarik Bumi Lebih Banyak Daripada Bumi Menarik Matahari
 

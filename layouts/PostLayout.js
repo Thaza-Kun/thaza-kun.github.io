@@ -26,8 +26,6 @@ const inlineDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { slug, fileName, date, title, tags, images } = frontMatter
 
-  // TODO Letak header
-
   const { canonical, reposts } = frontMatter
 
   const getBanner = _.get(frontMatter, 'header', true)
@@ -41,7 +39,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
       />
       <ScrollTopAndComment />
       <article>
-        <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
+        <div className="text-justify xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
           <header className="pt-6 xl:pb-6">
             <div className="space-y-1 text-center">
               <dl className="space-y-10">
@@ -99,7 +97,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               </dd>
             </dl>
             <div className="xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div className="divide-y divide-gray-200 dark:divide-gray-700 ">
+              <div className="mt-5 divide-y divide-gray-200 dark:divide-gray-700">
                 {getBanner && (
                   <div>
                     <Image src={images[0]} width="1024" height="512" layout="responsive" />

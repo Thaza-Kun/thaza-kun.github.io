@@ -6,15 +6,14 @@ summary: >-
   Pensyarah berikan aku masa 4 minit untuk membentangkan tesis berbanding 15 minit untuk tahun-tahun sebelumnya.
 date: '2022-02-10'
 tags: ['akademia', 'renungan penulis']
-images: ['/static/images/meme_Pepe-Silvia.jpg']
+images: ['/images/meme_Pepe-Silvia.jpg']
 authors: ['default']
 ---
 
-<aside class="changelog">
+<MetaPost>
+Isi-isi dalam ini aku jumpa dalam nota lama aku bertarikh 4 Mac 2021 yang ditulis sejurus selepas habis sesi pembentangan, jadi aku ambil keputusan untuk tulisnya semula di sini.
 
-- Isi-isi dalam ini aku jumpa semasa aku dalam nota lama aku bertarikh 4 Mac 2021, jadi aku ambil keputusan untuk tulisnya semula di sini. Nota itu ditulis sejurus selepas habis sesi pembentangan.
-
-</aside>
+</MetaPost>
 
 Seorang pelajar fizik akan perlu menulis tesis membuktikan dirinya mampu telaah dan bawa topik-topik berat berkait kefizikan. Hasil penat lelah ini akan dibentangka di hadapan para pensyarahnya di penghujung pengajiannya. Begitulah yang aku perlu hadapi pada awal tahun ini iaitu 4 Mac 2021.
 

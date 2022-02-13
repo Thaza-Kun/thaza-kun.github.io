@@ -4,12 +4,12 @@ title: 'Sir Martin Ryle: Bapa Astronomi Radio'
 subtitle: 'Kaedah yang dibangunkan beliau digunakan sehingga sekarang.'
 summary: >-
   Kaedah yang dibangunkan beliau digunakan sehingga sekarang.
-date: '2017-07-22'
+date: '2020-07-22'
 tags: ['astronomi', 'tokoh', 'sejarah sains']
 images: ['/images/vla-panorama.jpg']
 authors: ['default']
 canonical:
-  date: '2017-07-22'
+  date: '2020-07-22'
   link: 'https://www.thepatriots.asia/sir-martin-ryle-bapa-astronomi-radio/'
   title: 'Sir Martin Ryle: Bapa Astronomi Radio'
   source: 'The Patriots Asia'

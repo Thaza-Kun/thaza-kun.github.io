@@ -1,6 +1,6 @@
 ---
 name: Murthadza bin Aznam
-avatar: /static/images/avatar.png
+avatar: /static/images/avatar.jpg
 occupation: Graduan Fizik Gunaan
 company: Universiti Kebangsaan Malaysia
 email: taza.aznam@gmail.com
