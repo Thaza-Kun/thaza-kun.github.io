@@ -7,6 +7,9 @@ import siteMetadata from '@/data/siteMetadata'
 
 const isProduction = process.env.NODE_ENV === 'production'
 
+// TODO Handle views and Analytics
+// ? Mungkin leerob.io boleh membantu
+
 const Analytics = () => {
   return (
     <>
