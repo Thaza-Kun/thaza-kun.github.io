@@ -7,8 +7,9 @@ import siteMetadata from '@/data/siteMetadata'
 
 const isProduction = process.env.NODE_ENV === 'production'
 
-// TODO Handle views and Analytics
+// TODO Handle views
 // ? Mungkin leerob.io boleh membantu
+// ! LMAO Lah, selama ni aku letak senarai domain kat tempat salah ke bongok betul
 
 const Analytics = () => {
   return (
