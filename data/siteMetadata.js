@@ -26,6 +26,7 @@ const siteMetadata = {
     umamiWebsiteId: '0c8b276a-4691-40cd-9ce2-d8f0b69a3e62', // e.g. 123e4567-e89b-12d3-a456-426614174000
     umamiWebsiteInstance: 'https://umami-rmia.onrender.com/umami.js',
     googleAnalyticsId: 'G-N1Y1DW6RP4', // e.g. UA-000000-2 or G-XXXXXXX
+    microAnalyticsId: 'ZwSg9rf6GA',
   },
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo
