@@ -5,7 +5,7 @@ const siteMetadata = {
   description: 'Ini adalah blog peribadi milik Murthadza bin Aznam',
   language: 'ms',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://thaza-kun.github.io/',
+  siteUrl: 'https://thaza-kun.vercel.app/',
   siteRepo: 'https://github.com/thaza-kun/thaza-kun.github.io',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
