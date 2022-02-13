@@ -8,8 +8,10 @@ import siteMetadata from '@/data/siteMetadata'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 
-import Info from '@/components/admonitions/info'
+import MetaPost from '@/components/admonitions/metapost'
 import CustomLink from '@/components/Link'
+
+import _ from 'lodash'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/main/data/blog/${fileName}`
 const discussUrl = (slug) =>
@@ -27,6 +29,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
   // TODO Letak header
 
   const { canonical, reposts } = frontMatter
+
+  const getBanner = _.get(frontMatter, 'header', true)
 
   return (
     <SectionContainer>
@@ -94,115 +98,125 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 </ul>
               </dd>
             </dl>
-            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-              {(canonical || reposts) && (
-                <Info>
-                  {canonical && (
-                    <p>
-                      Rencana ini asalnya ditulis dalam {canonical.type} {canonical.source} dengan
-                      tajuk "<CustomLink href={canonical.link}>{canonical.title}</CustomLink>" pada{' '}
-                      <time dateTime={canonical.date}>
-                        {new Date(canonical.date).toLocaleDateString(
-                          siteMetadata.locale,
-                          inlineDateTemplate
-                        )}
-                      </time>{' '}
-                      tetapi ditulis semula di sini bagi tujuan penyimpanan. {canonical.comment}
-                    </p>
-                  )}
-                  {reposts &&
-                    (reposts.length > 1 ? (
-                      <div>
-                        <p>Rencana ini juga ada disiarkan di:</p>
-                        <ul className="list-outside list-disc pl-6">
-                          {reposts.map((repost, index) => (
-                            <li key={index}>
-                              {repost.type} {repost.source} dengan tajuk "
-                              <CustomLink href={repost.link}>{repost.title}</CustomLink>" pada{' '}
-                              <time dateTime={repost.date}>
-                                {new Date(repost.date).toLocaleDateString(
-                                  siteMetadata.locale,
-                                  inlineDateTemplate
-                                )}
-                              </time>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ) : (
+            <div className="xl:col-span-3 xl:row-span-2 xl:pb-0">
+              <div className="divide-y divide-gray-200 dark:divide-gray-700">
+                {getBanner && (
+                  <div>
+                    <Image src={images[0]} width="1024" height="512" layout="responsive" />
+                  </div>
+                )}
+              </div>
+              <div className="divide-y divide-gray-200 dark:divide-gray-700">
+                {(canonical || reposts) && (
+                  <MetaPost>
+                    {canonical && (
                       <p>
-                        Rencana ini juga ada disiarkan di {reposts[0].type} {reposts[0].source}{' '}
-                        dengan tajuk "
-                        <CustomLink href={reposts[0].link}>{reposts[0].title}</CustomLink>" pada{' '}
-                        <time dateTime={reposts[0].date}>
-                          {new Date(reposts[0].date).toLocaleDateString(
+                        Rencana ini asalnya ditulis dalam {canonical.type} {canonical.source} dengan
+                        tajuk "<CustomLink href={canonical.link}>{canonical.title}</CustomLink>"
+                        pada{' '}
+                        <time dateTime={canonical.date}>
+                          {new Date(canonical.date).toLocaleDateString(
                             siteMetadata.locale,
                             inlineDateTemplate
                           )}
                         </time>{' '}
-                        dengan izin penulis.
+                        tetapi ditulis semula di sini bagi tujuan penyimpanan. {canonical.comment}
                       </p>
-                    ))}
-                </Info>
-              )}
-              <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
-              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(slug)} rel="nofollow">
-                  {'Discuss on Twitter'}
-                </Link>
-                {` • `}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
-              </div>
-              <Comments frontMatter={frontMatter} />
-            </div>
-            <footer>
-              <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
-                {tags && (
-                  <div className="py-4 xl:py-8">
-                    <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                      Tags
-                    </h2>
-                    <div className="flex flex-wrap">
-                      {tags.map((tag) => (
-                        <Tag key={tag} text={tag} />
+                    )}
+                    {reposts &&
+                      (reposts.length > 1 ? (
+                        <div>
+                          <p>Rencana ini juga ada disiarkan di:</p>
+                          <ul className="list-outside list-disc pl-6">
+                            {reposts.map((repost, index) => (
+                              <li key={index}>
+                                {repost.type} {repost.source} dengan tajuk "
+                                <CustomLink href={repost.link}>{repost.title}</CustomLink>" pada{' '}
+                                <time dateTime={repost.date}>
+                                  {new Date(repost.date).toLocaleDateString(
+                                    siteMetadata.locale,
+                                    inlineDateTemplate
+                                  )}
+                                </time>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ) : (
+                        <p>
+                          Rencana ini juga ada disiarkan di {reposts[0].type} {reposts[0].source}{' '}
+                          dengan tajuk "
+                          <CustomLink href={reposts[0].link}>{reposts[0].title}</CustomLink>" pada{' '}
+                          <time dateTime={reposts[0].date}>
+                            {new Date(reposts[0].date).toLocaleDateString(
+                              siteMetadata.locale,
+                              inlineDateTemplate
+                            )}
+                          </time>{' '}
+                          dengan izin penulis.
+                        </p>
                       ))}
+                  </MetaPost>
+                )}
+                <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
+                <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
+                  <Link href={discussUrl(slug)} rel="nofollow">
+                    {'Discuss on Twitter'}
+                  </Link>
+                  {` • `}
+                  <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
+                </div>
+                <Comments frontMatter={frontMatter} />
+              </div>
+              <footer>
+                <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
+                  {tags && (
+                    <div className="py-4 xl:py-8">
+                      <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                        Tags
+                      </h2>
+                      <div className="flex flex-wrap">
+                        {tags.map((tag) => (
+                          <Tag key={tag} text={tag} />
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                )}
-                {(next || prev) && (
-                  <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
-                    {prev && (
-                      <div>
-                        <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                          Previous Article
-                        </h2>
-                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
-                          <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
+                  )}
+                  {(next || prev) && (
+                    <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
+                      {prev && (
+                        <div>
+                          <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                            Previous Article
+                          </h2>
+                          <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                            <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
+                          </div>
                         </div>
-                      </div>
-                    )}
-                    {next && (
-                      <div>
-                        <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                          Next Article
-                        </h2>
-                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
-                          <Link href={`/blog/${next.slug}`}>{next.title}</Link>
+                      )}
+                      {next && (
+                        <div>
+                          <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                            Next Article
+                          </h2>
+                          <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                            <Link href={`/blog/${next.slug}`}>{next.title}</Link>
+                          </div>
                         </div>
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
-              <div className="pt-4 xl:pt-8">
-                <Link
-                  href="/blog"
-                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                >
-                  &larr; Back to the blog
-                </Link>
-              </div>
-            </footer>
+                      )}
+                    </div>
+                  )}
+                </div>
+                <div className="pt-4 xl:pt-8">
+                  <Link
+                    href="/blog"
+                    className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                  >
+                    &larr; Back to the blog
+                  </Link>
+                </div>
+              </footer>
+            </div>
           </div>
         </div>
       </article>

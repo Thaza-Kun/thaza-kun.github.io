@@ -6,7 +6,7 @@ summary: >-
   Laporan pendek penulis tentang perkongsian di ICONSPACE 2017 yang dihadiri Dr Wayan Suparta, Dr Zahra Bouya, Dr Nur Adlyka Annuar, dan Dr Mazlan Othman.
 date: '2017-05-06'
 tags: ['akademia', 'laporan acara']
-images: ['/images/Planetarium-ICONSPACE-2917.jpg']
+images: ['/images/Planetarium-ICONSPACE-2017.jpg']
 authors: ['default']
 canonical:
   date: '2017-05-06'
