@@ -7,10 +7,10 @@ import TOCInline from './TOCInline'
 import Pre from './Pre'
 import { BlogNewsletterForm } from './NewsletterForm'
 
-import YouTube from './embeds/Youtube'
-import MetaPost from './admonitions/MetaPost'
-import Law from './admonitions/Law'
-import Figure from './embeds/figure'
+import YouTube from '@/components/embeds/Youtube'
+import MetaPost from '@/components/admonitions/MetaPost'
+import Law from '@/components/admonitions/Law'
+import Figure from '@/components/embeds/Figure'
 
 export const MDXComponents = {
   Image,
