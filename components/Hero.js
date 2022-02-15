@@ -12,6 +12,7 @@ export default function Hero() {
                             height="72"
                             className="h-32 w-32 rounded-lg border-2 border-gray-200 shadow-md"
                             layout="fixed"
+                            alt=""
                         />
                     </div>
                     <div className="ml-6">
