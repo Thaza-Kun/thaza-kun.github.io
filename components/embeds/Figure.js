@@ -3,7 +3,7 @@ import _ from 'lodash'
 import CustomLink from '../Link'
 import Image from 'next/image'
 
-export default function Figure({ license, src, link, viewport, width, height, children }) {
+export default function Figure({ license, src, link, viewport, width, height, alt, children }) {
   const size = viewport ? `${viewport}vw` : '100vw'
   const padding = viewport ? `py-[${1024 - (viewport / 100) * 1024}px]` : 'py-auto'
   return (
@@ -15,6 +15,7 @@ export default function Figure({ license, src, link, viewport, width, height, ch
         height={height}
         layout="responsive"
         sizes={size}
+        alt={alt}
       />
       <figcaption className="text-center">
         <p>

@@ -100,7 +100,13 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <div className="mt-5 divide-y divide-gray-200 dark:divide-gray-700">
                 {getBanner && (
                   <div>
-                    <Image src={images[0]} width="1024" height="512" layout="responsive" />
+                    <Image
+                      src={images[0]}
+                      width="1024"
+                      height="512"
+                      layout="responsive"
+                      alt="banner"
+                    />
                   </div>
                 )}
               </div>
