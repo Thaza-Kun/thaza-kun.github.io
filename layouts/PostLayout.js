@@ -8,7 +8,7 @@ import siteMetadata from '@/data/siteMetadata'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 
-import MetaPost from '@/components/admonitions/metapost'
+import MetaPost from '@/components/admonitions/MetaPost'
 import CustomLink from '@/components/Link'
 
 import _ from 'lodash'

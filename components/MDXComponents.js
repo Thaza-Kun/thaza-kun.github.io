@@ -7,8 +7,10 @@ import TOCInline from './TOCInline'
 import Pre from './Pre'
 import { BlogNewsletterForm } from './NewsletterForm'
 
-import YouTube from './embeds/youtube'
-import MetaPost from './admonitions/metapost'
+import YouTube from './embeds/Youtube'
+import MetaPost from './admonitions/MetaPost'
+import Law from './admonitions/Law'
+import Figure from './embeds/figure'
 
 export const MDXComponents = {
   Image,
@@ -18,6 +20,8 @@ export const MDXComponents = {
   BlogNewsletterForm: BlogNewsletterForm,
   YouTube: YouTube,
   MetaPost: MetaPost,
+  Law: Law,
+  Figure: Figure,
   wrapper: ({ components, layout, ...rest }) => {
     const Layout = require(`../layouts/${layout}`).default
     return <Layout {...rest} />
