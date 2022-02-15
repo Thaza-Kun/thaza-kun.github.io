@@ -58,7 +58,7 @@ export default function Hero() {
                 <div className="my-2 grid items-start gap-8">
                     <div className="group relative">
                         <div className="animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r from-green-600 to-amber-500 opacity-25 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
-                        <a href="https://discord.gg/9c6cWVwdEJ">
+                        <a target="_blank" href="https://discord.gg/9c6cWVwdEJ">
                             <a className="relative flex items-center divide-x divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none dark:bg-black">
                                 <span className="flex items-center space-x-5">
                                     <svg
@@ -85,7 +85,7 @@ export default function Hero() {
                 <div class="my-2 grid items-start gap-8">
                     <div class="group relative">
                         <div class="animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r from-fuchsia-600 to-primary-600 opacity-25 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
-                        <a href="https://github.com/thaza-kun/">
+                        <a target="_blank" href="https://github.com/thaza-kun/">
                             <a class="relative flex items-center divide-x divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none dark:bg-black">
                                 <span class="flex items-center space-x-5">
                                     <svg
@@ -111,7 +111,7 @@ export default function Hero() {
                 <div className="my-2 grid items-start gap-8">
                     <div className="group relative">
                         <div className="animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r from-pink-600 to-purple-600 opacity-25 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
-                        <a href="https://ko-fi.com/thaza_kun">
+                        <a target="_blank" href="https://ko-fi.com/thaza_kun">
                             <a className="relative flex items-center divide-x divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none dark:bg-black">
                                 <span className="flex items-center space-x-5">
                                     <svg
