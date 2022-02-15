@@ -29,17 +29,10 @@ export default function Hero() {
           Bagi yang meminati Sains, Matematik, Data, atau Pengaturcaraan; bolehlah ikut kembara
           bersamaku.
         </p>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          rel="noopener noreferrer"
-          href="https://twitter.com/Thaza_Kun"
-          className="w-full"
-        >
+        <a target="_blank" rel="noreferrer" href="https://twitter.com/Thaza_Kun" className="w-full">
           <a
             className="my-3 flex flex-row items-center justify-center text-sm font-bold leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 lg:justify-start"
             target="_blank"
-            rel="noreferrer"
             rel="noreferrer noopener"
           >
             <svg
