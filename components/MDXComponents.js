@@ -8,9 +8,11 @@ import Pre from './Pre'
 import { BlogNewsletterForm } from './NewsletterForm'
 
 import YouTube from '@/components/embeds/Youtube'
+import Figure from '@/components/embeds/Figure'
+
 import MetaPost from '@/components/admonitions/MetaPost'
 import Law from '@/components/admonitions/Law'
-import Figure from '@/components/embeds/Figure'
+import Example from '@/components/admonitions/Example'
 
 export const MDXComponents = {
   Image,
@@ -19,9 +21,10 @@ export const MDXComponents = {
   pre: Pre,
   BlogNewsletterForm: BlogNewsletterForm,
   YouTube: YouTube,
+  Figure: Figure,
   MetaPost: MetaPost,
   Law: Law,
-  Figure: Figure,
+  Example: Example,
   wrapper: ({ components, layout, ...rest }) => {
     const Layout = require(`../layouts/${layout}`).default
     return <Layout {...rest} />

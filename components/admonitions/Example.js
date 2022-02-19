@@ -27,7 +27,7 @@ export default function Example(props) {
           </svg>
         </button>
         <div className="flex w-full flex-col text-xl font-semibold leading-none text-black sm:block">
-          <span className="inline-block">Example</span>
+          <span className="inline-block">Contoh</span>
           {props.title && (
             <span className="float-right inline-block text-base text-gray-600 sm:text-lg ">
               {props.title}
