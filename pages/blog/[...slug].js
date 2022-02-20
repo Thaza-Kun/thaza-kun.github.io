@@ -43,18 +43,26 @@ export async function getStaticProps({ params }) {
 export default function Blog({ post, authorDetails, prev, next }) {
   const { mdxSource, toc, frontMatter } = post
 
+  function renderPost() {
+    return (
+      <MDXLayoutRenderer
+        layout={frontMatter.layout || DEFAULT_LAYOUT}
+        toc={toc}
+        mdxSource={mdxSource}
+        frontMatter={frontMatter}
+        authorDetails={authorDetails}
+        prev={prev}
+        next={next}
+      />
+    )
+  }
+
   return (
     <>
       {frontMatter.draft !== true ? (
-        <MDXLayoutRenderer
-          layout={frontMatter.layout || DEFAULT_LAYOUT}
-          toc={toc}
-          mdxSource={mdxSource}
-          frontMatter={frontMatter}
-          authorDetails={authorDetails}
-          prev={prev}
-          next={next}
-        />
+        renderPost()
+      ) : frontMatter.in_review ? (
+        renderPost()
       ) : (
         <div className="mt-24 text-center">
           <PageTitle>

@@ -1,5 +1,6 @@
 ---
-draft: false
+draft: true
+in_review: true
 title: 'Kaedah Menghasilkan Protein Dari Sejujuk DNA Guna Python'
 subtitle: 'Ia adalah projek kecil aku'
 summary: >-
@@ -142,7 +143,7 @@ Katakan ada jujukan DNA `GATTAGCCAGATTAC`, boleh jadi kodonnya adalah begini:
 
 </Example>
 
-Apa yang kita perlu panggil fungsi yang sama berulang kali dengan `init_pos` yang berbeza.
+Apa yang kita perlu buat ialah panggil fungsi yang sama berulang kali dengan `init_pos` yang berbeza.
 Selain itu, kita juga perlu ada satu fungsi yang akan hasilkan pasangan jujukan input.
 
 ```python:dna_toolkit.py
@@ -221,8 +222,7 @@ Semestinya, kalau kita ada model, kita perlu tentusahkannya sama ada ia berfungs
 Kita boleh lakukan sedemikian dengan cuba memadankannya dengan pangkalan data yang diketahui.
 Satu contoh pangkalan data yang boleh cuba digunakan ialah pangkalan data _National Center for Biotechnology Information_ (NCBI).
 
-Kita ambil satu contoh data insulin homo sapiens [`NM_001185097.2`](https://www.ncbi.nlm.nih.gov/nuccore/NM_001185097.2).
-(Pergi ke pautan FASTA untuk dapatkan data )
+Kita ambil satu contoh data insulin homo sapiens [`NM_001185097.2`](https://www.ncbi.nlm.nih.gov/nuccore/NM_001185097.2) (Pergi ke pautan FASTA untuk dapatkan jujukan DNAnya).
 Algoritma yang aku hasilkan ialah senarai ini:
 
 ```bash {1} showLineNumbers
