@@ -1,0 +1,71 @@
+---
+draft: true
+in_review: false
+title: 'Hukum Ketiga Kepler Teritlak Untuk Orbit Dua Jasad'
+subtitle: 'Bagaimana sekiranya matahari tidak berada di pusat orbit?'
+summary: >-
+  ''
+date: '2022-02-18'
+tags: ['catatan fizik']
+images: ['/images/sistem-suria.jpg']
+authors: ['default']
+---
+
+Hukum Kepler ketiga mengatakan bahawa kalaan orbit planet, $T$, berkadaran dengan jarak orbitnya, $R$ dengan perkadaran $T^2\propto R^3$. Khususnya, ia mematuhi persamaan
+
+<div className="katex-display">
+$$\displaystyle T^2 = \frac{4\pi^2}{GM} R^3$$
+</div>
+
+dengan maksud bahawa:
+
+| simbol | maksud                      |
+| :----: | :-------------------------- |
+|  $G$   | Pemalar kegravitian semesta |
+|  $M$   | Jisim bintang induk         |
+
+Namun begitu, hukum Kepler ini mengandaikan Matahari tidak bergerak di pusat orbit dan tidak juga berayun. Hal ini ketara bila kita perhatikan hukum pertama Kepler:
+
+<Law name="Pergerakan Planet Kepler">
+
+1. Setiap planet berbentuk bujur dengan bintang induk planet (Matahari) berada di salah satu dari dua titik fokus bujur tersebut.
+
+2. Planet akan lebih laju ketika berhampiran dengan bintang induknya berbanding ketika berjauhan sepanjang orbitnya.
+
+3. Kuasa dua kalaan orbit planet adalah berkadaran dengan kuasa tiga jejari orbitnya.
+
+</Law>
+
+Andaian ini boleh dipakai sebab pusat jisim orbit berada hampir dengan Matahari sehingga ia kelihatan tidak bergerak langsung.
+Katakan pula jika dua jisim tersebut menari dalam orbit masing-masing seperti dalam sistem bintang binari.
+Apakah pula persamaan yang menentukan kalaan putaran sistem tersebut?
+
+<Figure
+  src="/images/orbit-bintang-binari-jisim-mirip_DA_Zhatt-wikimedia.gif"
+  width={200}
+  height={200}
+  link="https://commons.wikimedia.org/wiki/File:Orbit2.gif"
+  license="Domain Awam"
+  viewport={50}
+>
+  Sistem bintang berpasangan yang menari mengelilingi pusat jisim.
+</Figure>
+
+Aku terjumpa satu hantaran dari [NASA yang memunculkan persamaan pergerakan bintang binari](https://imagine.gsfc.nasa.gov/features/yba/CygX1_mass/binary/equation_derive.html) dan jawapan pendeknya, ya persamaan yang sama juga terpakai.
+Akan tetapi, $M$ itu kali ini bukanlah jisim bintang induk semata-mata, tetapi merupakan hasil tambah dua jisim dalam sistem tersebut, $M = m_1 + m_2$,
+
+<div className="katex-display">
+$$\displaystyle T^2 = \frac{4\pi^2}{G(m_1 + m_2)} R^3.$$
+</div>
+
+Sebabnya, sekarang kedua-dua jasad tersebut menari dan bukan seorang sahaja yang berpusing-pusing. Sekiranya jisim pertama sangat-sangat besar berbanding jisim kedua, $m_1 >> m_2$, maka hasil tambah kedua-dua jisim itu sama seperti tidak tambah apa-apa pun,
+
+<div className="katex-display">
+$$\displaystyle M_{\text{matahari}} + m_{\text{bumi}} \approx M_{\text{matahari}}$$
+</div>
+
+dan ini yang kita dapat dalam hukum ketiga Kepler yang asal.
+
+## Kaedah Memperoleh Persamaan Teritlak Tersebut
+
+// TODO Sambung
