@@ -22,6 +22,26 @@ mark {
   @apply rounded-md bg-blue-300 px-1 pt-[0.5] pb-1 dark:bg-blue-500;
 }
 
+figure {
+  @apply rounded-xl bg-gray-200 pb-1 dark:bg-gray-800;
+  margin-bottom: 0px !important;
+}
+
+figure > div > span {
+  @apply m-0 rounded-xl;
+}
+
+figure > figcaption {
+  margin-top: 0px !important;
+}
+
+figure > figcaption > p {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
