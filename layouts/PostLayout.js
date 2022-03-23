@@ -96,7 +96,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 </ul>
               </dd>
             </dl>
-            <div className="xl:col-span-3 xl:row-span-2 xl:pb-0">
+            <div className="max-w-3xl xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="mt-5 divide-y divide-gray-200 dark:divide-gray-700">
                 {getBanner && (
                   <div>
