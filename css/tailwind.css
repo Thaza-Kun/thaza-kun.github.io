@@ -19,7 +19,7 @@
 }
 
 mark {
-  @apply rounded-md bg-blue-300 px-1 pt-[0.5] pb-1 dark:bg-blue-500;
+  @apply rounded-md bg-blue-300 px-1.5 pt-[0.5] pb-1 dark:bg-green-400;
 }
 
 figure {
