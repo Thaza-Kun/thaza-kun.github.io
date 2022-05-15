@@ -18,6 +18,10 @@
   @apply my-5;
 }
 
+li > a {
+  word-wrap: break-word;
+}
+
 mark {
   @apply rounded-md bg-blue-300 px-1.5 pt-[0.5] pb-1 dark:bg-green-400;
 }
