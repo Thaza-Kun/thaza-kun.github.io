@@ -59,18 +59,6 @@ const CallToActionBar: React.FC<CTAProps> = (props) => {
 export const CallToActions: React.FC = () => {
     const actions: Array<CTAProps> = [
         {
-            name: "Discord",
-            cta: "Bincang bersama pembaca yang lain",
-            icon: DiscordIcon,
-            link: "https://discord.gg/9c6cWVwdEJ",
-        },
-        {
-            name: "Github",
-            cta: "Jenguk kod yang pernah kuhasilkan",
-            link: "https://github.com/thaza-kun/",
-            icon: GithubIcon,
-        },
-        {
             name: "Kofi",
             cta: "Sumbangkan secangkir kopi",
             link: "https://ko-fi.com/thaza_kun",

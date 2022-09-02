@@ -9,13 +9,20 @@ export const Main: React.FC = () => {
         <Stack
             direction={["column", "row"]}
             minW="screen"
+            maxWidth={["1000"]}
+            marginX="auto"
             alignItems={["center"]}
             justifyContent="space-between"
             py="8"
             as="section"
         >
             <HeroCard />
-            <CallToActions />
+            {/* <CallToActions /> */}
+            {/* TODO Iklan:
+                - buku
+                - Samudra
+                - Kofi
+            */}
         </Stack>
     );
 };

@@ -1,5 +1,4 @@
 import {
-    Box,
     Button,
     Center,
     Heading,
@@ -7,8 +6,10 @@ import {
     Stack,
     Image,
     Text,
+    Grid,
+    GridItem,
 } from "@chakra-ui/react";
-import { TwitterIcon } from "@components/icons";
+import { DiscordIcon, GithubIcon, TwitterIcon } from "@components/icons";
 
 interface SocialProps {
     name: string;
@@ -29,46 +30,64 @@ export const HeroCard: React.FC = () => {
             icon: TwitterIcon,
             link: "https://twitter.com/Thaza_Kun",
         },
+        {
+            name: "Discord",
+            icon: DiscordIcon,
+            link: "https://discord.gg/9c6cWVwdEJ",
+        },
+        {
+            name: "Github",
+            link: "https://github.com/thaza-kun/",
+            icon: GithubIcon,
+        },
     ];
     return (
-        <Box
-            mb={["10", "10", "10", 0]}
-            flex="column"
-            h="full"
-            alignItems={["start"]}
-            justifyContent="center"
-            pr="8"
-            maxWidth={["512"]}
+        <Grid
+            templateAreas={[
+                `"pic"
+                "title"
+                "blurb"
+                "socials"`,
+                null,
+                `"pic title"
+                "pic blurb"
+                "socials socials"`,
+            ]}
+            gridTemplateRows={["16 16 10"]}
+            gridTemplateColumns={["32 50"]}
+            maxWidth={["700"]}
         >
-            <Box ml="6" alignContent={["center", "left"]}>
-                <Stack direction={["column", "row"]}>
-                    <Center>
-                        <Image
-                            src="/static/images/avatar.jpg"
-                            borderRadius={["full", "lg"]}
-                            boxSize={["70px", "90px", "90px", "100px"]}
-                            shadow="md"
-                            height={["32"]}
-                            width={["32"]}
-                            rounded={["lg"]}
-                            border={["gray"]}
-                            alt="avatar"
-                            minWidth={["32"]}
-                            minHeight={["32"]}
-                        />
-                    </Center>
-                    <Stack direction="column" alignItems={["center"]}>
-                        <Heading
-                            as="h2"
-                            fontSize={["4xl", "5xl"]}
-                            fontWeight="extrabold"
-                            textAlign={["center"]}
-                        >
-                            {pen_name}
-                        </Heading>
-                        <Center mt="1">({full_name})</Center>
-                    </Stack>
-                </Stack>
+            <GridItem area={["pic"]} margin={["auto"]}>
+                <Image
+                    src="/static/images/avatar.jpg"
+                    borderRadius={["full", "lg"]}
+                    boxSize={["70px", "90px", "90px", "100px"]}
+                    shadow="md"
+                    height={["32"]}
+                    width={["32"]}
+                    rounded={["lg"]}
+                    border={["gray"]}
+                    alt="avatar"
+                    minWidth={["32"]}
+                    minHeight={["32"]}
+                />
+            </GridItem>
+            <GridItem area={["title"]}>
+                <Heading
+                    as="h2"
+                    fontSize={["4xl", "5xl"]}
+                    fontWeight="extrabold"
+                    textAlign={["center"]}
+                >
+                    {pen_name}
+                </Heading>
+                <Center mt="1">({full_name})</Center>
+            </GridItem>
+            <GridItem
+                area={["blurb"]}
+                marginX={["2", null, "10"]}
+                maxWidth={["430"]}
+            >
                 <Text
                     mt="2"
                     fontSize={["lg"]}
@@ -77,10 +96,17 @@ export const HeroCard: React.FC = () => {
                 >
                     {blurb}
                 </Text>
-                <Stack alignItems="center">
+            </GridItem>
+            <GridItem area={["socials"]} marginX={["3", "10"]}>
+                <Stack
+                    alignItems="center"
+                    justifyContent={["space-around"]}
+                    direction={["column", "row"]}
+                    marginX="auto"
+                >
                     {socials.map((social) => {
                         return (
-                            <Button>
+                            <Button width={["full"]}>
                                 <Link
                                     my="3"
                                     py="auto"
@@ -96,7 +122,7 @@ export const HeroCard: React.FC = () => {
                         );
                     })}
                 </Stack>
-            </Box>
-        </Box>
+            </GridItem>
+        </Grid>
     );
 };
