@@ -1,17 +1,5 @@
 import React from "react";
-import {
-    Button,
-    Box,
-    Center,
-    Heading,
-    Icon,
-    Image,
-    Link,
-    Stack,
-    Text,
-    ButtonGroup,
-    Grid,
-} from "@chakra-ui/react";
+import { Stack } from "@chakra-ui/react";
 import { HeroCard } from "./hero";
 import { CallToActions } from "./callToAction";
 

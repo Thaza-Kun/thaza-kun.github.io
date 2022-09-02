@@ -38,30 +38,37 @@ export const HeroCard: React.FC = () => {
             alignItems={["start"]}
             justifyContent="center"
             pr="8"
+            maxWidth={["512"]}
         >
-            <Center>
-                <Image
-                    src="/static/images/avatar.jpg"
-                    borderRadius={["full", "lg"]}
-                    boxSize={["70px", "90px", "90px", "100px"]}
-                    shadow="md"
-                    height={["32"]}
-                    width={["32"]}
-                    rounded={["lg"]}
-                    border={["gray"]}
-                    alt="avatar"
-                />
-            </Center>
             <Box ml="6" alignContent={["center", "left"]}>
-                <Heading
-                    as="h2"
-                    fontSize={["4xl", "5xl", "5xl", "6xl"]}
-                    fontWeight="extrabold"
-                    textAlign={["center"]}
-                >
-                    {pen_name}
-                </Heading>
-                <Center mt="1">({full_name})</Center>
+                <Stack direction={["column", "row"]}>
+                    <Center>
+                        <Image
+                            src="/static/images/avatar.jpg"
+                            borderRadius={["full", "lg"]}
+                            boxSize={["70px", "90px", "90px", "100px"]}
+                            shadow="md"
+                            height={["32"]}
+                            width={["32"]}
+                            rounded={["lg"]}
+                            border={["gray"]}
+                            alt="avatar"
+                            minWidth={["32"]}
+                            minHeight={["32"]}
+                        />
+                    </Center>
+                    <Stack direction="column" alignItems={["center"]}>
+                        <Heading
+                            as="h2"
+                            fontSize={["4xl", "5xl"]}
+                            fontWeight="extrabold"
+                            textAlign={["center"]}
+                        >
+                            {pen_name}
+                        </Heading>
+                        <Center mt="1">({full_name})</Center>
+                    </Stack>
+                </Stack>
                 <Text
                     mt="2"
                     fontSize={["lg"]}
