@@ -1973,6 +1973,11 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@ltd/j-toml@^1.35.1":
+  version "1.35.1"
+  resolved "https://registry.yarnpkg.com/@ltd/j-toml/-/j-toml-1.35.1.tgz#051b46d81fdc4bda218f9eabcb8ad6536e172066"
+  integrity sha512-M1SXX+553AlKhBdIKiMKN4QMl+iW8QzJ4mmbTBGXd6YoTZ7rdxmGL3DkJUeULAxm0sd9J45HWE6Q5+Gi+0FuVQ==
+
 "@mdx-js/mdx@^1.6.22":
   version "1.6.22"
   resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-1.6.22.tgz#8a723157bf90e78f17dc0f27995398e6c731f1ba"
