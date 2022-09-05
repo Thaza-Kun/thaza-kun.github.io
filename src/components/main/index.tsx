@@ -18,11 +18,6 @@ export const Main: React.FC = () => {
         >
             <HeroCard />
             {/* <CallToActions /> */}
-            {/* TODO Iklan:
-                - buku
-                - Samudra
-                - Kofi
-            */}
         </Stack>
     );
 };

@@ -11,6 +11,7 @@ interface HomeProps {
     projects: ProjectProps[];
 }
 
+// TODO Style project cards
 const Home: React.FC<HomeProps> = (props) => {
     // Show only current projects
     const projects: ProjectProps[] = props.projects.filter((project) => {
@@ -20,7 +21,9 @@ const Home: React.FC<HomeProps> = (props) => {
         <DefaultLayout>
             <Flex direction="column" minH="100vh">
                 <Main />
-                <Heading as="h3">Karya Terkini</Heading>
+                <Heading as="h3" marginX="auto" paddingTop={15}>
+                    - Karya Terkini -
+                </Heading>
                 <Cards data={projects} />
                 {/* TODO Iklan:
                 - buku
