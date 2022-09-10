@@ -1,9 +1,7 @@
 import React from "react";
 import { Stack } from "@chakra-ui/react";
 import { HeroCard } from "./hero";
-import { CallToActions } from "./callToAction";
 
-// TODO Style Properly
 export const Main: React.FC = () => {
     return (
         <Stack
@@ -17,7 +15,6 @@ export const Main: React.FC = () => {
             as="section"
         >
             <HeroCard />
-            {/* <CallToActions /> */}
         </Stack>
     );
 };

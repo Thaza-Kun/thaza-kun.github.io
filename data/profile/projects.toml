@@ -2,16 +2,21 @@
 name = "Biografi Astronomiawan"
 type = "penulisan"
 date.start = 2022-05-20
+url = '/karya/astronomiawan'
 
     [projects.notes.en]
-    description = ""
+    description = "A collection of astronomers' biographies from the 15th century and before."
+    blurb = """
+    """
     role = "Author"
     highlights = [
         
     ]
     
     [projects.notes.ms]
-    description = ""
+    description = "Himpunan biografi ahli-ahli astronomi sekitar abad ke-15 dan sebelumnya."
+    blurb = """
+    """
     role = "Penulis"
     highlights = [
 

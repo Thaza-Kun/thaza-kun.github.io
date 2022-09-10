@@ -1,30 +1,38 @@
 import React from "react";
-import { Box, Flex, Text, Heading } from "@chakra-ui/react";
+import { Flex, Heading, Button, useColorMode } from "@chakra-ui/react";
 
-import { Header, Main, Cards, Footer } from "@components";
-import { DefaultLayout } from "src/layouts";
+import { Main, CardGrid } from "@components";
+import DefaultLayout from "src/layouts";
 
-import { getData, ProjectDataProps, ProjectProps } from "data/profile";
-import { GetStaticProps } from "next";
+import getData from "data/profile";
+import { type GetStaticProps } from "next";
+import ProjectCard, { type ProjectCardProps } from "@components/cards/projects";
 
 interface HomeProps {
-    projects: ProjectProps[];
+    projects: ProjectCardProps[];
 }
 
-// TODO Style project cards
 const Home: React.FC<HomeProps> = (props) => {
     // Show only current projects
-    const projects: ProjectProps[] = props.projects.filter((project) => {
+    const projects: ProjectCardProps[] = props.projects.filter((project) => {
         return !!!project.date.end;
     });
+    const { colorMode, toggleColorMode } = useColorMode();
     return (
         <DefaultLayout>
-            <Flex direction="column" minH="100vh">
+            <Flex
+                direction="column"
+                minH="100vh"
+                paddingTop={4}
+                paddingBottom={8}
+            >
+                {/* Toggle light/dark mode */}
+                <Button onClick={toggleColorMode}>Toggle Color</Button>
                 <Main />
                 <Heading as="h3" marginX="auto" paddingTop={15}>
-                    - Karya Terkini -
+                    - Sedang Diusahakan -
                 </Heading>
-                <Cards data={projects} />
+                <CardGrid data={projects} component={ProjectCard} />
                 {/* TODO Iklan:
                 - buku
                 - Samudra
@@ -36,7 +44,7 @@ const Home: React.FC<HomeProps> = (props) => {
 };
 
 export const getStaticProps: GetStaticProps = () => {
-    const projects: ProjectProps[] = getData("projects").projects;
+    const projects: ProjectCardProps[] = getData("projects").projects;
     return { props: { projects } };
 };
 

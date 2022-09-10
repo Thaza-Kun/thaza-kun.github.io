@@ -1,10 +1,17 @@
 import { Box } from "@chakra-ui/react";
 import { Footer } from "@components/footer";
 import { Header } from "@components/header";
+import React from "react";
 
 export const MAIN_CONTAINER_MAX_WIDTH: number = 1024;
 
-export const DefaultLayout: React.FC<React.ReactNode> = ({ children }) => {
+interface LayoutProps {
+    children: React.ReactNode;
+}
+
+export default function DefaultLayout({
+    children,
+}: LayoutProps): React.ReactElement {
     return (
         <Box>
             <Header />
@@ -14,4 +21,4 @@ export const DefaultLayout: React.FC<React.ReactNode> = ({ children }) => {
             <Footer />
         </Box>
     );
-};
+}
