@@ -17,6 +17,8 @@ interface SocialProps {
     link: string;
 }
 
+export const AvatarURL: string = "/static/images/avatar.jpg";
+
 export const HeroCard: React.FC = () => {
     const pen_name: string = "Thaza_Kun";
     const full_name: string = "Murthadza Aznam";
@@ -59,7 +61,7 @@ export const HeroCard: React.FC = () => {
         >
             <GridItem area={["pic"]} margin={["auto"]}>
                 <Image
-                    src="/static/images/avatar.jpg"
+                    src={AvatarURL}
                     borderRadius={["full", "lg"]}
                     boxSize={["70px", "90px", "90px", "100px"]}
                     shadow="md"

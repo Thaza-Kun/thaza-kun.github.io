@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Heading, Button, useColorMode } from "@chakra-ui/react";
+import { Flex, Heading, Button } from "@chakra-ui/react";
 
 import { Main, CardGrid } from "@components";
 import DefaultLayout from "src/layouts";
@@ -17,7 +17,6 @@ const Home: React.FC<HomeProps> = (props) => {
     const projects: ProjectCardProps[] = props.projects.filter((project) => {
         return !!!project.date.end;
     });
-    const { colorMode, toggleColorMode } = useColorMode();
     return (
         <DefaultLayout>
             <Flex
@@ -26,8 +25,6 @@ const Home: React.FC<HomeProps> = (props) => {
                 paddingTop={4}
                 paddingBottom={8}
             >
-                {/* Toggle light/dark mode */}
-                <Button onClick={toggleColorMode}>Toggle Color</Button>
                 <Main />
                 <Heading as="h3" marginX="auto" paddingTop={15}>
                     - Sedang Diusahakan -
