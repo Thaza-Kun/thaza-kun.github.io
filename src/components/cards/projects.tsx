@@ -106,7 +106,11 @@ export default function ProjectCard(
                     {props.url && parseLink(props.url)}
                 </Stack>
                 <Text fontSize="sm" marginY={3}>
-                    {!!notes.blurb ? notes.blurb : notes.description}
+                    {notes.blurb
+                        ? notes.blurb.trim().length != 0 // Check that it's not all whitespace
+                            ? notes.blurb
+                            : notes.description
+                        : notes.description}
                 </Text>
             </Box>
         </LinkBox>

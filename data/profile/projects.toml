@@ -7,6 +7,7 @@ url = '/karya/astronomiawan'
     [projects.notes.en]
     description = "A collection of astronomers' biographies from the 15th century and before."
     blurb = """
+    
     """
     role = "Author"
     highlights = [
