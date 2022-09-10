@@ -106,7 +106,7 @@ export const HeroCard: React.FC = () => {
                 >
                     {socials.map((social) => {
                         return (
-                            <Button width={["full"]}>
+                            <Button width={["full"]} key={social.name}>
                                 <Link
                                     my="3"
                                     py="auto"
