@@ -30,7 +30,7 @@ export const CardGrid: React.FC<CardData> = (props) => {
             marginX="auto"
         >
             {props.data.map((item) => (
-                <props.component {...item} />
+                <props.component {...item} key={item.name} />
             ))}
         </SimpleGrid>
     );

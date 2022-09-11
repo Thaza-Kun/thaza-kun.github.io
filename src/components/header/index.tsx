@@ -6,9 +6,9 @@ import {
     Button,
     Text,
     Link,
-    Menu,
-    MenuButton,
-    MenuList,
+    // Menu,
+    // MenuButton,
+    // MenuList,
     MenuItem,
     Stack,
     Icon,
@@ -55,7 +55,7 @@ const dropdownLinks: MenuLinkPropsItems[] = [
     },
 ];
 
-export default function NavBar(): React.ReactElement {
+export const NavBar: React.FC = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const { colorMode, toggleColorMode } = useColorMode();
 
@@ -99,7 +99,8 @@ export default function NavBar(): React.ReactElement {
                         {navLinks.map((link, index) => (
                             <NavLink key={index} {...link} onClose={onClose} />
                         ))}
-                        {/* Dropdown Menu */}
+                        {/* Dropdown Menu
+                        // The Menu component has a big bundle size
                         <Menu autoSelect={false} isLazy>
                             {({ isOpen, onClose }) => (
                                 <>
@@ -159,7 +160,7 @@ export default function NavBar(): React.ReactElement {
                                     </MenuList>
                                 </>
                             )}
-                        </Menu>
+                        </Menu> */}
                     </HStack>
                 </HStack>
 
@@ -171,6 +172,8 @@ export default function NavBar(): React.ReactElement {
             </Flex>
 
             {/* Mobile Screen Links */}
+            {/* TODO: The mobile nav is not sticky and is not overlayed */}
+            {/* Refer to mahmad.me to learn how to make sticky nav */}
             {isOpen ? (
                 <Box pb={4} display={["inherit", "inherit", "none"]}>
                     <Stack as="nav" spacing={2}>
@@ -182,7 +185,7 @@ export default function NavBar(): React.ReactElement {
             ) : null}
         </Box>
     );
-}
+};
 
 // NavLink Component
 interface NavLinkPropsItems {
@@ -225,24 +228,24 @@ interface MenuLinkPropsItems {
     path: string;
     icon: typeof Icon;
 }
-interface MenuLinkProps extends MenuLinkPropsItems {
-    onClose: () => void;
-}
+// interface MenuLinkProps extends MenuLinkPropsItems {
+//     onClose: () => void;
+// }
 
-const MenuLink = ({ name, path, icon, onClose }: MenuLinkProps) => {
-    return (
-        <Link href={path} onClick={() => onClose()}>
-            <MenuItem
-                _hover={{
-                    color: "blue.400",
-                    bg: useColorModeValue("gray.200", "gray.700"),
-                }}
-            >
-                <HStack>
-                    <Icon as={icon} size={18} color="blue.400" />
-                    <Text>{name}</Text>
-                </HStack>
-            </MenuItem>
-        </Link>
-    );
-};
+// const MenuLink = ({ name, path, icon, onClose }: MenuLinkProps) => {
+//     return (
+//         <Link href={path} onClick={() => onClose()}>
+//             <MenuItem
+//                 _hover={{
+//                     color: "blue.400",
+//                     bg: useColorModeValue("gray.200", "gray.700"),
+//                 }}
+//             >
+//                 <HStack>
+//                     <Icon as={icon} size={18} color="blue.400" />
+//                     <Text>{name}</Text>
+//                 </HStack>
+//             </MenuItem>
+//         </Link>
+//     );
+// };
