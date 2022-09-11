@@ -4,7 +4,7 @@ import path from "path";
 
 export interface ProjectNoteProps {
     description: string;
-    blurb: string;
+    blurb?: string;
     role: string;
     highlights: string[];
 }

@@ -7,7 +7,7 @@ export interface BaseCardProps {
     image?: string;
 }
 
-interface CardData {
+export interface CardData {
     data: ProjectCardProps[];
     component: React.FC<any>;
 }

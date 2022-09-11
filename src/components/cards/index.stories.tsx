@@ -1,16 +1,15 @@
-import { ProjectProps } from "data/profile";
-import { Cards } from "./index";
+import ProjectCard, { ProjectCardProps } from "@components/cards/projects";
+import { CardGrid, type CardData } from "./index";
 
 export default {
     title: "Project Card",
-    component: Cards,
+    component: CardGrid,
 };
 
-const data: { data: ProjectProps[] } = {
+const data: CardData = {
     data: [
         {
             name: "Anisa: Animasi Sains",
-            type: "pengaturcaraan",
             url: "url1",
             date: {
                 start: new Date("2022-02-30"),
@@ -37,7 +36,6 @@ const data: { data: ProjectProps[] } = {
         },
         {
             name: "Anisa: Animasi Sains",
-            type: "pengaturcaraan",
             url: "url1",
             date: {
                 start: new Date("2022-02-30"),
@@ -63,6 +61,7 @@ const data: { data: ProjectProps[] } = {
             },
         },
     ],
+    component: ProjectCard,
 };
 
-export const Basic = () => <Cards {...data} />;
+export const Basic = () => <CardGrid {...data} />;
