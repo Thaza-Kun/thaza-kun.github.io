@@ -13,12 +13,14 @@ import Figure from '@/components/embeds/Figure'
 import MetaPost from '@/components/admonitions/MetaPost'
 import Law from '@/components/admonitions/Law'
 import Example from '@/components/admonitions/Example'
+import BlockQuote from '@/components/blockquotes'
 
 export const MDXComponents = {
   Image,
   TOCInline,
   a: CustomLink,
   pre: Pre,
+  blockquote: BlockQuote,
   BlogNewsletterForm: BlogNewsletterForm,
   YouTube: YouTube,
   Figure: Figure,
