@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "🌓 QS ☀"
+  site-url: "https://thaza-kun.github.io/"
+  description: "Blog peribadi Thaza"
+  navbar:
+    right:
+      - text: About
+        href: about.qmd
+      - icon: github
+        href: https://github.com/Thaza-Kun
+      - icon: twitter
+        href: https://twitter.com/Thaza_Kun
+      - icon: rss
+        href: index.xml
+  search:
+    location: navbar
+    type: overlay
+
+format:
+  html:
+    theme: litera
+    css: styles.css
+    include-in-header:
+      - '<script async src="dist/ackee-tracker.min.js" data-ackee-server="https://ackee-production-758e.up.railway.app" data-ackee-domain-id="hd11f820-68a1-11e6-8047-79c0c2d9bce0"></script>'

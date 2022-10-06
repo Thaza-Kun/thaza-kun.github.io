@@ -1,0 +1,32 @@
+---
+# title: "Blog"
+listing:
+  - id: blog 
+    contents: blog
+    sort: "date desc"
+    type: grid
+    categories: unnumbered
+    sort-ui: false
+    filter-ui: false
+    feed: true
+    fields:
+      - title
+      - subtitle
+      - categories
+      - date
+      - reading-time
+      - image
+page-layout: full
+title-block-banner: true
+---
+
+# 🌓 Qamar Suria ☀
+
+<!-- :::{.callout-note} -->
+Penulis merupakakan graduan Fizik yang sedang meneroka dunia digital. Bagi yang meminati Sains, Matematik, Data, atau Pengaturcaraan; bolehlah ikuti kembara bersamaku.
+<!-- ::: -->
+
+## Blog
+
+:::{#blog}
+:::

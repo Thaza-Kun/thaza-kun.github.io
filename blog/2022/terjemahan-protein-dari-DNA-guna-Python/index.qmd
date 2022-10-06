@@ -1,0 +1,252 @@
+---
+draft: true
+title: "Kaedah Menghasilkan Protein Dari Sejujuk DNA Guna Python"
+subtitle: "Aku cuba teroka bioinformatik asas bersama kawan aku yang cuba belajar Python"
+date: "2022-02-25"
+categories: ["pengaturcaraan Python"]
+images: ["DNA_1920_1080.jpg"]
+authors: ["Murthadza Aznam"]
+---
+
+<!-- TODO: Make interactive -->
+
+Aku bukanlah orang dalam bidang biologi, tapi aku rasa elok kalau aku kongsikan apa yang aku sudah belajar.
+Pada pertengahan tahun lepas, aku ada ajar seorang kawan aku pengaturcaraan Python.
+Memandangkan dia adalah orang dari bidang biologi, kita sama-sama belajar menterjemah DNA menjadi protein berdasarkan [siri tutorial yang telah disediakan oleh saluran YouTube RebelCoder](https://www.youtube.com/playlist?list=PLpSOMAcxEB_jUKMvdl8rHqNiZXFIrtd5G).
+
+## Dogma Pusat Biologi Molekul
+
+Dogma pusat ialah satu set penjelasan aliran maklumat genetik dalam sistem biologi.
+Salah satunya ialah aliran bagaimana DNA boleh menghasilkan rantaian protein yang membentuk kehidupan.
+Secara ringkasnya, DNA menghasilkan RNA melalui proses transkripsi kemudian RNA akan menghasilkan protein melalui proses penterjemahan.
+
+Walaupun dogma pusat mengatakan protein dihasilkan daripada RNA, kita boleh langkau langkah ini kerana bentuk RNA sama sahaja seperti DNA kecuali bes timina (T) DNA diganti dengan bes urasil (U) RNA.
+Oleh itu, pengabaian langkah ini tidak akan menjejaskan hasil akhir protein bagi tujuan kita.
+
+Rumusan dogma pusat boleh didapati dalam video ini oleh Coretan Biologi:
+
+{{< video https://www.youtube.com/embed/mTHzTsgpiSc />}}
+
+## Pertama: Sediakan Pasangan Pemadanan
+
+Setiap asid amino dalam protein merupakah hasil bacaan satu set tiga bes serangkai yang dinamakan kodon.
+Oleh itu, kita perlu beritahu kod kita kodon apa akan hasilkan asid apa.
+Kita sediakan satu `dict` dengan nilai berikut:
+
+```python:structures.py
+#  {12, 22}
+DNA_Codons_Mapping: dict = {
+    "GCT": "A", "GCC": "A", "GCA": "A", "GCG": "A",
+    "TGT": "C", "TGC": "C",
+    "GAT": "D", "GAC": "D",
+    "GAA": "E", "GAG": "E",
+    "TTT": "F", "TTC": "F",
+    "GGT": "G", "GGC": "G", "GGA": "G", "GGG": "G",
+    "CAT": "H", "CAC": "H",
+    "ATA": "I", "ATT": "I", "ATC": "I",
+    "AAA": "K", "AAG": "K",
+    "TTA": "L", "TTG": "L", "CTT": "L", "CTC": "L", "CTA": "L", "CTG": "L",
+    "ATG": "M", # Kodon pemula
+    "AAT": "N", "AAC": "N",
+    "CCT": "P", "CCC": "P", "CCA": "P", "CCG": "P",
+    "CAA": "Q", "CAG": "Q",
+    "CGT": "R", "CGC": "R", "CGA": "R", "CGG": "R", "AGA": "R", "AGG": "R",
+    "TCT": "S", "TCC": "S", "TCA": "S", "TCG": "S", "AGT": "S", "AGC": "S",
+    "ACT": "T", "ACC": "T", "ACA": "T", "ACG": "T",
+    "GTT": "V", "GTC": "V", "GTA": "V", "GTG": "V",
+    "TGG": "W",
+    "TAT": "Y", "TAC": "Y",
+    "TAA": "_", "TAG": "_", "TGA": "_" # Kodon berhenti
+}
+```
+
+Pemetaan ini memberitahu kita bahawa jujukan bes `"GCT"` akan menghasilkan asid `A` dan seterusnya.
+Setiap asid diwakili oleh satu huruf yang merujuk kepada huruf pertama nama asid tersebut.
+Kodon yang berbeza boleh menghasilkan asid yang sama.
+
+Perlulah kita ketahui akan dua huruf penting yang aku nyalakan dalam kod di atas.
+Huruf pertama ialah huruf `M` yang merujuk kepada asid metionina yang dihasilkan oleh kodon `"ATG"`.
+Kodon ini dinamakan "kodon pemula" kerana ia mengisytiharkan permulaan rantaian asid amino.
+
+Huruf kedua pula ialah huruf `_` yang dihasilkan oleh tiga kodon berbeza.
+Kodon-kodon ini pula merupakan "kodon berhenti": ia memberitahu agar pembinaan rantaian asid perlu berhenti.
+Ia tidak mewakili apa-apa asid, maka simbol `_` dipilih.
+
+Secara ringkasnya, rantaian asid amino tidak akan dihasilkan selagi mana kodon pemula tidak dijumpai.
+Kemudian, rantaian itu akan diputuskan ketika bertemu dengan kodon berhenti.
+Hasil rantaian itulah protein makhluk tersebut.
+
+## Sampingan: Pengesahan Jujukan DNA
+
+Langkah ini bukanlah satu kewajipan, tatepi ia bantu melancarkan algoritma kita supaya kita tak masukkan input yang tak sah.
+Kita gunakan langkah ini untuk memastikan jujukan huruf yang dimasukkan itu adalah jujukan DNA yang sah.
+Bila dah melalui pengesahan ini, kita boleh yakin yang tidak ada set huruf yang pelik seperti `ABC` yang akan mengeluarkan ralat kerana tiada padanan langsung.
+
+Untuk pastikan jujukan kita hanya mempunyai huruf-huruf yang dibenarkan sahaja, kita boleh siapkan satu `tuple` bes-bes DNA dan semak keahlian huruf-huruf dalam jujukan input.
+Kita guna `tuple` dan bukan `list` sebab kita nak elakkan kesilapan penambahan huruf yang tidak disengajakan.
+Disebabkan `tuple` tidak membenarkan penambahan ahli, maka ia adalah calon yang baik.
+
+```python:structures.py
+DNA_Bases: tuple = ("A", "C", "G", "T")
+```
+
+Kemudian, kita sediakan fungsi `validate_sequence()` yang akan memunculkan ralat sekiranya inputnya tidak sah.
+Perkara sedekimian boleh dicapai dengan mengambil setiap huruf dalam `dna_seq` dan `raise ValueError` sekiranya huruf tersebut tiada dalam `tuple` yang disediakan.
+Sekiranya, ia bertemu dengan huruf yang tidak sah, `raise ValueError` akan menghentikan program.
+
+```python:DNA_to_proteins.py
+from structures import DNA_Bases
+
+def validate_sequence(dna_seq: str) -> str:
+    """Semak sama ada input adalah jujukan DNA adalah sah"""
+    check_seq = dna_seq.upper()
+    for nuc in check_seq:
+        if nuc not in DNA_Bases:
+            raise ValueError(f"Jujukan tidak sah. `{nuc}` bukan ahli {DNA_Bases=}")
+    return check_seq
+```
+
+## Kedua: Proses Terjemahan
+
+Sekarang ini, kita perlu beritahu komputer supaya dapatkan tiga bes serangkai, pastu padankan dengan asid menggunakan pemetaan `DNA_Codons_Mapping` yang kita dah sediakan sebelum ini.
+Namun begitu, perlu ditegaskan bahawa pembacaan huruf tidak semestinya bermula dari huruf pertama.
+Misalnya, katalah kita ada jujukan `ABCDEF`, pembacaan boleh mula dari `A`, `B`, `C`, `D` atau seterusnya.
+Oleh itu, kita sediakan satu pembolehubah kedudukan awal `init_pos` dengan nilai asal `0` yang kita boleh tentukan kemudian.
+
+```python:DNA_to_proteins.py
+from structures import DNA_Codons_Mapping
+
+def make_translation(dna_seq: str, init_pos: int = 0) -> list:
+    """Menterjemahkan jujukan input menjadi senarai asid amino"""
+    acids = list()
+    # Lelaran akan melangkau setiap tiga huruf sebab itulah panjang satu kodon
+    for pos in range(init_pos, len(dna_seq) - 2, 3):
+        codon = dna_seq[pos:pos + 3]
+        acids.append(DNA_Codons_Mapping[codon])
+    return acids
+```
+
+Fungsi ini akan memulangkan senarai asid kerana memang itulah yang kita mahukan.
+
+## Ketiga: Semua Kemungkinan Senarai Asid
+
+Untuk setiap jujukan DNA, ada enam kemungkinan senarai asid yang boleh dihasilkan.
+Hal ini kerana setiap kodon boleh mula dibaca dari mana-mana tiga huruf dalam jujukan tersebut.
+Perkara ini menghasilkan 3 kemungkinan.
+Tambahan pula, jujukan DNA tersebut ada pasangannya, maka pasangannya juga akan menghasilkan 3 kemungkinan senarai asidnya yang tersendiri.
+Maka, jumlahnya ialah 6 kemungkinan.
+
+Nampaknya bacaan kodon yang berbeza permulaannya dipanggil "[rangka bacaan](https://www.ncbi.nlm.nih.gov/Class/MLACourse/Original8Hour/Genetics/readingframe.html)".
+
+<Example>
+    
+Katakan ada jujukan DNA `GATTAGCCAGATTAC`, boleh jadi kodonnya adalah begini:
+1. [GAT][TAG][CCA][GAT][TAC] &larr; Jujukan input
+2. G[ATT][AGC][CAG][ATT]AC
+3. GA[TTA][GCC][AGA][TTA]C
+4. [CTA][ATC][GGT][CTA][ATG] &larr; Jujukan pasangan
+5. C[TAA][TCG][GTC][TAA]TG
+6. CT[AAT][CGG][TCT][AAT]G
+
+</Example>
+
+Apa yang kita perlu buat ialah panggil fungsi yang sama berulang kali dengan `init_pos` yang berbeza.
+Selain itu, kita juga perlu ada satu fungsi yang akan hasilkan pasangan jujukan input.
+
+```python:DNA_to_proteins.py
+from typing import List # Membolehkan kita nyatakan jenis isi dalam `List`
+
+def make_complement(dna_seq: str) -> str:
+    """Menghasilkan pasangan jujukan yang melekat bersama dengan jujukan input"""
+    mapping = str.maketrans('ATGC', 'TACG')
+    return dna_seq.translate(mapping)
+
+def make_reverse_complement(dna_seq: str) -> str:
+    """Menterbalikkan pasangan jujukan (sebab pasangannya dibaca berlawanan arah)"""
+    return make_complement(dna_seq)[::-1]
+
+def make_reading_frames(dna_seq: str) -> List[List[str]]:
+    """Menghasilkan kesemua enam (6) rangka bacaan daripada jujukan bes DNA yang diberikan."""
+    frames = []
+    frames.append(make_translation(dna_seq, 0))
+    frames.append(make_translation(dna_seq, 1))
+    frames.append(make_translation(dna_seq, 2))
+    frames.append(make_translation(make_reverse_complement(dna_seq), 0))
+    frames.append(make_translation(make_reverse_complement(dna_seq), 1))
+    frames.append(make_translation(make_reverse_complement(dna_seq), 2))
+    return frames
+```
+
+## Keempat: Mencari Kodon Mula dan Kodon berhenti
+
+Kita perlu sediakan arahan supaya:
+
+1. Jika ia adalah kodon berhenti, `_`, maka hentikan rantaian jika wujud.
+2. Jika ia adalah asid dari kodon mula, `M`, maka mulakan rantaian.
+3. Jika ia adalah asid biasa, maka sambung rantaian jika wujud ataupun langkau jika tiada rantaian.
+
+```python:DNA_to_proteins.py
+def make_proteins_from_one_reading_frame(amino_acid_seq: list) -> list:
+    """Menghasilkan calon protein dengan mengenal pasti kodon pemula dan kodon berhenti"""
+    current_protein = []
+    proteins = []
+    for amino_acid in amino_acid_seq:
+        if amino_acid == "_":
+            # Hentikan rantain
+            if current_protein:
+                # Dapatkan rantaian jika wujud
+                for p in current_protein:
+                    proteins.append(p)
+                current_protein = []
+        else:
+            if amino_acid == "M":
+                # Mulakan rantaian
+                current_protein.append("")
+            for i in range(len(current_protein)):
+                # Operasi ini tidak akan buat apa-apa kalau tiada `""` yang dihasilkan oleh syarat sebelum ini
+                current_protein[i] += amino_acid
+    return proteins
+```
+
+Kemudian, kita boleh dapatkan semua protein yang mungkin dihasilkan oleh jujukan DNA serta pasangannya.
+
+```python:DNA_to_proteins.py
+def make_proteins_from_all_reading_frames(dna_seq: str, ordered=False) -> List[str]:
+    """Menghasilkan calon protein daripada semua rangka bacaan yang dihasilkan dari sejujuk DNA"""
+    frames = make_reading_frames(dna_seq)
+
+    potential_proteins = []
+    for frame in frames:
+        proteins = make_proteins_from_one_reading_frame(frame)
+        for p in proteins:
+            potential_proteins.append(p)
+
+    # Susun supaya yang paling panjang berada di atas
+    if ordered:
+        potential_proteins = sorted(potential_proteins, key=len, reverse=True)
+
+    return potential_proteins
+```
+
+## Penentusahan
+
+Semestinya, kalau kita ada model, kita perlu tentusahkannya sama ada ia berfungsi atau tidak.
+Kita boleh lakukan sedemikian dengan cuba memadankannya dengan pangkalan data yang diketahui.
+Satu contoh pangkalan data yang boleh cuba digunakan ialah pangkalan data _National Center for Biotechnology Information_ (NCBI).
+
+Kita ambil satu contoh data insulin homo sapiens [`NM_001185097.2`](https://www.ncbi.nlm.nih.gov/nuccore/NM_001185097.2) (Pergi ke pautan FASTA untuk dapatkan jujukan DNAnya).
+Algoritma aku menghasilkan senarai ini:
+
+```bash {1} showLineNumbers
+MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN
+MRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN
+MLVQHCSTMPRFCRDPSRAKGCRLPAPGPPPSSTCPTCRSSASRRVLGV
+MPRFCRDPSRAKGCRLPAPGPPPSSTCPTCRSSASRRVLGV
+MAEGQ
+ME
+```
+
+Kalau dibandingkan dengan maklumat `\translation` yang ada pada pautan tersebut, ternyata ia padan dengan rantaian pertama hasil algoritma aku.
+Cubalah buat sendiri dan cuba padankannya dengan data lain.
+Kod-kod yang ditulis ada disediakan dalam [repositori GitHub](https://github.com/Thaza-Kun/Algoritma-Terjemahan-Protein/tree/arkib).
+Bolehlah gunakannya sebagai rujukan.

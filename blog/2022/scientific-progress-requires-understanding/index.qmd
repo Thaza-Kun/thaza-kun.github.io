@@ -1,0 +1,66 @@
+---
+draft: false
+in_review: false
+title: "A Progress in Science Comes from Understanding Science"
+subtitle: "A rebuttal to a PPSMI proponent's letter"
+date: "2022-09-13"
+categories: ["Renungan Penulis"]
+image: "bookshelf.jpg"
+authors: ["Murthadza Aznam"]
+---
+
+:::{.callout-note}
+
+  This piece was actually written on the 31st of July 2019, a few weeks after
+  the corresponding letter. However, when I submitted the piece via email, the
+  news firm didn't reply and it never went public. So, here I am 2 years later
+  archiving it on my blog after I unearthed it from my laptop's memory.
+
+:::
+
+Since the introduction of the Dual Language Programme (DLP) in 2012 which points the exit for the Teaching and Learning of Science and Mathematics in English (PPSMI), I was really hoping that that would be the end I will hear on PPSMI.
+Pakatan Harapan’s rise to governance honestly has made me anxious on their stand on PPSMI.
+On 16th July, [Tun M finally said it](https://www.thestar.com.my/news/nation/2019/07/16/dr-m-put-aside-nationalist-pride-allow-english-in-teaching-of-science-maths/) loud and clear that they are trying to reintroduce PPSMI followed by an echo by the Ministry of Education a few days later confirming their stance.
+
+His announcement has made people around the country up on their feet voicing out opinion on this matter.
+I am here writing in English mainly because I wish to rebut a letter submitted here by Sze Loong Steve Ngeow entitled: “[English, a realistic, practical pathway to advance nation](https://www.thestar.com.my/opinion/letters/2019/07/18/english-a-realistic-practical-pathway-to-advance-nation#55TWRfHYetwFyPcg.99)”.
+The letter anchors on to three (3) main arguments.
+
+## (1) On Educational Excellence
+
+Argument number 1 tells us that in order to become the center of education excellence, we must teach technical languages in English.
+I fail to see the mechanism that requires this statement to be true.
+Why does educational excellence equal to English-based technical subjects?
+
+For any education center to be excellent, its student must understand whatever that education center is trying to teach that student.
+In order to best understand a subject, it must be learned in a language that the students understand best &mdash; their native tongue.
+English plays no part in this mechanism. The only time when English comes into play is when the student’s native tongue is English.
+
+What’s true is that the United Nations recommends that subjects be taught to students in their first tongue, or their native tongue, in their 2016 Global Education Monitoring Report.
+The UN has put no exceptions on the subject in question; that means it includes technical subjects like STEM.
+Decades of research findings also point to the same conclusion. So, I ask again, why does educational excellence require the technical subjects be taught in English?
+
+## (2) On The Human Capital Report
+
+Argument number 2 desperately shows how Singapore is doing well in the 2016 Human Capital Report (HCR) and how the English language helps secure that 13th spot.
+If we really look into the 2016 report, we find that the top 12 spots or even top 5 are secured mostly by non-English speaking countries; Finland, Norway, Switzerland, Japan and Sweden in that order.
+If the English language really does give a major contribution in workforce, why are English speaking languages not concentrated at the top? (New Zealand at 6th, Singapore at 13th, Australia at 12th, United Kingdom at 19th, and United States of America at 24th)
+
+The Human Capital Index measures, quoting their website, how well they (the country) are developing and deploying their talents.
+English has no role in the development and distribution of talents within a country.
+Our rank at 42nd that year shows that we are bad at managing talents compared to Singapore and that is another issue on employment and such that has nothing to do with PPSMI or the role of English.
+
+## (3) On Global Competence
+
+Argument number 3 tries to convince us that core subjects must be taught in English because English dominates that field on a global scale.
+This is a normal pro-PPSMI argument.
+The globalization of any field has no relationship with how we understand a subject.
+Harkening back to my statement earlier on educational excellence, a student learns best in the language they understand best.
+
+In a setting where the teacher and students are facing each other, making the student understand the teaching material takes precedence over whether the students will understand what some random author is saying in some random book.
+That means that the language of teaching does not depend on how many books are written in a certain language there is out there.
+If the student and teacher speak the same mother tongue, let them teach and learn in that tongue.
+
+This is a necessary step if we want to advance in any knowledge of importance.
+A progress in science comes from understanding science.
+After the students have a firm basis for a scientific mind, they will be able to read, contribute, and communicate science in any language the world needs them to; given that the language is learned beforehand separately.

@@ -1,0 +1,25 @@
+---
+title: "Murthadza bin Aznam"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/Thaza-Kun
+    # - icon: linkedin
+    #   text: LinkedIn
+    #   href: https://linkedin.com/in/murthadza-aznam
+    - icon: discord
+      text: Discord
+      href: https://discord.com/invite/9c6cWVwdEJ
+    - icon: github
+      text: Github
+      href: https://github.com/thaza-kun
+    # - icon: letter
+    #   text: Emel
+    #   href: mailto:makmal.thaza@gmail.com
+
+---
+
+Graduan Fizik yang sedang meneroka dunia digital. Bagi yang meminati Sains, Matematik, Data, atau Pengaturcaraan; bolehlah ikuti kembara bersamaku.
