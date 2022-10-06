@@ -1,0 +1,59 @@
+---
+draft: false
+title: "5 Saluran Saintifik di YouTube yang Menarik"
+subtitle: Kita boleh manfaatkan YouTube sebagai platform pendidikan
+date: "2017-07-28"
+categories: ["komunikasi sains"]
+image: "Dianna-Cowern-sifat-ingin-tahu.jpg"
+authors: ["Murthadza Aznam"]
+canonical:
+  date: "2017-07-28"
+  link: "https://notasains.wordpress.com/2017/07/28/saluran-saintifik-youtube-2017/"
+  title: "5 Saluran Saintifik di YouTube yang Menarik"
+  source: "NotaSAINS"
+  type: "blog"
+---
+
+Apabila bercakap tentang muka saintifik di kaca Televisyen, nama-nama seperti Bill Nye, Carl Sagan, Michio Kaku, dan Neil DeGrasse Tyson akan memenuhi bayangan minda. Namun, di era serba internet ini, YouTube seperti sudah mengambil alih tugas TV. Maka, eloklah kita berkenalan dengan muka-muka penyampai sains di YouTube yang berprestasi.
+
+## 1. VSauce
+
+{{< video https://www.youtube.com/embed/mxhxL1LzKww >}}
+
+Video-video yang ditayangkan selama 15 ~ 20 minit ini dibawakan oleh Michael Stevens dalam pengembaraan menjawab misteri dunia. Setiap bulan mereka akan cuba menjawab persoalan-persoalan yang menarik yang kita sendiri tak terfikir. Contohnya, seperti "Berapa banyak permukaan bumi yang boleh kita lihat?" di atas ataupun "[Bulan itu milik siapa](https://www.youtube.com/watch?v=Ks8WH3xUo_E)?"
+
+## 2. Veritasium
+
+{{< video https://www.youtube.com/embed/4tgOyU34D44 >}}
+
+Derek Muller membawa kita meneroka fenomena demi fenomena dan perkara-perkara terbaharu dalam sains. Kadang kala ada dia akan mencabar pemikiran kita dan [mempersoalkan sains itu sendiri](https://www.youtube.com/watch?v=42QuXLucH3Q). Menurutnya, dalam [thesis beliau](http://www.compadre.org/per/items/detail.cfm?ID=11344), kita hanya akan belajar apabila kita dipersembahkan dengan benda yang menggugat kepercayaan [kita tentang apa yang kita tahu](https://www.youtube.com/watch?v=RQaW2bFieo8) dan bukan yang menambah keyakinan tentang apa yang kita percaya secara terus.
+
+## 3. Smarter Every Day
+
+{{< video https://www.youtube.com/embed/dNVtMmLlnoE >}}
+
+Gaya Destin Sandlin dalam Smarter Every Day agak berbeza dengan dua siaran di atas. Destin akan membuat beberapa siri eksperimen yang mengasyikkan, mempersoalkan pengamatannya lalu cuba menjawab dengan pembacaan, ataupun bertanya pakar.
+
+Saluran ini menarik kerana membawa "tatakaedah saintifik" dengan cara yang menghiburkan dan setiap fenomena dibuat di depan mata. Dengan cara ini, dia dan kita dapat belajar benda baru, bak kata dia, "Smarter Every Day".
+
+## 4. Minute Physics
+
+{{< video https://www.youtube.com/embed/V7C318DGB38 >}}
+
+Siapa sangka kita boleh melayan Fizik sambil bergegas pergi kerja atau kelas? MinutePhysics membolehkan kita berbuat demikian dengan gaya penyampaian stop motion dalam kurang daripada 5 minit.
+
+## 5. SciShow
+
+{{< video https://www.youtube.com/embed/7tzaWOdvGMw >}}
+
+SciShow membawakan berita perkembangan-perkembangan penyelidikan sains dan membangkitkan isu-isu yang menjadi hangat seperti [Fidget Spinner](https://youtu.be/3DpcxsSaGDs) yang digilakan.
+
+## Bonus: PhysicsGirl
+
+{{< video https://www.youtube.com/embed/pB AwkgfFQ}}"/>
+
+Apabila anda mencampurkan keriangan seorang kanak-kanak dan kebijaksanaan graduan [Massachusetts Institute of Technology](http://web.mit.edu/) (MIT), anda akan dapat Dianna Cowern atau lebih dikenali sebagai PhysicsGirl. Setiap video akan mengingatkan kita betapa indahnya menjadi seorang kanak-kanak yang penuh dengan sifat ingin tahu. Dianna tidak akan membenarkan mana-mana videonya menjadi bosan.
+
+## Kesimpulan
+
+Kesimpulannya, apa lagi? Tonton dan _Subscribe_-lah siaran mereka untuk menambah ilmu. Selamat beramal dan _Happy Physics-ing!_

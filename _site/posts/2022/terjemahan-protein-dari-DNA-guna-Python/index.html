@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2022-02-25">
+
+<title>blog - Kaedah Menghasilkan Protein Dari Sejujuk DNA Guna Python</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">blog</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about.html">About</a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../../index.xml"><i class="bi bi-rss" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Kaedah Menghasilkan Protein Dari Sejujuk DNA Guna Python</h1>
+            <p class="subtitle lead">Aku cuba teroka bioinformatik asas bersama kawan aku yang cuba belajar Python</p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">pengaturcaraan Python</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Murthadza Aznam </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 25, 2022</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<!-- TODO: Make interactive -->
+<p>Aku bukanlah orang dalam bidang biologi, tapi aku rasa elok kalau aku kongsikan apa yang aku sudah belajar. Pada pertengahan tahun lepas, aku ada ajar seorang kawan aku pengaturcaraan Python. Memandangkan dia adalah orang dari bidang biologi, kita sama-sama belajar menterjemah DNA menjadi protein berdasarkan <a href="https://www.youtube.com/playlist?list=PLpSOMAcxEB_jUKMvdl8rHqNiZXFIrtd5G">siri tutorial yang telah disediakan oleh saluran YouTube RebelCoder</a>.</p>
+<section id="dogma-pusat-biologi-molekul" class="level2">
+<h2 class="anchored" data-anchor-id="dogma-pusat-biologi-molekul">Dogma Pusat Biologi Molekul</h2>
+<p>Dogma pusat ialah satu set penjelasan aliran maklumat genetik dalam sistem biologi. Salah satunya ialah aliran bagaimana DNA boleh menghasilkan rantaian protein yang membentuk kehidupan. Secara ringkasnya, DNA menghasilkan RNA melalui proses transkripsi kemudian RNA akan menghasilkan protein melalui proses penterjemahan.</p>
+<p>Walaupun dogma pusat mengatakan protein dihasilkan daripada RNA, kita boleh langkau langkah ini kerana bentuk RNA sama sahaja seperti DNA kecuali bes timina (T) DNA diganti dengan bes urasil (U) RNA. Oleh itu, pengabaian langkah ini tidak akan menjejaskan hasil akhir protein bagi tujuan kita.</p>
+<p>Rumusan dogma pusat boleh didapati dalam video ini oleh Coretan Biologi:</p>
+<p>{{&lt; video https://www.youtube.com/embed/mTHzTsgpiSc /&gt;}}</p>
+</section>
+<section id="pertama-sediakan-pasangan-pemadanan" class="level2">
+<h2 class="anchored" data-anchor-id="pertama-sediakan-pasangan-pemadanan">Pertama: Sediakan Pasangan Pemadanan</h2>
+<p>Setiap asid amino dalam protein merupakah hasil bacaan satu set tiga bes serangkai yang dinamakan kodon. Oleh itu, kita perlu beritahu kod kita kodon apa akan hasilkan asid apa. Kita sediakan satu <code>dict</code> dengan nilai berikut:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python:structures.py code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#  {12, 22}</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>DNA_Codons_Mapping: <span class="bu">dict</span> <span class="op">=</span> {</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"GCT"</span>: <span class="st">"A"</span>, <span class="st">"GCC"</span>: <span class="st">"A"</span>, <span class="st">"GCA"</span>: <span class="st">"A"</span>, <span class="st">"GCG"</span>: <span class="st">"A"</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"TGT"</span>: <span class="st">"C"</span>, <span class="st">"TGC"</span>: <span class="st">"C"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"GAT"</span>: <span class="st">"D"</span>, <span class="st">"GAC"</span>: <span class="st">"D"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"GAA"</span>: <span class="st">"E"</span>, <span class="st">"GAG"</span>: <span class="st">"E"</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"TTT"</span>: <span class="st">"F"</span>, <span class="st">"TTC"</span>: <span class="st">"F"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"GGT"</span>: <span class="st">"G"</span>, <span class="st">"GGC"</span>: <span class="st">"G"</span>, <span class="st">"GGA"</span>: <span class="st">"G"</span>, <span class="st">"GGG"</span>: <span class="st">"G"</span>,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"CAT"</span>: <span class="st">"H"</span>, <span class="st">"CAC"</span>: <span class="st">"H"</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"ATA"</span>: <span class="st">"I"</span>, <span class="st">"ATT"</span>: <span class="st">"I"</span>, <span class="st">"ATC"</span>: <span class="st">"I"</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"AAA"</span>: <span class="st">"K"</span>, <span class="st">"AAG"</span>: <span class="st">"K"</span>,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">"TTA"</span>: <span class="st">"L"</span>, <span class="st">"TTG"</span>: <span class="st">"L"</span>, <span class="st">"CTT"</span>: <span class="st">"L"</span>, <span class="st">"CTC"</span>: <span class="st">"L"</span>, <span class="st">"CTA"</span>: <span class="st">"L"</span>, <span class="st">"CTG"</span>: <span class="st">"L"</span>,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">"ATG"</span>: <span class="st">"M"</span>, <span class="co"># Kodon pemula</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">"AAT"</span>: <span class="st">"N"</span>, <span class="st">"AAC"</span>: <span class="st">"N"</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">"CCT"</span>: <span class="st">"P"</span>, <span class="st">"CCC"</span>: <span class="st">"P"</span>, <span class="st">"CCA"</span>: <span class="st">"P"</span>, <span class="st">"CCG"</span>: <span class="st">"P"</span>,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">"CAA"</span>: <span class="st">"Q"</span>, <span class="st">"CAG"</span>: <span class="st">"Q"</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">"CGT"</span>: <span class="st">"R"</span>, <span class="st">"CGC"</span>: <span class="st">"R"</span>, <span class="st">"CGA"</span>: <span class="st">"R"</span>, <span class="st">"CGG"</span>: <span class="st">"R"</span>, <span class="st">"AGA"</span>: <span class="st">"R"</span>, <span class="st">"AGG"</span>: <span class="st">"R"</span>,</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">"TCT"</span>: <span class="st">"S"</span>, <span class="st">"TCC"</span>: <span class="st">"S"</span>, <span class="st">"TCA"</span>: <span class="st">"S"</span>, <span class="st">"TCG"</span>: <span class="st">"S"</span>, <span class="st">"AGT"</span>: <span class="st">"S"</span>, <span class="st">"AGC"</span>: <span class="st">"S"</span>,</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">"ACT"</span>: <span class="st">"T"</span>, <span class="st">"ACC"</span>: <span class="st">"T"</span>, <span class="st">"ACA"</span>: <span class="st">"T"</span>, <span class="st">"ACG"</span>: <span class="st">"T"</span>,</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">"GTT"</span>: <span class="st">"V"</span>, <span class="st">"GTC"</span>: <span class="st">"V"</span>, <span class="st">"GTA"</span>: <span class="st">"V"</span>, <span class="st">"GTG"</span>: <span class="st">"V"</span>,</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">"TGG"</span>: <span class="st">"W"</span>,</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">"TAT"</span>: <span class="st">"Y"</span>, <span class="st">"TAC"</span>: <span class="st">"Y"</span>,</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">"TAA"</span>: <span class="st">"_"</span>, <span class="st">"TAG"</span>: <span class="st">"_"</span>, <span class="st">"TGA"</span>: <span class="st">"_"</span> <span class="co"># Kodon berhenti</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Pemetaan ini memberitahu kita bahawa jujukan bes <code>"GCT"</code> akan menghasilkan asid <code>A</code> dan seterusnya. Setiap asid diwakili oleh satu huruf yang merujuk kepada huruf pertama nama asid tersebut. Kodon yang berbeza boleh menghasilkan asid yang sama.</p>
+<p>Perlulah kita ketahui akan dua huruf penting yang aku nyalakan dalam kod di atas. Huruf pertama ialah huruf <code>M</code> yang merujuk kepada asid metionina yang dihasilkan oleh kodon <code>"ATG"</code>. Kodon ini dinamakan “kodon pemula” kerana ia mengisytiharkan permulaan rantaian asid amino.</p>
+<p>Huruf kedua pula ialah huruf <code>_</code> yang dihasilkan oleh tiga kodon berbeza. Kodon-kodon ini pula merupakan “kodon berhenti”: ia memberitahu agar pembinaan rantaian asid perlu berhenti. Ia tidak mewakili apa-apa asid, maka simbol <code>_</code> dipilih.</p>
+<p>Secara ringkasnya, rantaian asid amino tidak akan dihasilkan selagi mana kodon pemula tidak dijumpai. Kemudian, rantaian itu akan diputuskan ketika bertemu dengan kodon berhenti. Hasil rantaian itulah protein makhluk tersebut.</p>
+</section>
+<section id="sampingan-pengesahan-jujukan-dna" class="level2">
+<h2 class="anchored" data-anchor-id="sampingan-pengesahan-jujukan-dna">Sampingan: Pengesahan Jujukan DNA</h2>
+<p>Langkah ini bukanlah satu kewajipan, tatepi ia bantu melancarkan algoritma kita supaya kita tak masukkan input yang tak sah. Kita gunakan langkah ini untuk memastikan jujukan huruf yang dimasukkan itu adalah jujukan DNA yang sah. Bila dah melalui pengesahan ini, kita boleh yakin yang tidak ada set huruf yang pelik seperti <code>ABC</code> yang akan mengeluarkan ralat kerana tiada padanan langsung.</p>
+<p>Untuk pastikan jujukan kita hanya mempunyai huruf-huruf yang dibenarkan sahaja, kita boleh siapkan satu <code>tuple</code> bes-bes DNA dan semak keahlian huruf-huruf dalam jujukan input. Kita guna <code>tuple</code> dan bukan <code>list</code> sebab kita nak elakkan kesilapan penambahan huruf yang tidak disengajakan. Disebabkan <code>tuple</code> tidak membenarkan penambahan ahli, maka ia adalah calon yang baik.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python:structures.py code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>DNA_Bases: <span class="bu">tuple</span> <span class="op">=</span> (<span class="st">"A"</span>, <span class="st">"C"</span>, <span class="st">"G"</span>, <span class="st">"T"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Kemudian, kita sediakan fungsi <code>validate_sequence()</code> yang akan memunculkan ralat sekiranya inputnya tidak sah. Perkara sedekimian boleh dicapai dengan mengambil setiap huruf dalam <code>dna_seq</code> dan <code>raise ValueError</code> sekiranya huruf tersebut tiada dalam <code>tuple</code> yang disediakan. Sekiranya, ia bertemu dengan huruf yang tidak sah, <code>raise ValueError</code> akan menghentikan program.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python:dna_to_proteins.py code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> structures <span class="im">import</span> DNA_Bases</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> validate_sequence(dna_seq: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Semak sama ada input adalah jujukan DNA adalah sah"""</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    check_seq <span class="op">=</span> dna_seq.upper()</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> nuc <span class="kw">in</span> check_seq:</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> nuc <span class="kw">not</span> <span class="kw">in</span> DNA_Bases:</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>            <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="ss">f"Jujukan tidak sah. `</span><span class="sc">{</span>nuc<span class="sc">}</span><span class="ss">` bukan ahli </span><span class="sc">{</span>DNA_Bases<span class="op">=</span><span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> check_seq</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="kedua-proses-terjemahan" class="level2">
+<h2 class="anchored" data-anchor-id="kedua-proses-terjemahan">Kedua: Proses Terjemahan</h2>
+<p>Sekarang ini, kita perlu beritahu komputer supaya dapatkan tiga bes serangkai, pastu padankan dengan asid menggunakan pemetaan <code>DNA_Codons_Mapping</code> yang kita dah sediakan sebelum ini. Namun begitu, perlu ditegaskan bahawa pembacaan huruf tidak semestinya bermula dari huruf pertama. Misalnya, katalah kita ada jujukan <code>ABCDEF</code>, pembacaan boleh mula dari <code>A</code>, <code>B</code>, <code>C</code>, <code>D</code> atau seterusnya. Oleh itu, kita sediakan satu pembolehubah kedudukan awal <code>init_pos</code> dengan nilai asal <code>0</code> yang kita boleh tentukan kemudian.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python:dna_to_proteins.py code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> structures <span class="im">import</span> DNA_Codons_Mapping</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_translation(dna_seq: <span class="bu">str</span>, init_pos: <span class="bu">int</span> <span class="op">=</span> <span class="dv">0</span>) <span class="op">-&gt;</span> <span class="bu">list</span>:</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Menterjemahkan jujukan input menjadi senarai asid amino"""</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    acids <span class="op">=</span> <span class="bu">list</span>()</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Lelaran akan melangkau setiap tiga huruf sebab itulah panjang satu kodon</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> pos <span class="kw">in</span> <span class="bu">range</span>(init_pos, <span class="bu">len</span>(dna_seq) <span class="op">-</span> <span class="dv">2</span>, <span class="dv">3</span>):</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>        codon <span class="op">=</span> dna_seq[pos:pos <span class="op">+</span> <span class="dv">3</span>]</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        acids.append(DNA_Codons_Mapping[codon])</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> acids</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Fungsi ini akan memulangkan senarai asid kerana memang itulah yang kita mahukan.</p>
+</section>
+<section id="ketiga-semua-kemungkinan-senarai-asid" class="level2">
+<h2 class="anchored" data-anchor-id="ketiga-semua-kemungkinan-senarai-asid">Ketiga: Semua Kemungkinan Senarai Asid</h2>
+<p>Untuk setiap jujukan DNA, ada enam kemungkinan senarai asid yang boleh dihasilkan. Hal ini kerana setiap kodon boleh mula dibaca dari mana-mana tiga huruf dalam jujukan tersebut. Perkara ini menghasilkan 3 kemungkinan. Tambahan pula, jujukan DNA tersebut ada pasangannya, maka pasangannya juga akan menghasilkan 3 kemungkinan senarai asidnya yang tersendiri. Maka, jumlahnya ialah 6 kemungkinan.</p>
+<p>Nampaknya bacaan kodon yang berbeza permulaannya dipanggil “<a href="https://www.ncbi.nlm.nih.gov/Class/MLACourse/Original8Hour/Genetics/readingframe.html">rangka bacaan</a>”.</p>
+<example>
+<p>Katakan ada jujukan DNA <code>GATTAGCCAGATTAC</code>, boleh jadi kodonnya adalah begini: 1. [GAT][TAG][CCA][GAT][TAC] ← Jujukan input 2. G[ATT][AGC][CAG][ATT]AC 3. GA[TTA][GCC][AGA][TTA]C 4. [CTA][ATC][GGT][CTA][ATG] ← Jujukan pasangan 5. C[TAA][TCG][GTC][TAA]TG 6. CT[AAT][CGG][TCT][AAT]G</p>
+</example>
+<p>Apa yang kita perlu buat ialah panggil fungsi yang sama berulang kali dengan <code>init_pos</code> yang berbeza. Selain itu, kita juga perlu ada satu fungsi yang akan hasilkan pasangan jujukan input.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python:dna_to_proteins.py code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> typing <span class="im">import</span> List <span class="co"># Membolehkan kita nyatakan jenis isi dalam `List`</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_complement(dna_seq: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Menghasilkan pasangan jujukan yang melekat bersama dengan jujukan input"""</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    mapping <span class="op">=</span> <span class="bu">str</span>.maketrans(<span class="st">'ATGC'</span>, <span class="st">'TACG'</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> dna_seq.translate(mapping)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_reverse_complement(dna_seq: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Menterbalikkan pasangan jujukan (sebab pasangannya dibaca berlawanan arah)"""</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> make_complement(dna_seq)[::<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_reading_frames(dna_seq: <span class="bu">str</span>) <span class="op">-&gt;</span> List[List[<span class="bu">str</span>]]:</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Menghasilkan kesemua enam (6) rangka bacaan daripada jujukan bes DNA yang diberikan."""</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    frames <span class="op">=</span> []</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    frames.append(make_translation(dna_seq, <span class="dv">0</span>))</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    frames.append(make_translation(dna_seq, <span class="dv">1</span>))</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    frames.append(make_translation(dna_seq, <span class="dv">2</span>))</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    frames.append(make_translation(make_reverse_complement(dna_seq), <span class="dv">0</span>))</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    frames.append(make_translation(make_reverse_complement(dna_seq), <span class="dv">1</span>))</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    frames.append(make_translation(make_reverse_complement(dna_seq), <span class="dv">2</span>))</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> frames</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="keempat-mencari-kodon-mula-dan-kodon-berhenti" class="level2">
+<h2 class="anchored" data-anchor-id="keempat-mencari-kodon-mula-dan-kodon-berhenti">Keempat: Mencari Kodon Mula dan Kodon berhenti</h2>
+<p>Kita perlu sediakan arahan supaya:</p>
+<ol type="1">
+<li>Jika ia adalah kodon berhenti, <code>_</code>, maka hentikan rantaian jika wujud.</li>
+<li>Jika ia adalah asid dari kodon mula, <code>M</code>, maka mulakan rantaian.</li>
+<li>Jika ia adalah asid biasa, maka sambung rantaian jika wujud ataupun langkau jika tiada rantaian.</li>
+</ol>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python:dna_to_proteins.py code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_proteins_from_one_reading_frame(amino_acid_seq: <span class="bu">list</span>) <span class="op">-&gt;</span> <span class="bu">list</span>:</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Menghasilkan calon protein dengan mengenal pasti kodon pemula dan kodon berhenti"""</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    current_protein <span class="op">=</span> []</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    proteins <span class="op">=</span> []</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> amino_acid <span class="kw">in</span> amino_acid_seq:</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> amino_acid <span class="op">==</span> <span class="st">"_"</span>:</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Hentikan rantain</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> current_protein:</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Dapatkan rantaian jika wujud</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>                <span class="cf">for</span> p <span class="kw">in</span> current_protein:</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>                    proteins.append(p)</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>                current_protein <span class="op">=</span> []</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> amino_acid <span class="op">==</span> <span class="st">"M"</span>:</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Mulakan rantaian</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>                current_protein.append(<span class="st">""</span>)</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(current_protein)):</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Operasi ini tidak akan buat apa-apa kalau tiada `""` yang dihasilkan oleh syarat sebelum ini</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>                current_protein[i] <span class="op">+=</span> amino_acid</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> proteins</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Kemudian, kita boleh dapatkan semua protein yang mungkin dihasilkan oleh jujukan DNA serta pasangannya.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python:dna_to_proteins.py code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_proteins_from_all_reading_frames(dna_seq: <span class="bu">str</span>, ordered<span class="op">=</span><span class="va">False</span>) <span class="op">-&gt;</span> List[<span class="bu">str</span>]:</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Menghasilkan calon protein daripada semua rangka bacaan yang dihasilkan dari sejujuk DNA"""</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    frames <span class="op">=</span> make_reading_frames(dna_seq)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    potential_proteins <span class="op">=</span> []</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> frame <span class="kw">in</span> frames:</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        proteins <span class="op">=</span> make_proteins_from_one_reading_frame(frame)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> p <span class="kw">in</span> proteins:</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>            potential_proteins.append(p)</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Susun supaya yang paling panjang berada di atas</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> ordered:</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>        potential_proteins <span class="op">=</span> <span class="bu">sorted</span>(potential_proteins, key<span class="op">=</span><span class="bu">len</span>, reverse<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> potential_proteins</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="penentusahan" class="level2">
+<h2 class="anchored" data-anchor-id="penentusahan">Penentusahan</h2>
+<p>Semestinya, kalau kita ada model, kita perlu tentusahkannya sama ada ia berfungsi atau tidak. Kita boleh lakukan sedemikian dengan cuba memadankannya dengan pangkalan data yang diketahui. Satu contoh pangkalan data yang boleh cuba digunakan ialah pangkalan data <em>National Center for Biotechnology Information</em> (NCBI).</p>
+<p>Kita ambil satu contoh data insulin homo sapiens <a href="https://www.ncbi.nlm.nih.gov/nuccore/NM_001185097.2"><code>NM_001185097.2</code></a> (Pergi ke pautan FASTA untuk dapatkan jujukan DNAnya). Algoritma aku menghasilkan senarai ini:</p>
+<p><code>bash {1} showLineNumbers MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN MRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN MLVQHCSTMPRFCRDPSRAKGCRLPAPGPPPSSTCPTCRSSASRRVLGV MPRFCRDPSRAKGCRLPAPGPPPSSTCPTCRSSASRRVLGV MAEGQ ME</code></p>
+<p>Kalau dibandingkan dengan maklumat <code>\translation</code> yang ada pada pautan tersebut, ternyata ia padan dengan rantaian pertama hasil algoritma aku. Cubalah buat sendiri dan cuba padankannya dengan data lain. Kod-kod yang ditulis ada disediakan dalam <a href="https://github.com/Thaza-Kun/Algoritma-Terjemahan-Protein/tree/arkib">repositori GitHub</a>. Bolehlah gunakannya sebagai rujukan.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
