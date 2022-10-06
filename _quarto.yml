@@ -18,6 +18,7 @@ website:
   search:
     location: navbar
     type: overlay
+  google-analytics: "G-N1Y1DW6RP4"
 
 format:
   html:
