@@ -24,5 +24,6 @@ format:
   html:
     theme: litera
     css: styles.css
+    code-line-numbers: true
     include-in-header:
       - '<script async src="dist/ackee-tracker.min.js" data-ackee-server="https://ackee-production-758e.up.railway.app" data-ackee-domain-id="hd11f820-68a1-11e6-8047-79c0c2d9bce0"></script>'

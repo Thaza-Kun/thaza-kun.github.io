@@ -1,14 +1,14 @@
 ---
-draft: true
+draft: false
 title: "Kaedah Menghasilkan Protein Dari Sejujuk DNA Guna Python"
 subtitle: "Aku cuba teroka bioinformatik asas bersama kawan aku yang cuba belajar Python"
 date: "2022-02-25"
 categories: ["pengaturcaraan Python"]
 images: ["DNA_1920_1080.jpg"]
 authors: ["Murthadza Aznam"]
+jupyer: python3
+freeze: true
 ---
-
-<!-- TODO: Make interactive -->
 
 Aku bukanlah orang dalam bidang biologi, tapi aku rasa elok kalau aku kongsikan apa yang aku sudah belajar.
 Pada pertengahan tahun lepas, aku ada ajar seorang kawan aku pengaturcaraan Python.
@@ -25,7 +25,7 @@ Oleh itu, pengabaian langkah ini tidak akan menjejaskan hasil akhir protein bagi
 
 Rumusan dogma pusat boleh didapati dalam video ini oleh Coretan Biologi:
 
-{{< video https://www.youtube.com/embed/mTHzTsgpiSc />}}
+{{< video https://www.youtube.com/embed/mTHzTsgpiSc >}}
 
 ## Pertama: Sediakan Pasangan Pemadanan
 
@@ -33,8 +33,7 @@ Setiap asid amino dalam protein merupakah hasil bacaan satu set tiga bes serangk
 Oleh itu, kita perlu beritahu kod kita kodon apa akan hasilkan asid apa.
 Kita sediakan satu `dict` dengan nilai berikut:
 
-```python:structures.py
-#  {12, 22}
+```{python}
 DNA_Codons_Mapping: dict = {
     "GCT": "A", "GCC": "A", "GCA": "A", "GCG": "A",
     "TGT": "C", "TGC": "C",
@@ -86,7 +85,7 @@ Untuk pastikan jujukan kita hanya mempunyai huruf-huruf yang dibenarkan sahaja, 
 Kita guna `tuple` dan bukan `list` sebab kita nak elakkan kesilapan penambahan huruf yang tidak disengajakan.
 Disebabkan `tuple` tidak membenarkan penambahan ahli, maka ia adalah calon yang baik.
 
-```python:structures.py
+```{python}
 DNA_Bases: tuple = ("A", "C", "G", "T")
 ```
 
@@ -94,7 +93,8 @@ Kemudian, kita sediakan fungsi `validate_sequence()` yang akan memunculkan ralat
 Perkara sedekimian boleh dicapai dengan mengambil setiap huruf dalam `dna_seq` dan `raise ValueError` sekiranya huruf tersebut tiada dalam `tuple` yang disediakan.
 Sekiranya, ia bertemu dengan huruf yang tidak sah, `raise ValueError` akan menghentikan program.
 
-```python:DNA_to_proteins.py
+```{python}
+
 from structures import DNA_Bases
 
 def validate_sequence(dna_seq: str) -> str:
@@ -113,7 +113,8 @@ Namun begitu, perlu ditegaskan bahawa pembacaan huruf tidak semestinya bermula d
 Misalnya, katalah kita ada jujukan `ABCDEF`, pembacaan boleh mula dari `A`, `B`, `C`, `D` atau seterusnya.
 Oleh itu, kita sediakan satu pembolehubah kedudukan awal `init_pos` dengan nilai asal `0` yang kita boleh tentukan kemudian.
 
-```python:DNA_to_proteins.py
+```{python}
+
 from structures import DNA_Codons_Mapping
 
 def make_translation(dna_seq: str, init_pos: int = 0) -> list:
@@ -153,7 +154,7 @@ Katakan ada jujukan DNA `GATTAGCCAGATTAC`, boleh jadi kodonnya adalah begini:
 Apa yang kita perlu buat ialah panggil fungsi yang sama berulang kali dengan `init_pos` yang berbeza.
 Selain itu, kita juga perlu ada satu fungsi yang akan hasilkan pasangan jujukan input.
 
-```python:DNA_to_proteins.py
+```{python}
 from typing import List # Membolehkan kita nyatakan jenis isi dalam `List`
 
 def make_complement(dna_seq: str) -> str:
@@ -185,7 +186,7 @@ Kita perlu sediakan arahan supaya:
 2. Jika ia adalah asid dari kodon mula, `M`, maka mulakan rantaian.
 3. Jika ia adalah asid biasa, maka sambung rantaian jika wujud ataupun langkau jika tiada rantaian.
 
-```python:DNA_to_proteins.py
+```{python}
 def make_proteins_from_one_reading_frame(amino_acid_seq: list) -> list:
     """Menghasilkan calon protein dengan mengenal pasti kodon pemula dan kodon berhenti"""
     current_protein = []
@@ -210,7 +211,7 @@ def make_proteins_from_one_reading_frame(amino_acid_seq: list) -> list:
 
 Kemudian, kita boleh dapatkan semua protein yang mungkin dihasilkan oleh jujukan DNA serta pasangannya.
 
-```python:DNA_to_proteins.py
+```{python}
 def make_proteins_from_all_reading_frames(dna_seq: str, ordered=False) -> List[str]:
     """Menghasilkan calon protein daripada semua rangka bacaan yang dihasilkan dari sejujuk DNA"""
     frames = make_reading_frames(dna_seq)
@@ -234,10 +235,12 @@ Semestinya, kalau kita ada model, kita perlu tentusahkannya sama ada ia berfungs
 Kita boleh lakukan sedemikian dengan cuba memadankannya dengan pangkalan data yang diketahui.
 Satu contoh pangkalan data yang boleh cuba digunakan ialah pangkalan data _National Center for Biotechnology Information_ (NCBI).
 
+<!-- TODO run satu contoh -->
+
 Kita ambil satu contoh data insulin homo sapiens [`NM_001185097.2`](https://www.ncbi.nlm.nih.gov/nuccore/NM_001185097.2) (Pergi ke pautan FASTA untuk dapatkan jujukan DNAnya).
 Algoritma aku menghasilkan senarai ini:
 
-```bash {1} showLineNumbers
+```{bash}
 MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN
 MRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN
 MLVQHCSTMPRFCRDPSRAKGCRLPAPGPPPSSTCPTCRSSASRRVLGV
