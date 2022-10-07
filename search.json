@@ -620,7 +620,7 @@
     "href": "blog/2022/terjemahan-protein-dari-DNA-guna-Python/index.html#hasil",
     "title": "Kaedah Menghasilkan Protein Dari Sejujuk DNA Guna Python",
     "section": "Hasil",
-    "text": "Hasil\n\nmake_proteins_from_all_reading_frames(dna_seq=DNAString)\n\n['MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN',\n 'MRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN',\n 'ME',\n 'MLVQHCSTMPRFCRDPSRAKGCRLPAPGPPPSSTCPTCRSSASRRVLGV',\n 'MPRFCRDPSRAKGCRLPAPGPPPSSTCPTCRSSASRRVLGV',\n 'MAEGQ']\n\n\nKalau dibandingkan dengan maklumat /translation yang ada pada pautan tersebut, ternyata ia padan dengan rantaian pertama hasil algoritma aku. Cubalah buat sendiri dan cuba padankannya dengan data lain. Kod-kod yang ditulis ada disediakan dalam repositori GitHub. Bolehlah gunakannya sebagai rujukan."
+    "text": "Hasil\n\nmake_proteins_from_all_reading_frames(dna_seq=DNAString)\n\n['MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN',\n 'MRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN',\n 'ME',\n 'MLVQHCSTMPRFCRDPSRAKGCRLPAPGPPPSSTCPTCRSSASRRVLGV',\n 'MPRFCRDPSRAKGCRLPAPGPPPSSTCPTCRSSASRRVLGV',\n 'MAEGQ']\n\n\nKalau dibandingkan dengan maklumat /translation yang ada pada pautan insulin homo sapiens NCBI, ternyata ia padan dengan rantaian pertama hasil algoritma aku. Cubalah buat sendiri dan cuba padankannya dengan data lain. Kod-kod yang ditulis ada disediakan dalam repositori GitHub. Bolehlah gunakannya sebagai rujukan."
   },
   {
     "objectID": "blog/2018/takrif-baru-satu-kilogram/index.html",

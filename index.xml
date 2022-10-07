@@ -277,7 +277,7 @@ make_reading_frames(dna_seq=DNAString)
  'MAEGQ']</code></pre>
 </div>
 </div>
-<p>Kalau dibandingkan dengan maklumat <code>/translation</code> yang ada pada pautan tersebut, ternyata ia padan dengan rantaian pertama hasil algoritma aku. Cubalah buat sendiri dan cuba padankannya dengan data lain. Kod-kod yang ditulis ada disediakan dalam <a href="https://github.com/Thaza-Kun/Algoritma-Terjemahan-Protein/tree/arkib">repositori GitHub</a>. Bolehlah gunakannya sebagai rujukan.</p>
+<p>Kalau dibandingkan dengan maklumat <code>/translation</code> yang ada pada pautan <a href="https://www.ncbi.nlm.nih.gov/nuccore/NM_001185097.2">insulin homo sapiens NCBI</a>, ternyata ia padan dengan rantaian pertama hasil algoritma aku. Cubalah buat sendiri dan cuba padankannya dengan data lain. Kod-kod yang ditulis ada disediakan dalam <a href="https://github.com/Thaza-Kun/Algoritma-Terjemahan-Protein/tree/arkib">repositori GitHub</a>. Bolehlah gunakannya sebagai rujukan.</p>
 
 
 </section>
