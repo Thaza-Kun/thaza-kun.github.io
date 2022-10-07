@@ -19,12 +19,14 @@ website:
     location: navbar
     type: overlay
   google-analytics: "G-N1Y1DW6RP4"
-
+  twitter-card: true
+  open-graph: true
+  reader-mode: true
 format:
   html:
     theme: litera
     css: styles.css
-    code-line-numbers: true
+    # code-line-numbers: true
     toc: true
     crossref:
       exm-prefix: Contoh
