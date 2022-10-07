@@ -262,7 +262,7 @@ def make_proteins_from_all_reading_frames(dna_seq: str, ordered=False) -> List[s
 make_proteins_from_all_reading_frames(dna_seq=DNAString)
 ```
 
-Kalau dibandingkan dengan maklumat `/translation` yang ada pada pautan tersebut, ternyata ia padan dengan rantaian pertama hasil algoritma aku.
+Kalau dibandingkan dengan maklumat `/translation` yang ada pada pautan [insulin homo sapiens NCBI](https://www.ncbi.nlm.nih.gov/nuccore/NM_001185097.2), ternyata ia padan dengan rantaian pertama hasil algoritma aku.
 Cubalah buat sendiri dan cuba padankannya dengan data lain.
 Kod-kod yang ditulis ada disediakan dalam [repositori GitHub](https://github.com/Thaza-Kun/Algoritma-Terjemahan-Protein/tree/arkib).
 Bolehlah gunakannya sebagai rujukan.
