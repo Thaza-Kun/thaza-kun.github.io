@@ -7,7 +7,7 @@ categories: ["pengaturcaraan Python"]
 image: "DNA_1920_1080.jpg"
 authors: ["Murthadza Aznam"]
 jupyter: python3
-freeze: true
+freeze: false
 ---
 
 Aku bukanlah orang dalam bidang biologi, tapi aku rasa elok kalau aku kongsikan apa yang aku sudah belajar.
@@ -115,8 +115,18 @@ def validate_sequence(dna_seq: str) -> str:
 
 Kita akan sahkan `DNAString` kita.
 ```{python}
-validate_sequence(DNAString)
+validate_sequence(dna_seq=DNAString)
 ```
+
+:::{#exm-dna_error}
+Katakan kita gunakan jujukan DNA yang tidak sah. Maka, kita dapat lihat yang `ValueError` akan dikemukakan.
+
+```{python}
+#| error: true
+
+validate_sequence(dna_seq='GAYA')
+```
+:::
 
 ## Kedua: Proses Terjemahan
 
@@ -190,6 +200,10 @@ def make_reading_frames(dna_seq: str) -> List[List[str]]:
     frames.append(make_translation(make_reverse_complement(dna_seq), 2))
     return frames
 ```
+
+<!-- ```{python}
+make_reading_frames(dna_seq=DNAString)
+``` -->
 
 ## Keempat: Mencari Kodon Mula dan Kodon berhenti
 
