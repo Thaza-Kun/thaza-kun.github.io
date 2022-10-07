@@ -4,9 +4,9 @@ title: "Kaedah Menghasilkan Protein Dari Sejujuk DNA Guna Python"
 subtitle: "Aku cuba teroka bioinformatik asas bersama kawan aku yang cuba belajar Python"
 date: "2022-02-25"
 categories: ["pengaturcaraan Python"]
-images: ["DNA_1920_1080.jpg"]
+image: "DNA_1920_1080.jpg"
 authors: ["Murthadza Aznam"]
-jupyer: python3
+jupyter: python3
 freeze: true
 ---
 
@@ -26,6 +26,16 @@ Oleh itu, pengabaian langkah ini tidak akan menjejaskan hasil akhir protein bagi
 Rumusan dogma pusat boleh didapati dalam video ini oleh Coretan Biologi:
 
 {{< video https://www.youtube.com/embed/mTHzTsgpiSc >}}
+
+## Sifar: Sediakan Data
+
+Kita akan gunakan data dari _National Center for Biotechnology Information_ sebagai contoh untuk tulisan ini. 
+Khususnya, data insulin homo sapiens [`NM_001185097.2`](https://www.ncbi.nlm.nih.gov/nuccore/NM_001185097.2) (Pergi ke pautan FASTA untuk dapatkan jujukan DNAnya)
+Kita namakannya `DNAString`.
+
+```{python}
+DNAString: str = "AGCCCTCCAGGACAGGCTGCATCAGAAGAGGCCATCAAGCAGGTCTGTTCCAAGGGCCTTTGCGTCAGATCACTGTCCTTCTGCCATGGCCCTGTGGATGCGCCTCCTGCCCCTGCTGGCGCTGCTGGCCCTCTGGGGACCTGACCCAGCCGCAGCCTTTGTGAACCAACACCTGTGCGGCTCACACCTGGTGGAAGCTCTCTACCTAGTGTGCGGGGAACGAGGCTTCTTCTACACACCCAAGACCCGCCGGGAGGCAGAGGACCTGCAGGTGGGGCAGGTGGAGCTGGGCGGGGGCCCTGGTGCAGGCAGCCTGCAGCCCTTGGCCCTGGAGGGGTCCCTGCAGAAGCGTGGCATTGTGGAACAATGCTGTACCAGCATCTGCTCCCTCTACCAGCTGGAGAACTACTGCAACTAGACGCAGCCCGCAGGCAGCCCCACACCCGCCGCCTCCTGCACCGAGAGAGATGGAATAAAGCCCTTGAACCAGC"
+```
 
 ## Pertama: Sediakan Pasangan Pemadanan
 
@@ -63,7 +73,7 @@ Pemetaan ini memberitahu kita bahawa jujukan bes `"GCT"` akan menghasilkan asid 
 Setiap asid diwakili oleh satu huruf yang merujuk kepada huruf pertama nama asid tersebut.
 Kodon yang berbeza boleh menghasilkan asid yang sama.
 
-Perlulah kita ketahui akan dua huruf penting yang aku nyalakan dalam kod di atas.
+Perlulah kita ketahui akan dua huruf penting yang aku beri komen dalam kod di atas.
 Huruf pertama ialah huruf `M` yang merujuk kepada asid metionina yang dihasilkan oleh kodon `"ATG"`.
 Kodon ini dinamakan "kodon pemula" kerana ia mengisytiharkan permulaan rantaian asid amino.
 
@@ -94,9 +104,6 @@ Perkara sedekimian boleh dicapai dengan mengambil setiap huruf dalam `dna_seq` d
 Sekiranya, ia bertemu dengan huruf yang tidak sah, `raise ValueError` akan menghentikan program.
 
 ```{python}
-
-from structures import DNA_Bases
-
 def validate_sequence(dna_seq: str) -> str:
     """Semak sama ada input adalah jujukan DNA adalah sah"""
     check_seq = dna_seq.upper()
@@ -104,6 +111,11 @@ def validate_sequence(dna_seq: str) -> str:
         if nuc not in DNA_Bases:
             raise ValueError(f"Jujukan tidak sah. `{nuc}` bukan ahli {DNA_Bases=}")
     return check_seq
+```
+
+Kita akan sahkan `DNAString` kita.
+```{python}
+validate_sequence(DNAString)
 ```
 
 ## Kedua: Proses Terjemahan
@@ -114,9 +126,6 @@ Misalnya, katalah kita ada jujukan `ABCDEF`, pembacaan boleh mula dari `A`, `B`,
 Oleh itu, kita sediakan satu pembolehubah kedudukan awal `init_pos` dengan nilai asal `0` yang kita boleh tentukan kemudian.
 
 ```{python}
-
-from structures import DNA_Codons_Mapping
-
 def make_translation(dna_seq: str, init_pos: int = 0) -> list:
     """Menterjemahkan jujukan input menjadi senarai asid amino"""
     acids = list()
@@ -129,6 +138,13 @@ def make_translation(dna_seq: str, init_pos: int = 0) -> list:
 
 Fungsi ini akan memulangkan senarai asid kerana memang itulah yang kita mahukan.
 
+```{python}
+from typing import List # Membolehkan kita nyatakan jenis isi dalam `List`
+
+senarai_asid_amino: List[str] = make_translation(dna_seq=DNAString)
+','.join(senarai_asid_amino)
+```
+
 ## Ketiga: Semua Kemungkinan Senarai Asid
 
 Untuk setiap jujukan DNA, ada enam kemungkinan senarai asid yang boleh dihasilkan.
@@ -139,24 +155,21 @@ Maka, jumlahnya ialah 6 kemungkinan.
 
 Nampaknya bacaan kodon yang berbeza permulaannya dipanggil "[rangka bacaan](https://www.ncbi.nlm.nih.gov/Class/MLACourse/Original8Hour/Genetics/readingframe.html)".
 
-<Example>
-    
+:::{#exm-enam-jujukan} 
 Katakan ada jujukan DNA `GATTAGCCAGATTAC`, boleh jadi kodonnya adalah begini:
-1. [GAT][TAG][CCA][GAT][TAC] &larr; Jujukan input
-2. G[ATT][AGC][CAG][ATT]AC
-3. GA[TTA][GCC][AGA][TTA]C
-4. [CTA][ATC][GGT][CTA][ATG] &larr; Jujukan pasangan
-5. C[TAA][TCG][GTC][TAA]TG
-6. CT[AAT][CGG][TCT][AAT]G
 
-</Example>
+1. `GAT` `TAG` `CCA` `GAT` `TAC` &larr; Jujukan input
+2. G `ATT` `AGC` `CAG` `ATT` AC
+3. GA `TTA` `GCC` `AGA` `TTA` C
+4. `CTA` `ATC` `GGT` `CTA` `ATG` &larr; Jujukan pasangan
+5. C `TAA` `TCG` `GTC` `TAA` TG
+6. CT `AAT` `CGG` `TCT` `AAT` G
+:::
 
 Apa yang kita perlu buat ialah panggil fungsi yang sama berulang kali dengan `init_pos` yang berbeza.
 Selain itu, kita juga perlu ada satu fungsi yang akan hasilkan pasangan jujukan input.
 
 ```{python}
-from typing import List # Membolehkan kita nyatakan jenis isi dalam `List`
-
 def make_complement(dna_seq: str) -> str:
     """Menghasilkan pasangan jujukan yang melekat bersama dengan jujukan input"""
     mapping = str.maketrans('ATGC', 'TACG')
@@ -229,27 +242,13 @@ def make_proteins_from_all_reading_frames(dna_seq: str, ordered=False) -> List[s
     return potential_proteins
 ```
 
-## Penentusahan
+## Hasil
 
-Semestinya, kalau kita ada model, kita perlu tentusahkannya sama ada ia berfungsi atau tidak.
-Kita boleh lakukan sedemikian dengan cuba memadankannya dengan pangkalan data yang diketahui.
-Satu contoh pangkalan data yang boleh cuba digunakan ialah pangkalan data _National Center for Biotechnology Information_ (NCBI).
-
-<!-- TODO run satu contoh -->
-
-Kita ambil satu contoh data insulin homo sapiens [`NM_001185097.2`](https://www.ncbi.nlm.nih.gov/nuccore/NM_001185097.2) (Pergi ke pautan FASTA untuk dapatkan jujukan DNAnya).
-Algoritma aku menghasilkan senarai ini:
-
-```{bash}
-MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN
-MRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN
-MLVQHCSTMPRFCRDPSRAKGCRLPAPGPPPSSTCPTCRSSASRRVLGV
-MPRFCRDPSRAKGCRLPAPGPPPSSTCPTCRSSASRRVLGV
-MAEGQ
-ME
+```{python}
+make_proteins_from_all_reading_frames(dna_seq=DNAString)
 ```
 
-Kalau dibandingkan dengan maklumat `\translation` yang ada pada pautan tersebut, ternyata ia padan dengan rantaian pertama hasil algoritma aku.
+Kalau dibandingkan dengan maklumat `/translation` yang ada pada pautan tersebut, ternyata ia padan dengan rantaian pertama hasil algoritma aku.
 Cubalah buat sendiri dan cuba padankannya dengan data lain.
 Kod-kod yang ditulis ada disediakan dalam [repositori GitHub](https://github.com/Thaza-Kun/Algoritma-Terjemahan-Protein/tree/arkib).
 Bolehlah gunakannya sebagai rujukan.
