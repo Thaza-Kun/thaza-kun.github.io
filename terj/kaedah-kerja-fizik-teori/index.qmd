@@ -1,21 +1,28 @@
 ---
 draft: false
-in_review: false
 title: "Kaedah Kerja Dalam Fizik Teori"
-# subtitle: "_Methods In Theoretical Physics_"
+subtitle: "_Methods In Theoretical Physics_"
 date: "2019-12-08"
 categories:
     - "syarahan"
-# image: "bookshelf.jpg"
+image: "PAM-Dirac.jpg"
 authors: 
     - "Paul Adrian Maurice Dirac"
     - "Murthadza Aznam (terjemahan)"
 editors: "Wan Mohd Aimran Wan Mohd Kamil"
+margin-footer: |
+    :::{.sidebar}
+    [English version](en.qmd)
+    :::
 ---
 
 :::{.callout-note}
 Berikut merupakan syarahan yang disampaikan oleh Paul Dirac bertajuk "_Methods in Theoretical Physics_".
 Syarahan tersebut dirakamkan dalam himpunan syarahan [_From A Life of Physics_ (1989)](https://www.worldscientific.com/worldscibooks/10.1142/0877#t=aboutBook) suntingan Abdus Salam.
+:::
+
+:::{.callout-note}
+Terjemahan ini asalnya diterbitkan dalam portal Fizik Kini dengan tajuk "Kaedah Kerja Dalam Fizik Teori" yang dipecahkan menjadi tiga bahagian ^\[[I](https://fizikkini.com/kaedah-kerja-dalam-fizik-teori-bahagian-i/),^ ^[II](https://fizikkini.com/kaedah-kerja-dalam-fizik-teori-bahagian-ii/),^ ^[III](https://fizikkini.com/kaedah-kerja-dalam-fizik-teori-bahagian-iii/)\]^ pada 8 - 12 Disember 2019 tetapi ditulis semula di sini bagi tujuan penyimpanan.
 :::
 
 Saya akan cuba menerangkan serba sedikit tentang kaedah kerja seorang ahli fizik teori.
@@ -295,30 +302,20 @@ Maka, ada yang merasakan perlunya sebuah perubahan idea dasar yang mendadak.
 
 ## Daftar Istilah
 
-- Aljabar Tidak Kalis Tukar Tertib = Non-commutative Algebra
-- Tidak Kalis Tukar Tertib = Non-commutative
-- Elektron Terpusat = Point Electrons
-- Kecapahan = Divergencies
-- Ketakvarianan bernisbi = Relativistic Invariance
-- Kesingularan = Singularity
-- Multikembar – Multiplet
-- Niskala = Abstract
-- Penormalan semula = Renormalization
-- Pemenggalan = Cut-off
-- Penukar Tertib = Commutators
-- Penjelmaan Matematik = Mathematical Transformation
-- Tekal = Consistent
-- Swa-tenaga  = Self-Energy
-- Teori Kenisbian Khas = Theory of Special Relativity
-- Kesingularan = Singularity
-- Multikembar = Multiplet
-- Niskala = Abstract
-- Penormalan semula = Renormalization
-- Pemenggalan = Cut-off
-- Penukar Tertib = Commutators
-- Penjelmaan Matematik = Mathematical Transformation
-- Tekal = Consistent
-- Swa-tenaga  = Self-Energy
-- Teori Kenisbian Khas = Theory of Special Relativity
-- Mekanik Kuantum Bernisbi = Nonrelativistic quantum mechanics
-- Anjakan Lamb = Lamb shift
+- Aljabar Tidak Kalis Tukar Tertib = _Non-commutative Algebra_
+- Tidak Kalis Tukar Tertib = _Non-commutative_
+- Elektron Terpusat = _Point Electrons_
+- Kecapahan = _Divergencies_
+- Ketakvarianan bernisbi = _Relativistic Invariance_
+- Kesingularan = _Singularity_
+- Multikembar = _Multiplet_
+- Niskala = _Abstract_
+- Penormalan semula = _Renormalization_
+- Pemenggalan = _Cut-off_
+- Penukar Tertib = _Commutators_
+- Penjelmaan Matematik = _Mathematical Transformation_
+- Tekal = _Consistent_
+- Swa-tenaga  = _Self-Energy_
+- Teori Kenisbian Khas = _Theory of Special Relativity_
+- Mekanik Kuantum Bernisbi = _Nonrelativistic quantum mechanics_
+- Anjakan Lamb = _Lamb shift_

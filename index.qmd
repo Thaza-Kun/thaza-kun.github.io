@@ -16,8 +16,9 @@ listing:
       - date
       - reading-time
       - image
-  - id: terj 
-    contents: terj
+    page-size: 3
+  - id: terjemahan
+    contents: terj/*/index.qmd
     sort: "date desc"
     type: default
     categories: unnumbered
@@ -26,7 +27,6 @@ listing:
     feed: true
     fields:
       - title
-      - subtitle
       - categories
       - date
       - reading-time
@@ -38,8 +38,19 @@ title-block-banner: true
 # 🌓 Qamar Suria ☀
 
 <!-- :::{.callout-note} -->
-Penulis merupakakan graduan Fizik yang sedang meneroka dunia digital. Bagi yang meminati Sains, Matematik, Data, atau Pengaturcaraan; bolehlah ikuti kembara bersamaku.
+Penulis merupakan graduan Fizik yang sedang meneroka dunia digital. 
+Bagi yang meminati:
+
+  - 🪐 Sains
+  - 🧮 Matematik
+  - 📈 Data
+  - 💻 Pengaturcaraan
+
+bolehlah ikuti kembara bersamaku.
 <!-- ::: -->
+
+:::{#TOC}
+:::
 
 ## Blog
 
