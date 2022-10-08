@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2019-12-08">
+
+<title>🌓 QS ☀ - Methods in Theoretical Physics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-N1Y1DW6RP4"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-N1Y1DW6RP4', { 'anonymize_ip': true});
+</script>
+<script async="" src="https://github.com/electerious/ackee-tracker/blob/master/dist/ackee-tracker.min.js" data-ackee-server="https://ackee-production-758e.up.railway.app" data-ackee-domain-id="hd11f820-68a1-11e6-8047-79c0c2d9bce0"></script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="🌓 QS ☀ - Methods in Theoretical Physics">
+<meta property="og:description" content="A lecture part of From A Life of Physics (1989)">
+<meta property="og:image" content="https://thaza-kun.github.io/terj/kaedah-kerja-fizik-teori/PAM-Dirac.jpg">
+<meta property="og:site-name" content="🌓 QS ☀">
+<meta name="twitter:title" content="🌓 QS ☀ - Methods in Theoretical Physics">
+<meta name="twitter:description" content="A lecture part of From A Life of Physics (1989)">
+<meta name="twitter:image" content="https://thaza-kun.github.io/terj/kaedah-kerja-fizik-teori/PAM-Dirac.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">🌓 QS ☀</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">About</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html">Blog</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../terj.html">Terjemahan</a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Thaza-Kun"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/Thaza_Kun"><i class="bi bi-twitter" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"><i class="bi bi-rss" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#cosmological-speculation" id="toc-cosmological-speculation" class="nav-link active" data-scroll-target="#cosmological-speculation">Cosmological Speculation</a></li>
+  <li><a href="#success-through-method" id="toc-success-through-method" class="nav-link" data-scroll-target="#success-through-method">Success Through Method</a></li>
+  <li><a href="#impact-of-relativity" id="toc-impact-of-relativity" class="nav-link" data-scroll-target="#impact-of-relativity">Impact of Relativity</a></li>
+  <li><a href="#fruitful-relaxation" id="toc-fruitful-relaxation" class="nav-link" data-scroll-target="#fruitful-relaxation">Fruitful Relaxation</a></li>
+  <li><a href="#from-tensors-to-spinors" id="toc-from-tensors-to-spinors" class="nav-link" data-scroll-target="#from-tensors-to-spinors">From Tensors to Spinors</a></li>
+  <li><a href="#on-the-wrong-track" id="toc-on-the-wrong-track" class="nav-link" data-scroll-target="#on-the-wrong-track">On The Wrong Track?</a></li>
+  <li><a href="#difficulty-in-quantum-electrodynamic" id="toc-difficulty-in-quantum-electrodynamic" class="nav-link" data-scroll-target="#difficulty-in-quantum-electrodynamic">Difficulty In Quantum Electrodynamic</a></li>
+  </ul>
+</nav>
+    <div class="quarto-margin-footer"><div class="margin-footer-item">
+<div class="sidebar">
+<p><a href="../../terj/kaedah-kerja-fizik-teori/index.html">Versi Melayu</a></p>
+</div>
+</div></div></div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Methods in Theoretical Physics</h1>
+<p class="subtitle lead">A lecture part of From A Life of Physics (1989)</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">🏆 Tokoh Nobel</div>
+    <div class="quarto-category">⚡ Kuantum</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Paul Adrian Maurice Dirac </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 8, 2019</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<!-- Author:\
+**Paul Adrian Maurice Dirac**
+
+Year: **May 1989**
+
+Book: **From A Life of Physics**
+
+Publisher: **World Scientific Publishing Co Lte Ptd, Singapore**
+
+Pages: **19-30** -->
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is a lecture recorded in the collection <a href="https://www.worldscientific.com/worldscibooks/10.1142/0877#t=aboutBook"><em>From A Life of Physics</em> (1989)</a> edited by Abdus Salam.</p>
+</div>
+</div>
+<p>I shall attempt to give you some idea of how a theoretical physicist works – how he sets about trying to get a better understanding of the laws of nature.</p>
+<p>One can look back over the work that has been done in the past. In doing so one has the underlying hope at the back of one's mind that one may get some hints or learn some lessons that will be of value in dealing with present-day problems. The problems that we had to deal with in the past had fundamentally much in common with the present-day ones, and reviewing the successful methods of the past may give us some help for the present.</p>
+<p>One can distinguish between two main procedures for a theoretical physicist. One of them is to work from the experimental basis. For this, one must keep in close touch with the experimental physicists. One reads about all the results they obtain and tries to fit them into a comprehensive and satisfying scheme.</p>
+<p>The other procedure is to work from the mathematical basis. One examines and criticizes the existing theory. One tries to pin-point the faults in it and then tries to remove them. The difficulty here is to remove the faults without destroying the very great successes of the existing theory.</p>
+<p>There are two general procedures, but of course the distinction between them is not hard-and-fast. There are all grades of procedure between the extremes.</p>
+<p>Which procedure one follows depends largely on the subject of study. For a subject about which very little is known, where one is breaking quite a new ground, one is pretty well forced to follow the procedure based on experiment. In the beginning, for a new subject, one merely collects experimental evidence and classifies it.</p>
+<p>For example, let us recall how our knowledge of the periodic system for the atoms was built up in the last century. To begin with, one si mply collected the experimental facts and arranged them. As the system was built up one gradually acquired confidence in it, until eventually, when the system was nearly complete, one has sufficient confidence to be able to predict that, where there was a gap, a new atom would subsequently be discovered to fill the gap. These predictions all came true.</p>
+<p>In recent times there has been a very similar situation for the new particles of high energy physics. They have been fitted into a system in which one has so much confidence that, where one finds a gap, one can predict that a particle will be discovered to fill it.</p>
+<p>In any region of physics where very little is known, one must keep to the experimental basis if one is not to indulge in wild speculation that is almost certain to be wrong. I do not wish to condemn speculations altogether. It can be entertaining and may be indirectly useful even if it does turn out to be wrong. One should always keep an open mind receptive to new ideas, so one sho uld not completely oppose speculation, but one most take care not to get too involved in it.</p>
+<section id="cosmological-speculation" class="level2">
+<h2 class="anchored" data-anchor-id="cosmological-speculation">Cosmological Speculation</h2>
+<p>One field of work in which there has been too much speculation is cosmology. There are very few hard facts to go on, but theoretical workers have been busy constructing various models for the universe, based on any assumptions that they fancy. These models are probably all wrong. It is usually assumed that the laws of nature has always been the same as they are now. There is no justification for this. The laws may be changing, and in particular quantities which are considered to be constants of nature may be varying with cosmological time. Such variations would completely upset the model makers.</p>
+<p>With increasing knowledge of a subject, when one has a great deal of support to work from, one can go over more and more towards the mathematical procedure. One then has as one's underlying motivation the striving of mathematical beauty. Theoretical physicists accept the need for mathematical beauty as an act of faith. There is no compelling reason for it, but it has proved a very profitable objective in the past. For example, the main reason why the theory of relativity is so universally accepted is its mathematical beauty.</p>
+<p>With the mathematical procedure there are two main methods that one may follow, (i) to remove inconsistencies and (ii) to unite theories that are previously disjoint.</p>
+</section>
+<section id="success-through-method" class="level2">
+<h2 class="anchored" data-anchor-id="success-through-method">Success Through Method</h2>
+<p>There are many examples where the following of method (i) has led to brilliant success. Maxwell's investigation of an inconsistency in the electromagnetic equations of his time led to his introducing the displacement current, which led to the theory of electromagnetic waves. Planck's study of difficulties in the theory of black-body radiation led to his introduction of the quantum. Einstein noticed a difficulty in the theory of an atom in equilibrium in black-body radiation and was led to introduce stimulated emission, which has led to the moder n lasers. But the supreme example is Einstein's discovery of his law of gravitation, which came from the need to reconcile Newtonian gravitation with special relativity.</p>
+<p>In practice, method (ii) has not proved very fruitful. One would think that the gravitational and electromagnetic fields, the two long-range fields known in physics, should be closely connected, but Einstein spent many years trying to unify them, without success. It seems that a direct attempt to unify disjoint theories, where there is no definite inconsistency to work from, is usually too difficult, and if success does ultimately come, it will come in an indirect way.</p>
+<p>Whether one follows the experimental or the mathematical procedure depends largely on the subject of study, but not entirely so. It also depends on the man. This is illustrated by the discovery of quantum mechanics.</p>
+<p>Two men are involved, Heisenberg and Schrödinger. Heisenberg was working from the experimental basis, using the results of spectroscopy, whic h by 1925 had accumulated an enormous amount of data. Much of this was no useful, but some was, for example the relative intensities of the lines of multiplet. It was Heisenberg's genius that he was able to pick out the important things from the great wealth of information and arrange them in a natural scheme. He was thus led to matrices.</p>
+<p>Schrödinger's approach was quite different. He worked from the mathematical basis. He was not well informed about the latest spectroscopic results, like Heisenberg was, but had the idea at the back of his mind that spectral frequencies should be fixed by eigenvalue equations, something like those that fix the frequencies of systems of vibrating springs. He had this idea for a long time, and was eventually able to find the right equation, in an indirect way.</p>
+</section>
+<section id="impact-of-relativity" class="level2">
+<h2 class="anchored" data-anchor-id="impact-of-relativity">Impact of Relativity</h2>
+<p>In order to understand the atmosphere in which theoretical physicist were then working, one must appreciate the enormous influence of relativity. Relativity had burst into the world of scientific thought with a tremendous impact, at the end of a long and difficult war. Everyone wanted to get away from the strain of war and eagerly seized on the new mode of thought and new philosophy. The excitement was quite unprecedented in the history of science.</p>
+<p>Against this background of excitement, physicist were trying to understand the mystery of the stability of atoms. Schrödinger, like everyone else, was caught up by the new ideas, and so he tried to set up a quantum mechanics within the framework of relativity. Everything had to be expressed in terms of vectors and tensors in space-time. This was unfortunate, as the time was not ripe for a relativistic quantum mechanics, and Schrödinger's discovery was delayed in consequence.</p>
+<p>Schrödinger was working form a beautiful idea of de Broglie connecting waves and particles in a relativistic way. De Broglie's idea applied only to free particles, and Schrödinger tried to generalize it to an electron bound in an atom. Eve ntually he succeeded, keeping within the relativistic framework. But when he applied his theory to the hydrogen atom, he found it did not agree with experiment. The discrepancy was due to his not having taken the spin of the electron into account. It was not then known. Schrödinger subsequently noticed that his theory was correct in non-relativistic approximation, and he had to reconcile himself to publishing this degraded version of his work, which he did after some months' delay.</p>
+<p>The moral of this story is that one should not try to accomplish too much in one stage. One should separate the difficulties in physics one from another as far as possible, and then dispose of them one by one.</p>
+<p>Heisenberg and Schrödinger gave us two forms of quantum mechanics, which were soon found to be equivalent. They provided two pictures, with a certain mathematical transformation connecting them.</p>
+<p>I joined in the early work on quantum mechanics, following the procedure based on mathematics, with a very ab stract point of view. I took the non-commutative algebra which was suggested by Heisenberg's matrices as the main feature for a new dynamics, and examined how classical dynamics could be adapted to fit in with it. Other people were working on the subject from various points of view, and we all obtained equivalent results, at about the same time.</p>
+</section>
+<section id="fruitful-relaxation" class="level2">
+<h2 class="anchored" data-anchor-id="fruitful-relaxation">Fruitful Relaxation</h2>
+<p>I would like to mention that I found the best ideas usually came, not when one was actively striving for them, but when one was in a more relaxed state. Professor Bloch has told us how he got ideas on railway trains and often worked them out before the end of the journey. It was not like that with me. I used to take long solitary walks on Sundays, during which I tended to review the current situation in a leisurely way. Such occasions often proved fruitful, even though, (or perhaps because) the primary purpose of the walk was relaxation and not research.</p>
+<p>It was on one of these occasions that the possibility occurred to m e of a connection between commutators and Poisson brackets, I did not know very well what a Poisson bracket was, so was very uncertain of the connection. On getting home, I found I did not have any book explaining Poisson brackets, so I had to wait impatiently for the libraries to open the following morning before I could verify the idea.</p>
+<p>With the development of quantum mechanics one had a new situation in theoretical physics. The basic equations, Heisenberg's equation of motion, the commutation relations and Schrödinger's wave equation were discovered without their physical interpretation being known. With non-commutation of the dynamical variables, the direct interpretation that one was used to in classical mechanics was not possible, and it became a problem to find the precise meaning and mode of application of the new equations.</p>
+<p>This problem was not solved by a direct attack. People first studied examples, such as the non-relativistic hydrogen atom and Compton scattering, and found sp ecial methods that worked for these examples. One gradually generalized, and after a few years the complete understanding of the theory was evolved as we know it today, with Heisenberg's principle of uncertainty and the general statistical interpretation of the wave function.</p>
+<p>The early rapid progress of quantum mechanics was made in a non-relativistic setting, but of course people were not happy with this situation. A relativistic theory for a single electron was set up, namely Schrödinger's original equation, which was rediscovered by Klein and Gordon and is known by their name, but its interpretation was not consistent with the general statistical interpretation of quantum mechanics.</p>
+</section>
+<section id="from-tensors-to-spinors" class="level2">
+<h2 class="anchored" data-anchor-id="from-tensors-to-spinors">From Tensors to Spinors</h2>
+<p>As relativity was then understood, all relativistic theories had to be expressible in tensor form. On this basis one could not do better than the Klein-Gordon theory. Most physicists were content with the Klein-Gordon theory as the best possible relativistic quantum theory for an electron, but I was always dissatisfied with the discrepancy between it and general principles, and continually worried over it till I found the solution.</p>
+<p>Tensors are inadequate and one has to get away from them, introducing two-valued quantities, now called spinors. Those people who were too familiar with tensors were not fitted to get away from them and think up something more general, and I was able to do so only because I was more attached to the general principles of quantum mechanics than to tensors. Eddington was very surprised when he saw the possibility of departing from tensors. One should always guard against getting too attached to one particular line of thought.</p>
+<p>The introduction of spinors provided a relativistic theory in agreement with the general principles of quantum mechanics, and also accounted for the spin of electron, although this was not the original intention of the work. But then a new problem appeared, that of negative energies. The theory gives symmetries be tween positive and negative energies, while only positive energies occur in nature.</p>
+<p>As frequently happens with the mathematical procedure in research, the solving of one difficulty leads to another. You may think that no real progress is then made, but this is not so, because the second difficulty is more remote than the first. It may be that the second difficulty was really there all the time, and was only brought into prominence by the removal of the first.</p>
+<p>This was the case with the negative energy difficulty. All relativistic theories give symmetry between positive and negative energies, but previously this difficulty had been overshadowed by more crude imperfections in the theory.</p>
+<p>The difficulty is removed by the assumption that in the vacuum, all the negative energy states are filled. One is then led to a theory of positrons together with electrons. Our knowledge is thereby advanced one stage, but again a new difficulty appears, this time connected with the interaction between an e lectron and the electromagnetic field.</p>
+<p>When one writes down the equations that one believes should describe this interaction accurately and tries to solve them, one gets divergent integrals for quantities that ought to be finite. Again, this difficulty was really present all the time, lying dormant in the theory, and only now becoming the dominant one.</p>
+</section>
+<section id="on-the-wrong-track" class="level2">
+<h2 class="anchored" data-anchor-id="on-the-wrong-track">On The Wrong Track?</h2>
+<p>If one deals classically with point electrons interacting with the electromagnetic field, one find difficulties connected with the singularities in the field. People have been aware of these difficulties from the time of Lorentz, who first worked out the equations of motion for an electron. In the early days of the quantum mechanics of Heisenberg and Schrödinger, people thought these difficulties would be swept away by the new mechanics. It now has become clear that these hopes would not be fulfilled. The difficulties reappear in the divergencies of quantum electrodynamics, the quantum theory of the interaction o f electrons and the electromagnetic field. They are modified somewhat by the infinities associated with the sea of negative-energy electrons, but they stand out as the dominant problem.</p>
+<p>The difficulty of divergencies proved to be a very bad one. No progress was made for twenty years. Then a development came, initiated by Lamb's discovery and explanation of the Lamb shift, which fundamentally changed the character of theoretical physics. It involved setting up rules for disregarding the infinities, rules which are precise, so as to leave well-defined residues that can be compared with experiment. But still one is using working rules and not regular mathematics.</p>
+<p>Most theoretical physicists nowadays appear to be satisfied with this situation, but I am not. I believe that theoretical physics has gone on the wrong track with such developments and one should not be complacent about it. There is some similarity between this situation and the one in 1927, when most physicists were satisfied with the Klein-Gordon equation and did not let themselves be bothered by the negative probabilities that it entailed.</p>
+<p>We must realize that there is something radically wrong when we have to discard infinities from our equations, and we must hang on to the basic ideas of logic at all costs. Worrying over this point may lead to an important advance. Quantum electrodynamics is the domain of physics that we know most about, and presumably it will have to be put in order before we can hope to make any fundamental progress with the other field theories, although these will continue to develop on the experimental basis.</p>
+<p>Let us see what can be done with putting the present quantum electrodynamics on a logical footing. We must keep to the standard practice of neglecting only quantities which one can believe to be small, even though the grounds for this believe may be rather shaky.</p>
+<p>In order to handle infinities, we must refer to a process of cut-off. We must do this in mathematics whenever we have a serie s or an integral which is not absolutely convergent. When we have introduced a cut-off, we may proceed to make it more and more remote and go to a limit, which then depends on the method of cut-off. Alternatively, we may keep the cut-off finite. In the latter case, we must find quantities that are insensitive to the cut-off.</p>
+<p>The divergencies of quantum electrodynamics come from the high-energy terms in the energy interaction between the particles and the field. The cut-off thus involves introducing an energy, <em>g</em> say, beyond which the interaction energy terms are omitted. It is found that we cannot make <em>g</em> tend to infinity without destroying the possibility of solving the equations logically. We have to keep a finite cut-off.</p>
+<p>The relativistic invariance of the theory is then destroyed. This is a pity, but it is a lesser evil than a departure from logic would be. It results in a theory which cannot be valid for high-energy processes, processes involving energies comparable with <em>g</em>, but we may still hope that it will be a good approximation for low-energy processes.</p>
+<p>On physical grounds we should expect to have to take <em>g</em> to be of order of a few hundred MeV, as this is the region where quantum electrodynamics ceases to be a self-contained subject and the other particles of physics begin to play a role. This value of <em>g</em> is satisfactory for the theory.</p>
+<p>Working with a finite cut-off, we have to search for quantities which are not sensitive to the precise mode and value of the cut-off. We then find that the Schrödinger picture is not a suitable one. Solutions to the Schrödinger equation, even the one describing the vacuum state, are very sensitive to the cut-off. But there are some calculations that one can carry out in the Heisenberg picture that lead to results insensitive to the cut-off.</p>
+<p>One can deduce in this way the Lamb shift and the anomalous magnetic moment of the electron. The results are the same as those obtained some twenty years ago by the method of working rul es with discard of infinities. But now the result can be obtained by a logical process, following standard mathematics in which only small quantities are neglected.</p>
+<p>As we cannot now use the Schrödinger picture, we cannot use the regular physical interpretation of quantum mechanics involving the square modulus of the wave function. We have to feel our way towards a new physical interpretation which can be used with the Heisenberg picture. The situation for quantum electrodynamics is rather like that for elementary quantum mechanics in the early days when we had the equations of motions but no general physical interpretation.</p>
+<p>A feature of the calculations leading to the Lamb shift and the anomalous magnetic moment should be noted. One finds that the parameters <em>m</em> and <em>e</em> denoting the mass and charge of the electron in the starting equations are not the same as the observed values for these quantities. If we keep the symbols <em>m</em> and <em>e</em> to denote the observed values, we have to replace the <em>m</em> and <em>e</em> in the starting equations by <em>m+5m</em> and <em>e+5e</em>, where <em>5m</em> and <em>5e</em> are small corrections which can be calculated. This procedure is known as renormalization.</p>
+</section>
+<section id="difficulty-in-quantum-electrodynamic" class="level2">
+<h2 class="anchored" data-anchor-id="difficulty-in-quantum-electrodynamic">Difficulty In Quantum Electrodynamic</h2>
+<p>Such change in the starting equations is permitted. We can take any starting equations we like, and then develop the theory by making deductions from them. You might think the work of the theoretical physics is easy if he can make any starting assumptions he likes, but the difficulty arises because he needs the same starting assumptions for all the applications of the theory. This very strongly restricts his freedom. Renormalization is permitted because it is a simple change which can be applied universally whenever one has charged particles interacting with the electromagnetic field.</p>
+<p>There is a serious difficulty still remaining in quantum electrodynamics, connected with the self-energy of the photon. It will have to be dealt with by some further change in the starting equation s, of a more complicated kind of renormalization.</p>
+<p>The ultimate goal is to obtain suitable starting equations from which the whole atomic physics can be deduced. We are still far from it. One way of proceeding towards it is first to perfect the theory of low-energy physics, which is quantum electrodynamics, and then try to extend it to higher and higher energies. However, the present quantum electrodynamics does not conform to the high standard of mathematical beauty that one would expect for a fundamental physical theory, and leads one to suspect that a drastic alteration of basic ideas is still needed.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

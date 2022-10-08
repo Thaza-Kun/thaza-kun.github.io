@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>🌓 QS ☀</title>
+<title>🌓 QS ☀ – blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,41 +71,13 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-title','listing-subtitle','listing-categories','listing-date','listing-reading-time','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 3,
+      page: 18,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-blog'] = new List('listing-blog', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-terjemahan .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-categories','listing-date','listing-reading-time','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-terjemahan'] = new List('listing-terjemahan', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -132,13 +104,7 @@ gtag('config', 'G-N1Y1DW6RP4', { 'anonymize_ip': true});
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="🌓 QS ☀" href="index.xml"><meta property="og:title" content="">
-<meta property="og:description" content="Penulis merupakan graduan Fizik yang sedang meneroka dunia digital. Bagi yang meminati:">
-<meta property="og:site-name" content="🌓 QS ☀">
-<meta name="twitter:title" content="">
-<meta name="twitter:description" content="Penulis merupakan graduan Fizik yang sedang meneroka dunia digital. Bagi yang meminati:">
-<meta name="twitter:card" content="summary">
-</head>
+<link rel="alternate" type="application/rss+xml" title="🌓 QS ☀" href="blog.xml"></head>
 
 <body class="nav-fixed">
 
@@ -160,7 +126,7 @@ gtag('config', 'G-N1Y1DW6RP4', { 'anonymize_ip': true});
     <a class="nav-link" href="./about.html">About</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html">Blog</a>
+    <a class="nav-link active" href="./blog.html" aria-current="page">Blog</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./terj.html">Terjemahan</a>
@@ -198,40 +164,18 @@ gtag('config', 'G-N1Y1DW6RP4', { 'anonymize_ip': true});
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#qamar-suria" id="toc-qamar-suria" class="nav-link active" data-scroll-target="#qamar-suria">🌓 Qamar Suria ☀</a>
-  <ul class="collapse">
-  <li><a href="#blog" id="toc-blog" class="nav-link" data-scroll-target="#blog">Blog</a></li>
-  <li><a href="#terjemahan" id="toc-terjemahan" class="nav-link" data-scroll-target="#terjemahan">Terjemahan</a></li>
-  </ul></li>
-  </ul>
-</nav>
+        
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="⚛ PERMATApintar">⚛ PERMATApintar</div><div class="category" data-category="⚡ Kuantum">⚡ Kuantum</div><div class="category" data-category="✨ Astronomi">✨ Astronomi</div><div class="category" data-category="🎓 Pendidikan">🎓 Pendidikan</div><div class="category" data-category="🏆 Tokoh Nobel">🏆 Tokoh Nobel</div><div class="category" data-category="🐍 Python">🐍 Python</div><div class="category" data-category="📚 Akademia">📚 Akademia</div><div class="category" data-category="📢 Berita">📢 Berita</div><div class="category" data-category="📰 Acara">📰 Acara</div><div class="category" data-category="📺 Teroka Karya">📺 Teroka Karya</div><div class="category" data-category="🧮 Matematik">🧮 Matematik</div><div class="category" data-category="🪐 Sains">🪐 Sains</div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
-<section id="qamar-suria" class="level1">
-<h1>🌓 Qamar Suria ☀</h1>
-<!-- :::{.callout-note} -->
-<p>Penulis merupakan graduan Fizik yang sedang meneroka dunia digital. Bagi yang meminati:</p>
-<ul>
-<li>🪐 Sains</li>
-<li>“🧮 Matematik”</li>
-<li>📈 Data</li>
-<li>💻 Pengaturcaraan</li>
-</ul>
-<p>bolehlah ikuti kembara bersamaku. <!-- ::: --></p>
-<div id="TOC">
 
-</div>
-<section id="blog" class="level2">
-<h2 class="anchored" data-anchor-id="blog">Blog</h2>
-<div id="listing-blog" class="quarto-listing quarto-listing-container-grid">
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-blog">
 <div class="list grid quarto-listing-cols-3">
 <div class="g-col-1" data-index="0" data-categories="🎓 Pendidikan" data-listing-date-sort="1663027200000" data-listing-file-modified-sort="1665246467910" data-listing-reading-time-sort="3.73">
 <a href="./blog/2022/scientific-progress-requires-understanding/index.html" class="quarto-grid-link">
@@ -330,7 +274,7 @@ Feb 10, 2022
 <a href="./blog/2020/kewujudan-kehidupan-di-planet-zuhrah-ditemui/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img data-src="./blog/2020/kewujudan-kehidupan-di-planet-zuhrah-ditemui/biopetanda-zuhrah.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog/2020/kewujudan-kehidupan-di-planet-zuhrah-ditemui/biopetanda-zuhrah.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -363,7 +307,7 @@ Sep 20, 2020
 <a href="./blog/2020/sir-martin-ryle-bapa-astronomi-radio/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img data-src="./blog/2020/sir-martin-ryle-bapa-astronomi-radio/vla-panorama.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog/2020/sir-martin-ryle-bapa-astronomi-radio/vla-panorama.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -396,7 +340,7 @@ Jul 22, 2020
 <a href="./blog/2019/teori-umwelt-dalam-siri-flip-flappers/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img data-src="./blog/2019/teori-umwelt-dalam-siri-flip-flappers/flip-flappers-gurun.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog/2019/teori-umwelt-dalam-siri-flip-flappers/flip-flappers-gurun.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -426,7 +370,7 @@ Sep 23, 2019
 <a href="./blog/2019/jalur-gemilang-kaedah-melukis-bintang-14-bucu/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img data-src="./blog/2019/jalur-gemilang-kaedah-melukis-bintang-14-bucu/jalur-gemilang-geometri.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog/2019/jalur-gemilang-kaedah-melukis-bintang-14-bucu/jalur-gemilang-geometri.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -456,7 +400,7 @@ Aug 23, 2019
 <a href="./blog/2019/kekalkan-nama-permata/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img data-src="./blog/2019/kekalkan-nama-permata/alumni-permatapintar-2017.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog/2019/kekalkan-nama-permata/alumni-permatapintar-2017.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -489,7 +433,7 @@ Apr 16, 2019
 <a href="./blog/2019/choe-mal-li-hangeul-ialah-tulisan-orang-tak-bertamadun/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img data-src="./blog/2019/choe-mal-li-hangeul-ialah-tulisan-orang-tak-bertamadun/sincheon-malam_CC-BY-SA_David.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog/2019/choe-mal-li-hangeul-ialah-tulisan-orang-tak-bertamadun/sincheon-malam_CC-BY-SA_David.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -519,7 +463,7 @@ Mar 30, 2019
 <a href="./blog/2018/takrif-baru-satu-kilogram/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img data-src="./blog/2018/takrif-baru-satu-kilogram/sang-kilo.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog/2018/takrif-baru-satu-kilogram/sang-kilo.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -549,7 +493,7 @@ Nov 16, 2018
 <a href="./blog/2017/dunia-pascasiswazah-keilmuan-keperluan-atau-keterpaksaan/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img data-src="./blog/2017/dunia-pascasiswazah-keilmuan-keperluan-atau-keterpaksaan/artikel-forum-dunia-pascasiswazah-2017.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog/2017/dunia-pascasiswazah-keilmuan-keperluan-atau-keterpaksaan/artikel-forum-dunia-pascasiswazah-2017.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -582,7 +526,7 @@ Nov 24, 2017
 <a href="./blog/2017/masalah-dengan-steins-gate/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img data-src="./blog/2017/masalah-dengan-steins-gate/artikel-steins-gate-2017.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog/2017/masalah-dengan-steins-gate/artikel-steins-gate-2017.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -612,7 +556,7 @@ Sep 29, 2017
 <a href="./blog/2017/wacana-sains-dan-teknologi-malayonesia/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img data-src="./blog/2017/wacana-sains-dan-teknologi-malayonesia/artikel-wacana-st-malayonesia-2017.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog/2017/wacana-sains-dan-teknologi-malayonesia/artikel-wacana-st-malayonesia-2017.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -642,7 +586,7 @@ Sep 22, 2017
 <a href="./blog/2017/gerhana-einstein-1919/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img data-src="./blog/2017/gerhana-einstein-1919/artikel-gerhana-2017.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog/2017/gerhana-einstein-1919/artikel-gerhana-2017.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -672,7 +616,7 @@ Aug 18, 2017
 <a href="./blog/2017/kenali-anak-pintar-bersama-rosmah/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img data-src="./blog/2017/kenali-anak-pintar-bersama-rosmah/kenali-anak-pintar-bersama-rosmah.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog/2017/kenali-anak-pintar-bersama-rosmah/kenali-anak-pintar-bersama-rosmah.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -705,7 +649,7 @@ Aug 7, 2017
 <a href="./blog/2017/ifsc-2017/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img data-src="./blog/2017/ifsc-2017/ifsc-2017.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog/2017/ifsc-2017/ifsc-2017.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -741,7 +685,7 @@ Jul 31, 2017
 <a href="./blog/2017/saluran-saintifik-youtube-2017/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img data-src="./blog/2017/saluran-saintifik-youtube-2017/Dianna-Cowern-sifat-ingin-tahu.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog/2017/saluran-saintifik-youtube-2017/Dianna-Cowern-sifat-ingin-tahu.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -771,7 +715,7 @@ Jul 28, 2017
 <a href="./blog/2017/railgun-agak-saintifik/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img data-src="./blog/2017/railgun-agak-saintifik/artikel-railgun-2017.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog/2017/railgun-agak-saintifik/artikel-railgun-2017.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -1020,59 +964,6 @@ No matching items
 <nav id="blog-pagination" class="listing-pagination" aria-label="Page Navigation">
   <ul class="pagination"></ul>
 </nav>
-</div>
-</section>
-<section id="terjemahan" class="level2">
-<h2 class="anchored" data-anchor-id="terjemahan">Terjemahan</h2>
-<div id="terj">
-
-</div>
-
-
-
-</section>
-</section>
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-terjemahan">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="🏆 Tokoh Nobel,⚡ Kuantum" data-listing-date-sort="1575763200000" data-listing-file-modified-sort="1665246467910" data-listing-reading-time-sort="15.51">
-<div class="thumbnail">
-<p><a href="./terj/kaedah-kerja-fizik-teori/index.html"> <img src="./terj/kaedah-kerja-fizik-teori/PAM-Dirac.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./terj/kaedah-kerja-fizik-teori/index.html">
-<h3 class="no-anchor listing-title">
-Kaedah Kerja Dalam Fizik Teori
-</h3>
-<div class="listing-subtitle">
-<em>Methods In Theoretical Physics</em>
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('🏆 Tokoh Nobel'); return false;">
-🏆 Tokoh Nobel
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('⚡ Kuantum'); return false;">
-⚡ Kuantum
-</div>
-</div>
-<a href="./terj/kaedah-kerja-fizik-teori/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="./terj/kaedah-kerja-fizik-teori/index.html">
-<div class="listing-date">
-Dec 8, 2019
-</div>
-<div class="listing-reading-time">
-15 min
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
