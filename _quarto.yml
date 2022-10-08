@@ -36,4 +36,4 @@ format:
       exm-prefix: Contoh
       exm-title: Contoh
     include-in-header:
-      - text: '<script async src="https://github.com/electerious/ackee-tracker/blob/master/dist/ackee-tracker.min.js" data-ackee-server="https://ackee-production-758e.up.railway.app" data-ackee-domain-id="hd11f820-68a1-11e6-8047-79c0c2d9bce0"></script>'
+      - text: '<script async src="https://ackee-production-758e.up.railway.app/tracker.js" data-ackee-server="https://ackee-production-758e.up.railway.app" data-ackee-domain-id="hd11f820-68a1-11e6-8047-79c0c2d9bce0"></script>'
