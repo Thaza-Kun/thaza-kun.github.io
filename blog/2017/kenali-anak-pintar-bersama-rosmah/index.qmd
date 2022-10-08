@@ -3,7 +3,7 @@ draft: false
 title: 'Program PERMATA: "Pelajar Pintar Kini Berpeluang Mengembangkan Bakat Tanpa Perlu ke Luar Negara".'
 subtitle: Pusat PERMATA ditubuhkan kerana tidak mahu negara kerugian bakat anak-anak pintar dan berbakat
 date: "2017-08-07"
-categories: ["PERMATApintar", "laporan acara"]
+categories: ["⚛ PERMATApintar", "📰 Acara"]
 image: "kenali-anak-pintar-bersama-rosmah.jpg"
 authors: ["Murthadza Aznam"]
 canonical:

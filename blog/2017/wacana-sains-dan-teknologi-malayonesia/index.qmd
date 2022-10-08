@@ -3,7 +3,7 @@ draft: false
 title: "Wacana Sains &amp; Teknologi Malayonesia"
 subtitle: Anjuran Dr Alinor Mohd Kadir dan rakan-rakannya
 date: "2017-09-22"
-categories: ["laporan acara"]
+categories: ["📰 Acara"]
 image: "artikel-wacana-st-malayonesia-2017.jpg"
 authors: ["Murthadza Aznam"]
 canonical:

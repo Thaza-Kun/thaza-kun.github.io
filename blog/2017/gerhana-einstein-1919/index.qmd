@@ -3,7 +3,7 @@ draft: false
 title: "Gerhana Matahari 1919: Mencerap Buah Fikiran Einstein"
 subtitle: Gerhana matahari adalah calon yang sesuai untuk mencerap kanta graviti
 date: "2017-08-18"
-categories: ["sejarah sains", "astronomi"]
+categories: ["✨ Astronomi"]
 image: "artikel-gerhana-2017.jpg"
 authors: ["Murthadza Aznam"]
 canonical:

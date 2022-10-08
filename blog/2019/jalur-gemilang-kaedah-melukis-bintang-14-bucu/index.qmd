@@ -3,7 +3,7 @@ draft: false
 title: "Jalur Gemilang: Kaedah Melukis Bintang 14 Bucu"
 subtitle: Menggunakan pembaris dan jangka lukis untuk melukis bintang jalur gemilang
 date: "2019-08-23"
-categories: ["matematik"]
+categories: ["🧮 Matematik"]
 image: "jalur-gemilang-geometri.jpg"
 authors: ["Murthadza Aznam"]
 bibliography: references.bib

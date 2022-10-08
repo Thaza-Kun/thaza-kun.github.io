@@ -5,7 +5,7 @@ subtitle: Makise Kurisu tidak patut dijemput berceramah pasal mesin masa
 summary: >-
   Makise Kurisu dikenali kerana makalahnya dalam bidang memori manusia tetapi dijemput berceramah tentang mesin masa
 date: "2017-09-29"
-categories: ["teroka karya", "renungan penulis"]
+categories: ["📺 Teroka Karya"]
 image: "artikel-steins-gate-2017.jpg"
 authors: ["Murthadza Aznam"]
 canonical:

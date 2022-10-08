@@ -3,7 +3,7 @@ draft: false
 title: "Bukti Kewujudan Kehidupan Di Planet Zuhrah Ditemui?"
 subtitle: "Astronomiawan melaporkan kewujudan calon biopetanda di planet Zuhrah."
 date: "2020-09-20"
-categories: ["berita sains", "astronomi"]
+categories: ["📢 Berita", "✨ Astronomi"]
 image: "biopetanda-zuhrah.jpg"
 authors: ["Murthadza Aznam"]
 bibliography: references.bib

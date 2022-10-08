@@ -3,7 +3,7 @@ draft: false
 title: "Teori Umwelt dalam Siri Flip Flappers"
 subtitle: Aku belajar satu teori menarik daripada cerita ini
 date: "2019-09-23"
-categories: ["teroka karya"]
+categories: ["📺 Teroka Karya"]
 image: "flip-flappers-gurun.jpg"
 authors: ["Murthadza Aznam"]
 bibliography: references.bib

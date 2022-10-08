@@ -3,7 +3,7 @@ draft: false
 title: "5 Saluran Saintifik di YouTube yang Menarik"
 subtitle: Kita boleh manfaatkan YouTube sebagai platform pendidikan
 date: "2017-07-28"
-categories: ["komunikasi sains"]
+categories: ["🪐 Sains"]
 image: "Dianna-Cowern-sifat-ingin-tahu.jpg"
 authors: ["Murthadza Aznam"]
 canonical:

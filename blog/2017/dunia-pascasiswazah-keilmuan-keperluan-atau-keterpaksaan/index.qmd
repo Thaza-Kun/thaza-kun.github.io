@@ -3,7 +3,7 @@ draft: false
 title: '"Dunia Pascasiswazah: Keilmuan, Keperluan atau Keterpaksaan?"'
 subtitle: Forum khas yang dianjurkan oleh MajalahSains dan Pusat Siswazah UKM
 date: "2017-11-24"
-categories: ["akademia", "laporan acara"]
+categories: ["📚 Akademia", "📰 Acara"]
 image: "artikel-forum-dunia-pascasiswazah-2017.jpg"
 authors: ["Murthadza Aznam"]
 canonical:
