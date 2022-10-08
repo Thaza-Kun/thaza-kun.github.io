@@ -16,6 +16,21 @@ listing:
       - date
       - reading-time
       - image
+  - id: terj 
+    contents: terj
+    sort: "date desc"
+    type: default
+    categories: unnumbered
+    sort-ui: false
+    filter-ui: false
+    feed: true
+    fields:
+      - title
+      - subtitle
+      - categories
+      - date
+      - reading-time
+      - image
 page-layout: full
 title-block-banner: true
 ---
@@ -29,4 +44,9 @@ Penulis merupakakan graduan Fizik yang sedang meneroka dunia digital. Bagi yang 
 ## Blog
 
 :::{#blog}
+:::
+
+## Terjemahan
+
+:::{#terj}
 :::
