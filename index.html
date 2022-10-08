@@ -89,6 +89,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-terj .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-subtitle','listing-categories','listing-date','listing-reading-time','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-terj'] = new List('listing-terj', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-N1Y1DW6RP4"></script>
 
@@ -170,10 +198,11 @@ gtag('config', 'G-N1Y1DW6RP4', { 'anonymize_ip': true});
   <li><a href="#qamar-suria" id="toc-qamar-suria" class="nav-link active" data-scroll-target="#qamar-suria">🌓 Qamar Suria ☀</a>
   <ul class="collapse">
   <li><a href="#blog" id="toc-blog" class="nav-link" data-scroll-target="#blog">Blog</a></li>
+  <li><a href="#terjemahan" id="toc-terjemahan" class="nav-link" data-scroll-target="#terjemahan">Terjemahan</a></li>
   </ul></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="PERMATApintar">PERMATApintar</div><div class="category" data-category="Renungan Penulis">Renungan Penulis</div><div class="category" data-category="akademia">akademia</div><div class="category" data-category="astronomi">astronomi</div><div class="category" data-category="berita sains">berita sains</div><div class="category" data-category="isu semasa">isu semasa</div><div class="category" data-category="komunikasi sains">komunikasi sains</div><div class="category" data-category="konsep sains">konsep sains</div><div class="category" data-category="laporan acara">laporan acara</div><div class="category" data-category="matematik">matematik</div><div class="category" data-category="pengaturcaraan Python">pengaturcaraan Python</div><div class="category" data-category="renungan penulis">renungan penulis</div><div class="category" data-category="sejarah sains">sejarah sains</div><div class="category" data-category="teroka karya">teroka karya</div><div class="category" data-category="tokoh">tokoh</div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="PERMATApintar">PERMATApintar</div><div class="category" data-category="Renungan Penulis">Renungan Penulis</div><div class="category" data-category="akademia">akademia</div><div class="category" data-category="astronomi">astronomi</div><div class="category" data-category="berita sains">berita sains</div><div class="category" data-category="isu semasa">isu semasa</div><div class="category" data-category="komunikasi sains">komunikasi sains</div><div class="category" data-category="konsep sains">konsep sains</div><div class="category" data-category="laporan acara">laporan acara</div><div class="category" data-category="matematik">matematik</div><div class="category" data-category="pengaturcaraan Python">pengaturcaraan Python</div><div class="category" data-category="renungan penulis">renungan penulis</div><div class="category" data-category="sejarah sains">sejarah sains</div><div class="category" data-category="syarahan">syarahan</div><div class="category" data-category="teroka karya">teroka karya</div><div class="category" data-category="tokoh">tokoh</div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -187,7 +216,7 @@ gtag('config', 'G-N1Y1DW6RP4', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="blog">Blog</h2>
 <div id="listing-blog" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Renungan Penulis" data-listing-date-sort="1663027200000" data-listing-file-modified-sort="1665233366486" data-listing-reading-time-sort="3.755">
+<div class="g-col-1" data-index="0" data-categories="Renungan Penulis" data-listing-date-sort="1663027200000" data-listing-file-modified-sort="1665234696781" data-listing-reading-time-sort="3.755">
 <a href="./blog/2022/scientific-progress-requires-understanding/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -217,7 +246,7 @@ Sep 13, 2022
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="pengaturcaraan Python" data-listing-date-sort="1645747200000" data-listing-file-modified-sort="1665233366490" data-listing-reading-time-sort="8.51">
+<div class="g-col-1" data-index="1" data-categories="pengaturcaraan Python" data-listing-date-sort="1645747200000" data-listing-file-modified-sort="1665234696781" data-listing-reading-time-sort="8.51">
 <a href="./blog/2022/terjemahan-protein-dari-DNA-guna-Python/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -247,7 +276,7 @@ Feb 25, 2022
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="akademia,renungan penulis" data-listing-date-sort="1644451200000" data-listing-file-modified-sort="1665233366486" data-listing-reading-time-sort="3.42">
+<div class="g-col-1" data-index="2" data-categories="akademia,renungan penulis" data-listing-date-sort="1644451200000" data-listing-file-modified-sort="1665234696781" data-listing-reading-time-sort="3.42">
 <a href="./blog/2021/refleksi-pembentangan-tesis-4-minit/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -280,7 +309,7 @@ Feb 10, 2022
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="berita sains,astronomi" data-listing-date-sort="1600560000000" data-listing-file-modified-sort="1665233366486" data-listing-reading-time-sort="3.445">
+<div class="g-col-1" data-index="3" data-categories="berita sains,astronomi" data-listing-date-sort="1600560000000" data-listing-file-modified-sort="1665234696781" data-listing-reading-time-sort="3.445">
 <a href="./blog/2020/kewujudan-kehidupan-di-planet-zuhrah-ditemui/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -313,7 +342,7 @@ Sep 20, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="astronomi,tokoh,sejarah sains" data-listing-date-sort="1595376000000" data-listing-file-modified-sort="1665233366486" data-listing-reading-time-sort="6.255">
+<div class="g-col-1" data-index="4" data-categories="astronomi,tokoh,sejarah sains" data-listing-date-sort="1595376000000" data-listing-file-modified-sort="1665234696781" data-listing-reading-time-sort="6.255">
 <a href="./blog/2020/sir-martin-ryle-bapa-astronomi-radio/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -349,7 +378,7 @@ Jul 22, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="teroka karya" data-listing-date-sort="1569196800000" data-listing-file-modified-sort="1665233366486" data-listing-reading-time-sort="3.27">
+<div class="g-col-1" data-index="5" data-categories="teroka karya" data-listing-date-sort="1569196800000" data-listing-file-modified-sort="1665234696777" data-listing-reading-time-sort="3.27">
 <a href="./blog/2019/teori-umwelt-dalam-siri-flip-flappers/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -379,7 +408,7 @@ Sep 23, 2019
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="matematik" data-listing-date-sort="1566518400000" data-listing-file-modified-sort="1665233366482" data-listing-reading-time-sort="4.92">
+<div class="g-col-1" data-index="6" data-categories="matematik" data-listing-date-sort="1566518400000" data-listing-file-modified-sort="1665234696777" data-listing-reading-time-sort="4.92">
 <a href="./blog/2019/jalur-gemilang-kaedah-melukis-bintang-14-bucu/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -409,7 +438,7 @@ Aug 23, 2019
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="PERMATApintar,isu semasa" data-listing-date-sort="1555372800000" data-listing-file-modified-sort="1665233366486" data-listing-reading-time-sort="5.585">
+<div class="g-col-1" data-index="7" data-categories="PERMATApintar,isu semasa" data-listing-date-sort="1555372800000" data-listing-file-modified-sort="1665234696777" data-listing-reading-time-sort="5.585">
 <a href="./blog/2019/kekalkan-nama-permata/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -442,7 +471,7 @@ Apr 16, 2019
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="isu semasa" data-listing-date-sort="1553904000000" data-listing-file-modified-sort="1665233366482" data-listing-reading-time-sort="5.01">
+<div class="g-col-1" data-index="8" data-categories="isu semasa" data-listing-date-sort="1553904000000" data-listing-file-modified-sort="1665234696777" data-listing-reading-time-sort="5.01">
 <a href="./blog/2019/choe-mal-li-hangeul-ialah-tulisan-orang-tak-bertamadun/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -472,7 +501,7 @@ Mar 30, 2019
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="berita sains" data-listing-date-sort="1542326400000" data-listing-file-modified-sort="1665233366482" data-listing-reading-time-sort="3.135">
+<div class="g-col-1" data-index="9" data-categories="berita sains" data-listing-date-sort="1542326400000" data-listing-file-modified-sort="1665234696777" data-listing-reading-time-sort="3.135">
 <a href="./blog/2018/takrif-baru-satu-kilogram/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -502,7 +531,7 @@ Nov 16, 2018
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="akademia,laporan acara" data-listing-date-sort="1511481600000" data-listing-file-modified-sort="1665233366446" data-listing-reading-time-sort="2.14">
+<div class="g-col-1" data-index="10" data-categories="akademia,laporan acara" data-listing-date-sort="1511481600000" data-listing-file-modified-sort="1665234696733" data-listing-reading-time-sort="2.14">
 <a href="./blog/2017/dunia-pascasiswazah-keilmuan-keperluan-atau-keterpaksaan/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -535,7 +564,7 @@ Nov 24, 2017
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="teroka karya,renungan penulis" data-listing-date-sort="1506643200000" data-listing-file-modified-sort="1665233366458" data-listing-reading-time-sort="1.85">
+<div class="g-col-1" data-index="11" data-categories="teroka karya,renungan penulis" data-listing-date-sort="1506643200000" data-listing-file-modified-sort="1665234696749" data-listing-reading-time-sort="1.85">
 <a href="./blog/2017/masalah-dengan-steins-gate/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -568,7 +597,7 @@ Sep 29, 2017
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="12" data-categories="laporan acara" data-listing-date-sort="1506038400000" data-listing-file-modified-sort="1665233366482" data-listing-reading-time-sort="1.57">
+<div class="g-col-1" data-index="12" data-categories="laporan acara" data-listing-date-sort="1506038400000" data-listing-file-modified-sort="1665234696777" data-listing-reading-time-sort="1.57">
 <a href="./blog/2017/wacana-sains-dan-teknologi-malayonesia/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -598,7 +627,7 @@ Sep 22, 2017
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="13" data-categories="sejarah sains,astronomi" data-listing-date-sort="1503014400000" data-listing-file-modified-sort="1665233366454" data-listing-reading-time-sort="2.015">
+<div class="g-col-1" data-index="13" data-categories="sejarah sains,astronomi" data-listing-date-sort="1503014400000" data-listing-file-modified-sort="1665234696741" data-listing-reading-time-sort="2.015">
 <a href="./blog/2017/gerhana-einstein-1919/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -631,7 +660,7 @@ Aug 18, 2017
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="14" data-categories="PERMATApintar,laporan acara" data-listing-date-sort="1502064000000" data-listing-file-modified-sort="1665233366458" data-listing-reading-time-sort="1.525">
+<div class="g-col-1" data-index="14" data-categories="PERMATApintar,laporan acara" data-listing-date-sort="1502064000000" data-listing-file-modified-sort="1665234696749" data-listing-reading-time-sort="1.525">
 <a href="./blog/2017/kenali-anak-pintar-bersama-rosmah/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -664,7 +693,7 @@ Aug 7, 2017
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="15" data-categories="akademia,laporan acara,PERMATApintar" data-listing-date-sort="1501459200000" data-listing-file-modified-sort="1665233366454" data-listing-reading-time-sort="1.46">
+<div class="g-col-1" data-index="15" data-categories="akademia,laporan acara,PERMATApintar" data-listing-date-sort="1501459200000" data-listing-file-modified-sort="1665234696741" data-listing-reading-time-sort="1.46">
 <a href="./blog/2017/ifsc-2017/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -700,7 +729,7 @@ Jul 31, 2017
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="16" data-categories="komunikasi sains" data-listing-date-sort="1501200000000" data-listing-file-modified-sort="1665233366478" data-listing-reading-time-sort="1.77">
+<div class="g-col-1" data-index="16" data-categories="komunikasi sains" data-listing-date-sort="1501200000000" data-listing-file-modified-sort="1665234696769" data-listing-reading-time-sort="1.77">
 <a href="./blog/2017/saluran-saintifik-youtube-2017/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -730,7 +759,7 @@ Jul 28, 2017
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="17" data-categories="teroka karya" data-listing-date-sort="1499990400000" data-listing-file-modified-sort="1665233366474" data-listing-reading-time-sort="3.415">
+<div class="g-col-1" data-index="17" data-categories="teroka karya" data-listing-date-sort="1499990400000" data-listing-file-modified-sort="1665234696765" data-listing-reading-time-sort="3.415">
 <a href="./blog/2017/railgun-agak-saintifik/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -760,7 +789,7 @@ Jul 14, 2017
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="18" data-categories="akademia,laporan acara" data-listing-date-sort="1494028800000" data-listing-file-modified-sort="1665233366466" data-listing-reading-time-sort="1.37">
+<div class="g-col-1" data-index="18" data-categories="akademia,laporan acara" data-listing-date-sort="1494028800000" data-listing-file-modified-sort="1665234696761" data-listing-reading-time-sort="1.37">
 <a href="./blog/2017/para-penyelidik-berkongsi-harapan-di-planetarium-negara/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -793,7 +822,7 @@ May 6, 2017
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="19" data-categories="konsep sains" data-listing-date-sort="1493942400000" data-listing-file-modified-sort="1665233366446" data-listing-reading-time-sort="1.785">
+<div class="g-col-1" data-index="19" data-categories="konsep sains" data-listing-date-sort="1493942400000" data-listing-file-modified-sort="1665234696733" data-listing-reading-time-sort="1.785">
 <a href="./blog/2017/dron-dan-heli-tak-boleh-terbang-dalam-vakum/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -823,7 +852,7 @@ May 5, 2017
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="20" data-categories="matematik" data-listing-date-sort="1489449600000" data-listing-file-modified-sort="1665233366482" data-listing-reading-time-sort="1.87">
+<div class="g-col-1" data-index="20" data-categories="matematik" data-listing-date-sort="1489449600000" data-listing-file-modified-sort="1665234696773" data-listing-reading-time-sort="1.87">
 <a href="./blog/2017/selamat-hari-pi-2017/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -853,7 +882,7 @@ Mar 14, 2017
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="21" data-categories="sejarah sains,tokoh" data-listing-date-sort="1489104000000" data-listing-file-modified-sort="1665233366450" data-listing-reading-time-sort="2.305">
+<div class="g-col-1" data-index="21" data-categories="sejarah sains,tokoh" data-listing-date-sort="1489104000000" data-listing-file-modified-sort="1665234696733" data-listing-reading-time-sort="2.305">
 <a href="./blog/2017/einstein-tak-menang-anugerah-nobel-kerana-emcc/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -886,7 +915,7 @@ Mar 10, 2017
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="22" data-categories="matematik" data-listing-date-sort="1484179200000" data-listing-file-modified-sort="1665233366458" data-listing-reading-time-sort="1.87">
+<div class="g-col-1" data-index="22" data-categories="matematik" data-listing-date-sort="1484179200000" data-listing-file-modified-sort="1665234696745" data-listing-reading-time-sort="1.87">
 <a href="./blog/2017/kebijaksanaan-rekaan-kertas-a4/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -916,7 +945,7 @@ Jan 12, 2017
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="23" data-categories="konsep sains,isu semasa" data-listing-date-sort="1480291200000" data-listing-file-modified-sort="1665233366442" data-listing-reading-time-sort="3">
+<div class="g-col-1" data-index="23" data-categories="konsep sains,isu semasa" data-listing-date-sort="1480291200000" data-listing-file-modified-sort="1665234696725" data-listing-reading-time-sort="3">
 <a href="./blog/2016/belon-hidrogen-sejarah-yang-berulang-ulang-lagi/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -949,7 +978,7 @@ Nov 28, 2016
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="24" data-categories="konsep sains" data-listing-date-sort="1479859200000" data-listing-file-modified-sort="1665233366442" data-listing-reading-time-sort="3.285">
+<div class="g-col-1" data-index="24" data-categories="konsep sains" data-listing-date-sort="1479859200000" data-listing-file-modified-sort="1665234696729" data-listing-reading-time-sort="3.285">
 <a href="./blog/2016/salah-faham-berkaitan-graviti/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -986,6 +1015,51 @@ No matching items
 <nav id="blog-pagination" class="listing-pagination" aria-label="Page Navigation">
   <ul class="pagination"></ul>
 </nav>
+</div>
+</section>
+<section id="terjemahan" class="level2">
+<h2 class="anchored" data-anchor-id="terjemahan">Terjemahan</h2>
+<div id="listing-terj" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="syarahan" data-listing-date-sort="1575763200000" data-listing-file-modified-sort="1665234696785" data-listing-reading-time-sort="15.53">
+<div class="thumbnail">
+<a href="./terj/kaedah-kerja-fizik-teori/index.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./terj/kaedah-kerja-fizik-teori/index.html"></a></p>
+</div>
+<div class="body">
+<a href="./terj/kaedah-kerja-fizik-teori/index.html">
+<h3 class="no-anchor listing-title">
+Kaedah Kerja Dalam Fizik Teori
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('syarahan'); return false;">
+syarahan
+</div>
+</div>
+<a href="./terj/kaedah-kerja-fizik-teori/index.html"> </a>
+</div>
+<div class="metadata">
+<a href="./terj/kaedah-kerja-fizik-teori/index.html">
+<div class="listing-date">
+Dec 8, 2019
+</div>
+<div class="listing-reading-time">
+15 min
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
 </div>
 
 
