@@ -1,21 +1,18 @@
 ---
 draft: false
-in_review: false
 title: "A Progress in Science Comes from Understanding Science"
 subtitle: "A rebuttal to a PPSMI proponent's letter"
 date: "2022-09-13"
-categories: ["Renungan Penulis"]
+categories:
+  - "🎓 Pendidikan"
 image: "bookshelf.jpg"
 authors: ["Murthadza Aznam"]
 ---
 
 :::{.callout-note}
-
-  This piece was actually written on the 31st of July 2019, a few weeks after
-  the corresponding letter. However, when I submitted the piece via email, the
-  news firm didn't reply and it never went public. So, here I am 2 years later
-  archiving it on my blog after I unearthed it from my laptop's memory.
-
+This piece was actually written on the 31st of July 2019, a few weeks after the corresponding letter. 
+However, when I submitted the piece via email, the news firm didn't reply and it never went public. 
+So, here I am 2 years later archiving it on my blog after I unearthed it from my laptop's memory.
 :::
 
 Since the introduction of the Dual Language Programme (DLP) in 2012 which points the exit for the Teaching and Learning of Science and Mathematics in English (PPSMI), I was really hoping that that would be the end I will hear on PPSMI.

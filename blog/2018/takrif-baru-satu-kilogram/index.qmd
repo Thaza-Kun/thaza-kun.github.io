@@ -5,7 +5,7 @@ subtitle: Kilogram kini tidak tertakluk pada jasad fizikal
 date: "2018-11-16"
 authors: ["Murthadza Aznam"]
 image: "sang-kilo.jpg"
-categories: ["berita sains"]
+categories: ["📢 Berita"]
 bibliography: references.bib
 nocite: |
   @*

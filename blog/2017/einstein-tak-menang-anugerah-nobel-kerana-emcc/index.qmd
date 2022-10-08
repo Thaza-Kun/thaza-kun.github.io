@@ -3,7 +3,9 @@ draft: false
 title: Einstein Tidak Menang Anugerah Nobel Kerana E=mcc
 subtitle: Einstein dinaugerahkan Hadiah Nobel atas sebab sumbangannya dalam kesan fotoelektrik.
 date: "2017-03-10"
-categories: ["sejarah sains", "tokoh"]
+categories: 
+  - "🏆 Tokoh Nobel"
+  - "⚡ Kuantum"
 image: "Albert-Einstein-1921_DA_wiki.jpg"
 authors: ["Murthadza Aznam"]
 canonical:

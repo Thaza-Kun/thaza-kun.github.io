@@ -3,7 +3,9 @@ draft: false
 title: "Kaedah Menghasilkan Protein Dari Sejujuk DNA Guna Python"
 subtitle: "Aku cuba teroka bioinformatik asas bersama kawan aku yang cuba belajar Python"
 date: "2022-02-25"
-categories: ["pengaturcaraan Python"]
+categories: 
+    - "🐍 Python"
+    - "🪐 Sains"
 image: "DNA_1920_1080.jpg"
 authors: ["Murthadza Aznam"]
 jupyter: python3

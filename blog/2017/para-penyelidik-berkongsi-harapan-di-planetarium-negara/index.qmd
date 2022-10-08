@@ -3,7 +3,7 @@ draft: false
 title: Para Penyelidik Berkongsi Harapan di Planetarium Negara
 subtitle: Laporan pendek penulis tentang perkongsian di ICONSPACE 2017
 date: "2017-05-06"
-categories: ["akademia", "laporan acara"]
+categories: ["📚 Akademia", "📰 Acara"]
 image: "Planetarium-ICONSPACE-2017.jpg"
 authors: ["Murthadza Aznam"]
 canonical:

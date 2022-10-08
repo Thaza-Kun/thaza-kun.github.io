@@ -42,7 +42,7 @@ Penulis merupakan graduan Fizik yang sedang meneroka dunia digital.
 Bagi yang meminati:
 
   - 🪐 Sains
-  - 🧮 Matematik
+  - "🧮 Matematik"
   - 📈 Data
   - 💻 Pengaturcaraan
 

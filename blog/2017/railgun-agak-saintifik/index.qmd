@@ -3,7 +3,7 @@ draft: false
 title: "Agak Saintifik Tapi Belum Cukup: A Certain Scientific Railgun"
 subtitle: Kita cuba selami bagaimana cerita rekaan ini menunggang sains
 date: "2017-07-14"
-categories: ["teroka karya"]
+categories: ["📺 Teroka Karya"]
 image: "artikel-railgun-2017.jpg"
 authors: ["Murthadza Aznam"]
 canonical:

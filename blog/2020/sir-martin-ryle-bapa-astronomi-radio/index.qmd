@@ -3,7 +3,7 @@ draft: false
 title: "Sir Martin Ryle: Bapa Astronomi Radio"
 subtitle: "Kaedah yang dibangunkan beliau digunakan sehingga sekarang."
 date: "2020-07-22"
-categories: ["astronomi", "tokoh", "sejarah sains"]
+categories: ["✨ Astronomi", "🏆 Tokoh Nobel"]
 image: "vla-panorama.jpg"
 authors: ["Murthadza Aznam"]
 bibliography: references.bib

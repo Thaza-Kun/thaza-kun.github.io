@@ -3,7 +3,7 @@ draft: false
 title: "Wahai Dr Maszlee, Kekalkan Nama PERMATA"
 subtitle: Surat terbuka menentang keputusan penjenamaan semula alma mater saya
 date: "2019-04-16"
-categories: ["PERMATApintar", "isu semasa"]
+categories: ["⚛ PERMATApintar", "🎓 Pendidikan"]
 image: "alumni-permatapintar-2017.jpg"
 authors: ["Murthadza Aznam"]
 canonical:

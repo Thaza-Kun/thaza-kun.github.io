@@ -3,7 +3,7 @@ draft: false
 title: "Menyemai Bakat dalam Penyelidikan Melalui iFSC 2017"
 subtitle: Pusat PERMATApintar&trade; Negara menganjurkan sidang penyelidikan setiap tahun.
 date: "2017-07-31"
-categories: ["akademia", "laporan acara", "PERMATApintar"]
+categories: ["📚 Akademia", "📰 Acara", "⚛ PERMATApintar"]
 image: "ifsc-2017.jpg"
 authors: ["Murthadza Aznam"]
 canonical:

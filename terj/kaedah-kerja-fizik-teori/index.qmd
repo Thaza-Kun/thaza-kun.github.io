@@ -3,8 +3,9 @@ draft: false
 title: "Kaedah Kerja Dalam Fizik Teori"
 subtitle: "_Methods In Theoretical Physics_"
 date: "2019-12-08"
-categories:
-    - "syarahan"
+categories: 
+  - "🏆 Tokoh Nobel"
+  - "⚡ Kuantum"
 image: "PAM-Dirac.jpg"
 authors: 
     - "Paul Adrian Maurice Dirac"

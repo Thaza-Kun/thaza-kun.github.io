@@ -3,7 +3,7 @@ draft: false
 title: "Cabaran Membentang Tesis 4 Minit"
 subtitle: Keputusan pihak pensyarah memendekkan masa pembentangan membuatkan aku terfikir
 date: "2022-02-10"
-categories: ["akademia", "renungan penulis"]
+categories: ["📚 Akademia"]
 image: "meme_Pepe-Silvia.jpg"
 authors: ["Murthadza Aznam"]
 ---

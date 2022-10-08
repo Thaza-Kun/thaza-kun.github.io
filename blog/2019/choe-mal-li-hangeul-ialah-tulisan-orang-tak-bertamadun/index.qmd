@@ -1,9 +1,9 @@
 ---
 draft: false
 title: Choe Mal-Li Membantah Tulisan Hangeul Kerana Ia Tidak Bertamadun
-subtitle: Choe Mal-Li membantah tindakan Raja Sejong membangunkan tulisan jati orang Korea
+subtitle: Ada tiga aspek kisah ini menyerupai hujah-hujah pendukung PPSMI
 date: "2019-03-30"
-categories: ["isu semasa"]
+categories: ["🎓 Pendidikan"]
 image: "sincheon-malam_CC-BY-SA_David.jpg"
 authors: ["Murthadza Aznam"]
 bibliography: references.bib

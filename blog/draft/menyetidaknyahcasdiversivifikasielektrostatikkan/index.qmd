@@ -1,12 +1,11 @@
 ---
 draft: true
-in_review: false
 title: "Menyetidaknyahcasdiversifikasielektrostatikkan"
 subtitle: "Dari mana datangnya perkataan ini?"
 summary: >-
   Perkataan ini dikatakan perkataan terpanjang tapi aku meragui dakwaan tersebut.
 date: "2022-02-25"
-categories: ["Renungan Penulis"]
+categories: [""]
 images: ["/images/DNA_1920_1080.jpg"]
 authors: ["Murthadza Aznam"]
 ---

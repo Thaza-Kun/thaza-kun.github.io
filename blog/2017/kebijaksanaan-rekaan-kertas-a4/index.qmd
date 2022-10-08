@@ -3,7 +3,7 @@ draft: false
 title: "Rekaan Kertas A4 Sangat Bijak, Jangan Terkejut Kenapa!"
 subtitle: "Perasan tak kalau kertas A4 dilipat atau dipotong dua, nisbah sisi-sisinya kekal sama?"
 date: "2017-01-12"
-categories: ["matematik"]
+categories: ["🧮 Matematik"]
 image: "kapal-terbang-kertas.jpg"
 authors: ["Murthadza Aznam"]
 canonical:

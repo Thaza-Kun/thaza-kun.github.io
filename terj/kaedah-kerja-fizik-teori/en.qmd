@@ -3,8 +3,9 @@ draft: false
 title: "Methods in Theoretical Physics"
 subtitle: "A lecture part of From A Life of Physics (1989)"
 date: "2019-12-08"
-categories:
-    - "syarahan"
+categories: 
+  - "🏆 Tokoh Nobel"
+  - "⚡ Kuantum"
 image: "PAM-Dirac.jpg"
 authors: 
     - "Paul Adrian Maurice Dirac"

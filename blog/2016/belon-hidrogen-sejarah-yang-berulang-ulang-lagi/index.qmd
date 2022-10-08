@@ -3,7 +3,7 @@ draft: false
 title: "Belon Hidrogen: Sejarah yang Berulang-Ulang Lagi"
 subtitle: "Hidrogen adalah ganti Helium yang murah tetapi berisiko tinggi"
 date: "2016-11-28"
-categories: ["konsep sains", "isu semasa"]
+categories: ["🪐 Sains"]
 image: "letupan-belon-2017.jpg"
 authors: ["Murthadza Aznam"]
 canonical:
