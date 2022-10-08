@@ -6,6 +6,9 @@ date: "2019-03-30"
 categories: ["isu semasa"]
 image: "sincheon-malam_CC-BY-SA_David.jpg"
 authors: ["Murthadza Aznam"]
+bibliography: references.bib
+nocite: |
+  @*
 canonical:
   date: "2019-01-19"
   link: "https://www.thepatriots.asia/kisah-raja-sejong-melawan-ppsmi-versi-tamadun-korea-purba/"
@@ -51,15 +54,11 @@ Namun, kisah Raja Sejong ini mengajar kita bahawa tahap keilmuan masyarakat itu 
 
 Hal ini juga bermakna, tidak kiralah wujud ataupun tidak lambakan karya ilmiah dalam bahasa asing, sekiranya kita ingin mengajarkan apa sahaja ilmu kepada anak-anak tempatan kita, ia haruslah diajarkan dalam bahasa ibunda mereka ataupun bahasa percakapan mereka setiap hari. Soal boleh ataupun tidak mereka menelaah lambakan karya ilmiah bahasa asing itu kurang pentingnya berbanding soal boleh ataupun tidak mereka memahami bahan ajaran yang sedang kita bentangkan.
 
-## DAFTAR RAJAH
+<!-- ## DAFTAR RAJAH
 
-- Gambar Utama: David (2009) Sincheon @ Night, dipetik dari Flickr https://www.flickr.com/photos/randomwire/3944485166/in/photostream/ (Lesen CC: BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/2.0/)
+- Gambar Utama: David (2009) Sincheon @ Night, dipetik dari Flickr https://www.flickr.com/photos/randomwire/3944485166/in/photostream/ (Lesen CC: BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/2.0/) -->
 
-## RUJUKAN:
+## Daftar Pustaka
 
-- Henthorn, W.E. 1971. A History of Korea. New York: The Free Press.
-- Lee, P. H. (ed.), Baker, D., Choe, Yong-Ho, Kang, H.H.W., & Kim, Han-Kyo. 1929. Sourcebook of Korean Civilization Vol. 1: From Early Times to the Sixteenth Century. New York: Columbia University Press.
-- Murthadza Aznam. 2018. Sejujurnya Aku Lebih Suka Kawi Berbanding Kawi. The Patriots. https://www.thepatriots.asia/sejujurnya-aku-lebih-suka-kawi-berbanding-jawi/ [19 Jan 2018]
-- Tae, Hung-Ha. 1958. Korea: Forty-Three Centuries. Seoul: Yonsei University Press.
-- New World Encyclopedia. 2018, 27 Julai. Joseon Dynasty. www.newworldencyclopedia.org/entry/Joseon_Dynasty [20 Okt 2018]
-- Saccone, R. 1993. Koreans to Remember: 50 Famous People Who Helped Shape Korea. Seoul: Hollym Corp.
+:::{#refs}
+:::

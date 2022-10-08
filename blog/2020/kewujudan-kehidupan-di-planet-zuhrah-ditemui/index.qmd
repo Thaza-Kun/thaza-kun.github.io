@@ -6,6 +6,9 @@ date: "2020-09-20"
 categories: ["berita sains", "astronomi"]
 image: "biopetanda-zuhrah.jpg"
 authors: ["Murthadza Aznam"]
+bibliography: references.bib
+nocite: |
+  @*
 canonical:
   date: "2020-09-20"
   link: "https://www.thepatriots.asia/kewujudan-bukti-kehidupan-di-planet-zuhrah-ditemui/"
@@ -48,12 +51,11 @@ Kesimpulannya, saintis tidak menemui makhluk hidup di Zuhrah. Mereka menemui gas
 - Zuhal = Saturn
 - Zuhrah = Venus
 
-## DAFTAR GAMBAR
+<!-- ## DAFTAR GAMBAR
 
-- Gambar Utama: ESO/ M. Kornmesser/ L. Calçada/ NASA/ JPL-Caltech/ Royal Astronomical Society (CC BY 4.0), pautan: https://ras.ac.uk/news-and-press/news/hints-life-venus
+- Gambar Utama: ESO/ M. Kornmesser/ L. Calçada/ NASA/ JPL-Caltech/ Royal Astronomical Society (CC BY 4.0), pautan: https://ras.ac.uk/news-and-press/news/hints-life-venus -->
 
-## DAFTAR PUSTAKA
+## Daftar Pustaka
 
-- Greaves, J.S., Richards, A.M.S., Bains, W. et al. 2020. Phosphine Gas in The Cloud Decks of Venus. Nature Astronomy. https://doi.org/10.1038/s41550-020-1174-4
-- Royal Astronomical Society. 2020. RAS Press Briefing – Phosphine on Venus (YouTube) https://www.youtube.com/watch?v=y1u-jlf_Olo&t=1s
-- Sousa-Silva, C., Seager, S., Ranjan, S. et al. 2020. Phosphine as A Biosignature Gas in Exoplanet Atmospheres. Astrobiology 2(20) 235-268 http://doi.org/10.1089/ast.2018.1954
+:::{#refs}
+:::

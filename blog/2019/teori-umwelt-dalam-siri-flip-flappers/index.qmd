@@ -6,6 +6,9 @@ date: "2019-09-23"
 categories: ["teroka karya"]
 image: "flip-flappers-gurun.jpg"
 authors: ["Murthadza Aznam"]
+bibliography: references.bib
+nocite: |
+  @*
 canonical:
   date: "2019-09-23"
   link: "https://www.thepatriots.asia/teori-umwelt-dalam-siri-flip-flappers/"
@@ -43,11 +46,7 @@ Oleh itu, Pure Illusion ini bukanlah dunia lain yang bergerak selari lalu dihubu
 
 Hal ini bukan sahaja suatu spekulasi semata-mata. Pengarah Flip Flappers, Kiyotaka Oshiyama, pernah mengaku bahawa banyak ilhamnya datang dari teori Umwelt ini. Katanya dalam satu temubual, “Asalnya, banyak pengetahuan saya yang berkaitan projek ini adalah daripada buku yang ditulis oleh ahli sains tingkah laku Toshitaka Hidaka. Penulisan beliau tentang Umwelt, sains tingkah laku, serta psikologi analitis ditulis dalam bahasa yang mudah difahami. Kemudian, karya Hayao Kawai tentang bidang psikologi, mitos-mitos dan ceritera rakyat juga membantu. Pure Illusion ini serupa dengan teori Umwelt, dan salah satu tema kisah Flip Flappers ialah tentang dunia kita yang berlapis-lapis, maka saya rasa psikologi juga penting untuk ditelaah.” Sebagai tambahan, kita dapat lihat bahawa nama Toshitaka Hidaka itu diabadikan dalam watak Dr Hidaka dan nama Jakob von Uexküll itu diabadikan dalam watak Uexküll Si Arnab.
 
-## DAFTAR PUSTAKA
+## Daftar Pustaka
 
-1. von Uexküll, J. (1934) “A Stroll Through The Worlds of Animals and Men: A Picture Book of Invisible Worlds” Instinctive Behavior: The Development of a Modern Concept, sunt. & terj. Claire H. Schiller, New York: International Universities Press (1957) pp 5-80; cetak semula: Semiotica 89:4 (1992), pp 319-391.
-
-2. New World Encyclopedia. Jakob von Uexküll pautan: https://www.newworldencyclopedia.org/entry/Jakob_von_Uexk%C3%BCll [17 Sept 2019]
-
-3. "Flip Flappers: An Interview with Director Kiyotaka Oshiyama" (2017) Far From Animation, terj. TheHugBee.
-   Pautan: https://farfromanimation.com/2017/01/06/flip-flappers-an-interview-with-director-kiyotaka-oshiyama/ [17 Sept 2019]
+:::{#refs}
+:::
