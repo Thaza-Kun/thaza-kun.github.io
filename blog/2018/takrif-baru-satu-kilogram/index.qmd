@@ -6,6 +6,9 @@ date: "2018-11-16"
 authors: ["Murthadza Aznam"]
 image: "sang-kilo.jpg"
 categories: ["berita sains"]
+bibliography: references.bib
+nocite: |
+  @*
 canonical:
   date: "2018-11-16"
   link: "https://www.thepatriots.asia/takrif-baru-satu-kilogram/"
@@ -33,7 +36,7 @@ Maka, BIPM mencadangkan untuk menggunakan pemalar Planck, h, untuk mejadi takrif
 ![](Dacing-Kibble_NIST.jpg)
 
 <figcaption>
-Gambar 1. Dacing Kibble di NIST
+Gambar 1. Dacing Kibble di NIST [@Resnick2018]
 </figcaption>
 </figure>
 
@@ -44,7 +47,7 @@ Dacing Kibble menggunakan hubungkait kuasa mekanikal dengan kuasa elektrik untuk
 ![](Dacing-Kibble-kiraan.jpg)
 
 <figcaption>
-Gambar 2.
+Gambar 2. [@Resnick2018]
 </figcaption>
 </figure>
 
@@ -54,7 +57,7 @@ Gambar 2.
 
 <figcaption>
 
-Gambar 3. Hubungan antara Nilai Avogadro, N<sub>A</sub> dengan pemalar Planck, h
+Gambar 3. Hubungan antara Nilai Avogadro, N<sub>A</sub> dengan pemalar Planck, h [@Muller2018]
 
 </figcaption>
 </figure>
@@ -71,21 +74,7 @@ Pemalar Boltzmann: 1.380 649 × 10—23 J K<sup>-1</sup>
 
 Namun, adakah ini bermakna jisim badan kita akan berubah mengikut takrif baru? Jawapannya, ya dan tidak. Ya ia akan berubah kerana takrifnya sudah berubah tetapi tujuan utamanya ialah untuk kekalkan saiz perkara-perkara yang sudah lama kita kenal. Namun, hal ini bermakna takrif-takrif unit asasi Fizik tidak lagi bergantung pada jasad jasmani.
 
-## DAFTAR RAJAH
+## Daftar Pustaka
 
-- Gambar Utama: Reuters. (2018) _Scientists to Swap Dusty Old Kilogram for Something More Stable_. VOA retrieved from https://www.voanews.com/a/scientists-to-swap-dusty-old-kilogram-for-something-more-stable/4655398.html
-- Gambar 1: Resnick, B. (2018) _The world is about to redefine the kilogram_. Vox Retrieved from https://www.vox.com/science-and-health/2018/11/14/18072368/kilogram-kibble-redefine-weight-science
-- Gambar 2: Sama dengan Gambar 1
-- Gambar 3: Muller, D. [Veritasium] (2018, Nov 15) _The kg is dead, long live the kg_ [Video] https://www.youtube.com/watch?v=c_e1wITe_ig
-
-## DAFTAR PUSTAKA
-
-- Banks, M. (2018) _Kilogram finally redefined as world’s metrologists agree to new formulation for SI units_. Physics World. Retrieved from https://physicsworld.com/a/kilogram-finally-redefined-as-worlds-metrologists-agree-to-new-formulation-for-si-units/ [16 Nov 2018]
-- Bennett, J. (2018) _Scientists Are About to Redefine the Kilogram and Shake Up Our System of Measures_. Smithsonian. Retrieved from https://www.smithsonianmag.com/science-nature/redefine-kilogram-180970798/ [16 Nov 2018]
-- _Base Units_. Retrieved from https://www.bipm.org/en/measurement-units/base-units.html [16 Nov 2018]
-- Moskowitz, C. (2018) _Redefining the Kilogram_. Scientific American. Retrieved from https://www.scientificamerican.com/article/redefining-the-kilogram/ [16 Nov 2018]
-- Muller, D. [Veritasium] (2018, Nov 15) _The kg is dead, long live the kg_ [Video file] https://www.youtube.com/watch?v=c_e1wITe_ig [16 Nov 2018]
-- Muller, D. [Veritasium] (2013, Mar 25) _World’s Roundest Object!_ [Video file] Retrieved from https://www.youtube.com/watch?v=ZMByI4s-D-Y [16 Nov 2018]
-- National Institute of Standard and Technology. _Historical Context of the SI_ Retrieved from https://physics.nist.gov/cuu/Units/history.html [16 Nov 2018]
-- National Institute of Standard and Technology. _SI Redefinition_. Retrieved from https://www.nist.gov/si-redefinition [16 Nov 2018]
-- Sharp, T (2017) \_How Big is Earth?\_com Retrieved from https://www.space.com/17638-how-big-is-earth.html [16 Nov 2018]
+:::{#refs}
+:::
