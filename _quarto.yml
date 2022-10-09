@@ -35,5 +35,7 @@ format:
     crossref:
       exm-prefix: Contoh
       exm-title: Contoh
+      eq-prefix: pers.
+      eq-title: Persamaan
     include-in-header:
       - text: '<script async src="https://ackee-production-758e.up.railway.app/tracker.js" data-ackee-server="https://ackee-production-758e.up.railway.app" data-ackee-domain-id="cbdc97e1-2061-41b2-af74-cbbe87def11c"></script>'
