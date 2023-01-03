@@ -1,0 +1,5 @@
+# Daftar Buku Teks Sains
+
+<!-- This is the place to cureate technical textbooks -->
+
+- "[Physik Libre: Freies Physikbuch f&uml;r die Sekudarstufe II](https://physikbuch.schule/)" (2019-kini) oleh Michael Rundel. (Bahasa Jerman)
