@@ -1,0 +1,29 @@
+---
+draft: true
+title: "Petua Menulis Soalan Aneka Jawapan"
+subtitle: "Bertanya Soalan Adalah Satu Kemahiran"
+date: "now"
+categories: ["🎓 Pendidikan"]
+image: "mcq.png"
+authors: ["Murthadza Aznam"]
+# canonical:
+#   date: "2016-11-28"
+#   link: "https://notasains.wordpress.com/2016/11/28/belon-hidrogen-sejarah-yang-berulang-lagi/"
+#   title: "Belon Hidrogen: Sejarah yang Berulang Lagi"
+#   source: "NotaSAINS"
+#   type: "blog"
+# reposts:
+#   - date: "2018-05-21"
+#     link: "https://www.majalahsains.com/kejadian-belon-hidrogen-ialah-sejarah-yang-berulang-kembali/"
+#     title: "Kejadian Letupan Belon Hidrogen ialah Sejarah yang Berulang Kembali!"
+#     source: "MajalahSains"
+#     type: "portal"
+---
+
+## Soalan Adalah Peluang Kita Mengenali Pelajar
+
+## Jangan Bagi Jawapan Salah Mengarut
+
+## Tak Mengapa Kalau Tak Cukup 4 Pilihan
+
+## 

@@ -1,0 +1,34 @@
+---
+draft: true
+title: "Bila Kita Akan Guna Persamaan Ini?"
+subtitle: ""
+date: "2022-02-10"
+categories: ["📚 Akademia"]
+images:
+  ["/static/images/canada/mountains.jpg"]
+authors: ["Murthadza Aznam"]
+---
+
+Sewaktu aku sedang belajar tentang penjelmaan Fourier dalam kursus Teknik Matematik di awal pengajian aku di UKM, satu soalan yang tidak lagi asing dalam dunia sains dan matematik telah dilontarkan pada pensyarah tersebut: “Bila kita akan guna formula ini?”
+Ingatan aku tentang jawapan pensyarah itu agak samar-samar tapi aku ingat yang beliau cakap yang tak semua orang akan dapat peluang guna kaedah yang diajarkan dalam kelas sewaktu kerja nanti tapi kalau salah seorang dari kita ada rezeki menghadapnya, maka kita akan tahu cara menyelesaikannya.
+
+Ada benarnya begitu. Hakikatnya, tiada siapa tahu apakah kerja kita di masa hadapan.
+Tiada siapa tahu sama ada perkara yang kita belajar hari ini, tidak kiralah dari sekolah ataupun masyarakat, akan dapat berbuah dalam mana-mana perjalanan hidup kita. 
+
+Adapun begitu, pendidikan secara umumnya tidak harus dipandang dari segi kebergunaannya semata-mata tetapi merupakan satu proses yang membentuk peribadi manusia yang menerima didikan tersebut.
+
+Jadi di sini, izinkan aku menambah jawapan dengan cubaan mendalami punca lahirnya soalan tersebut.
+Aku akan cuba berikan panduan bagaimana seorang pelajar boleh mencari sendiri jawapan sekiranya muncul soalan yang sama untuk topik-topik yang berkaitan.
+
+Jawapan aku memerlukan sedikit lencongan ke kisah aku ketika di litar latihan motorsikal.
+
+## Sejenak Pemikiran di Litar Latihan Motorsikal
+
+Ada beberapa peringkat seseorang perlu lalui sebelum boleh layak memegang lesen kenderaan.
+Peringkat akhir ialah ujian membawa kenderaan di litar.
+Di sinilah tempatnya aku teringat balik ke soalan di kelas penjelmaan Fourier yang aku sebutkan di awal rencana: “Bila kita akan guna semua ini?”
+
+“Mestilah waktu bawa motor nanti!” laung kalian dari balik skrin.
+Ya, tahu.
+
+Untuk faham soalan aku itu, mari aku bagi contoh beberapa bahagian litar. Pertama sekali, ada bahagian titi....

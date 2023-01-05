@@ -2,7 +2,8 @@
 # title: "Blog"
 listing:
   - id: blog 
-    contents: blog
+    contents: 
+      - blog
     sort: "date desc"
     type: grid
     categories: unnumbered
@@ -17,7 +18,24 @@ listing:
       - reading-time
       - image
     page-size: 3
-  - id: terjemahan
+  - id: twitter
+    contents: 
+      - twitter
+    sort: "date desc"
+    type: table
+    categories: unnumbered
+    sort-ui: false
+    filter-ui: false
+    feed: true
+    fields:
+      - title
+      - subtitle
+      - categories
+      - date
+      - reading-time
+      - image
+    page-size: 3
+  - id: terj
     contents: terj/*/index.qmd
     sort: "date desc"
     type: default
@@ -60,4 +78,9 @@ bolehlah ikuti kembara bersamaku.
 ## Terjemahan
 
 :::{#terj}
+:::
+
+## Twitter
+
+:::{#twitter}
 :::

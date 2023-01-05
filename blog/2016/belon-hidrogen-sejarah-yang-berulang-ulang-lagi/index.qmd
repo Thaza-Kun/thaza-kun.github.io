@@ -46,7 +46,9 @@ Hidrogen (H) terletak dalam kumpulan satu (kumpulan logam alkali). Kumpulan loga
 
 {{< video https://www.youtube.com/embed/HvVUtpdK7xw >}}
 
-`(Nampaknya videonya telah dipadam oleh pemilik. Kalau ada contoh lain, akan dimasukkan)`
+:::{.callout-note}
+(Nampaknya videonya telah dipadam oleh pemilik. Kalau ada contoh lain, akan dimasukkan)
+:::
 
 Berbeza pula dengan Helium (He) yang terletak dalam kumpulan 18 (kumpulan gas adi). Unsur-unsur dalam kumpulan ini tidak akan bertindak balas dengan mana-mana unsur lain melainkan berada dalam suhu dan tekanan yang sangat-sangat tinggi. Oleh sebab itu juga, gas-gas adi hanya wujud dalam bentuk gas dalam suhu dan tekanan yang biasa (baca berkaitan Helium Cecair untuk sedikit kelainan dari sifat gas adi biasa).
 
