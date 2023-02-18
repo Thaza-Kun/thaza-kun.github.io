@@ -1,0 +1,137 @@
+---
+title: "Fungsi gubahan"
+subtitle: ""
+date: "2023-01-16"
+categories: ["Fungsi"]
+authors: ["Murthadza Aznam"]
+execute: 
+  echo: false
+---
+
+Katalah wujud dua fungsi $f(x): x \rightarrow y_x$ dan $g(x): x \rightarrow z_x$, maka fungsi tergubah $f\circ g(x)$ ialah
+$$
+  f\circ g (x) \equiv f(g(x)): g(x) \rightarrow y_{g(x)}.
+$$
+Hal ini bersamaan dengan mula-mula melaksanakan fungsi $g(x)$ dan menggunakan hasil $g(x)$ sebagai input untuk fungsi $f(x)$ seperti yang digambarkan dalam @fig-gubahan.
+Domain bagi $f\circ g$ ialah apa sahaja domain $g(x)$ yang menghasilkan input yang berada dalam domain $f(x)$.
+
+```{mermaid}
+%%| label: fig-gubahan
+%%| fig-cap: Gambaran gubahan fungsi $g(x)$ ke dalam $f(x)$.
+%%| fig-align: center
+flowchart LR
+  X((X)) --> |"g(x)"| Z((Z))
+  Z -->|"f(z)"| Y((Y))
+  X -->|"f(g(x))"| Y
+```
+
+
+:::{#exm-gubahan}
+Katakan $f(x) = \frac{1}{x}$ dan $g(x) = x^3 - x$ maka,
+$$
+\begin{align}
+  f\circ g (x) = f(g(x))  &= \frac{1}{(g(x))}\\
+                      &= \frac{1}{x^3-x}.
+\end{align}
+$$
+
+Walaupun domain bagi $g(x) = x^3-x$ pula ialah $(-\infty, \infty)$ dengan julat $(-\infty, \infty)$, memandangkan $g(x) = 0$ pada $x=\{-1,0,1\}$ maka domain bagi $f\circ g(x) = \frac{1}{x^3-x}$ ialah $x \neq \{-1,0,1\}$ kerana $\frac{1}{0}$ tidak tertakrif.
+
+<!-- TODO Handle asymptotes -->
+```{python}
+#| fig-cap: Lihat bagaimana domain $f\circ g$ dipengaruhi oleh kedua-dua $f$ dan $g$. (Aku belum ada cara nak uruskan asimptot pada $x=\{-1,0,1\}$ jadi andaikan sahaja garis di situ tidak wujud.)
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-2,2,1_000)
+g = x**3 - x
+f = 1/x
+fg = 1/g
+
+axis_style = {
+  'color':'k',
+  'linewidth':1
+}
+
+plt.figure(figsize=(6,3))
+plt.plot(x,g,"-.", label=r"$g(x)=x^3-x$")
+plt.plot(x,f,"--y", label=r"$f(x)=1/x$")
+plt.plot(x,fg, "r", label=r"$f\circ g (x) = 1/(x^3-x)$")
+plt.legend()
+plt.xlim(-2,2)
+plt.ylim(-10,10)
+plt.axhline(0, **axis_style)
+plt.axvline(0, **axis_style)
+plt.show()
+```
+:::
+
+## Mencari Fungsi Asal
+
+Katalah yang diketahui ialah $g(x)$ dan $f\circ g (x)$ dan kita ingin memperoleh fungsi asal $f(x)$.
+Kita boleh lakukan sedemikian dengan menggunakan songsangan fungsi $g(x)$ iaitu $g^{-1}(x)$,
+$$
+  f(x) = f\circ g \circ g^{-1} (x).
+$$
+
+Katakan pula yang diketahui ialah $g(x)$ dan $g\circ f(x)$ dan kita ingin memperoleh fungsi asal $f(x)$.
+Sama juga, kita gunakan fungsi songsangan, $g^{-1}(x)$, tetapi kali ini kita letakkannya di sebelah kiri.
+$$
+  f(x) = g^{-1}\circ g \circ f (x).
+$$
+
+::::{#exm-perolehan-f-dari-fg}
+Diberi $g(x)=x^2+3$ dan $f\circ g(x)=x^2$ maka $f(x)$ ialah,
+$$
+  f (x) = f\circ g \circ g^{-1} (x).
+$${#eq-cth-2}
+Mula-mula kita cari songsangan $g(x)$, $g^{-1}(x) = \sqrt{x-3}$ lalu kita ganti masuk dalam @eq-cth-2,
+$$
+\begin{align}
+  f (x) &= (\sqrt{x-3})^2\\
+        &= x - 3.
+\end{align}
+$$
+
+:::{.proof} 
+## Semakan
+Jika benar $f(x)=x-3$, maka $f\circ g (x)$ akan hasilkan semula $f\circ g(x)=x^2$,
+$$
+\begin{align}
+  f \circ g (x) &= g(x) - 3\\
+                &= (x^2 + 3) - 3\\
+                &= x^2.
+\end{align}
+$$
+
+Kita peroleh hasil yang sama maka benarlah @eq-cth-2 seperti yang dinyatakan.
+:::
+::::
+
+::::{#exm-perolehan-f-dari-gf}
+Diberi $g(x)=x^2+3$ dan $g\circ f(x)=x^{2/3}+3$ maka $f(x)$ ialah,
+$$
+  f (x) = g^{-1}\circ g\circ f (x).
+$${#eq-cth-3}
+Mula-mula kita cari songsangan $g(x)$, $g^{-1}(x) = \sqrt{x-3}$ lalu kita ganti masuk dalam @eq-cth-3,
+$$
+\begin{align}
+  f (x) &= \sqrt{(x^{2/3}+3)-3}\\
+        &= \sqrt[3]{x}.
+\end{align}
+$$
+
+:::{.proof} 
+## Semakan
+Jika benar $f(x)=\sqrt[3]{x}$, maka $g\circ f (x)$ akan hasilkan semula $g\circ f(x)=x^{2/3}+3$,
+$$
+\begin{align}
+  g\circ f (x) &= (f(x))^2 + 3\\
+                &= (\sqrt[3]{x})^2 + 3\\
+                &= x^{2/3}+3.
+\end{align}
+$$
+
+Kita peroleh hasil yang sama maka benarlah @eq-cth-3 seperti yang dinyatakan.
+:::
+::::
