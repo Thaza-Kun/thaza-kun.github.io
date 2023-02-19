@@ -1,0 +1,19 @@
+---
+listing:
+  - id: wiki
+    contents: wiki/*.qmd
+    sort: "date desc"
+    type: default
+    categories: unnumbered
+    sort-ui: false
+    filter-ui: false
+    feed: true
+    fields:
+      - title
+      - categories
+      - date
+      - reading-time
+---
+
+:::{#wiki}
+:::
