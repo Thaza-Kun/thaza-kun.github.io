@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/draft/nasihat-buat-pelajar-sains/index.html",
       "/blog/2022/scientific-progress-requires-understanding/index.html",
       "/blog/2022/terjemahan-protein-dari-DNA-guna-Python/index.html",
       "/blog/2021/refleksi-pembentangan-tesis-4-minit/index.html",
@@ -30,16 +31,9 @@
     ]
   },
   {
-    "listing": "/terj.html",
-    "items": [
-      "/terj/penemuan-ulung-fizik-2021/index.html",
-      "/terj/evolusi-pandangan-alam-fizikawan/index.html",
-      "/terj/kaedah-kerja-fizik-teori/index.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
+      "/blog/draft/nasihat-buat-pelajar-sains/index.html",
       "/blog/2022/scientific-progress-requires-understanding/index.html",
       "/blog/2022/terjemahan-protein-dari-DNA-guna-Python/index.html",
       "/blog/2021/refleksi-pembentangan-tesis-4-minit/index.html",
@@ -65,6 +59,20 @@
       "/blog/2017/kebijaksanaan-rekaan-kertas-a4/index.html",
       "/blog/2016/belon-hidrogen-sejarah-yang-berulang-ulang-lagi/index.html",
       "/blog/2016/salah-faham-berkaitan-graviti/index.html",
+      "/terj/penemuan-ulung-fizik-2021/index.html",
+      "/terj/evolusi-pandangan-alam-fizikawan/index.html",
+      "/terj/kaedah-kerja-fizik-teori/index.html"
+    ]
+  },
+  {
+    "listing": "/wiki.html",
+    "items": [
+      "/wiki/gubahan-fungsi.html"
+    ]
+  },
+  {
+    "listing": "/terj.html",
+    "items": [
       "/terj/penemuan-ulung-fizik-2021/index.html",
       "/terj/evolusi-pandangan-alam-fizikawan/index.html",
       "/terj/kaedah-kerja-fizik-teori/index.html"

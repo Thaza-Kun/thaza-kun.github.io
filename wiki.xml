@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>🌓 QS ☀</title>
+<link>https://thaza-kun.github.io/wiki.html</link>
+<atom:link href="https://thaza-kun.github.io/wiki.xml" rel="self" type="application/rss+xml"/>
+<description>Blog peribadi Thaza</description>
+<generator>quarto-1.2.335</generator>
+<lastBuildDate>Mon, 16 Jan 2023 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Fungsi gubahan</title>
+  <link>https://thaza-kun.github.io/wiki/gubahan-fungsi.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Katalah wujud dua fungsi <img src="https://latex.codecogs.com/png.latex?f(x):%20x%20%5Crightarrow%20y_x"> dan <img src="https://latex.codecogs.com/png.latex?g(x):%20x%20%5Crightarrow%20z_x">, maka fungsi tergubah <img src="https://latex.codecogs.com/png.latex?f%5Ccirc%20g(x)"> ialah <img src="https://latex.codecogs.com/png.latex?%0A%20%20f%5Ccirc%20g%20(x)%20%5Cequiv%20f(g(x)):%20g(x)%20%5Crightarrow%20y_%7Bg(x)%7D.%0A"> Hal ini bersamaan dengan mula-mula melaksanakan fungsi <img src="https://latex.codecogs.com/png.latex?g(x)"> dan menggunakan hasil <img src="https://latex.codecogs.com/png.latex?g(x)"> sebagai input untuk fungsi <img src="https://latex.codecogs.com/png.latex?f(x)"> seperti yang digambarkan dalam rajah&nbsp;1. Domain bagi <img src="https://latex.codecogs.com/png.latex?f%5Ccirc%20g"> ialah apa sahaja domain <img src="https://latex.codecogs.com/png.latex?g(x)"> yang menghasilkan input yang berada dalam domain <img src="https://latex.codecogs.com/png.latex?f(x)">.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-gubahan" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p>
+</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+  X((X)) --&gt; |"g(x)"| Z((Z))
+  Z --&gt;|"f(z)"| Y((Y))
+  X --&gt;|"f(g(x))"| Y
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+<p></p><figcaption class="figure-caption">Rajah&nbsp;1: Gambaran gubahan fungsi <img src="https://latex.codecogs.com/png.latex?g(x)"> ke dalam <img src="https://latex.codecogs.com/png.latex?f(x)">.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="exm-gubahan" class="theorem example">
+<p><span class="theorem-title"><strong>Contoh 1 </strong></span>Katakan <img src="https://latex.codecogs.com/png.latex?f(x)%20=%20%5Cfrac%7B1%7D%7Bx%7D"> dan <img src="https://latex.codecogs.com/png.latex?g(x)%20=%20x%5E3%20-%20x"> maka, <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign%7D%0A%20%20f%5Ccirc%20g%20(x)%20=%20f(g(x))%20%20&amp;=%20%5Cfrac%7B1%7D%7B(g(x))%7D%5C%5C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20&amp;=%20%5Cfrac%7B1%7D%7Bx%5E3-x%7D.%0A%5Cend%7Balign%7D%0A"></p>
+<p>Walaupun domain bagi <img src="https://latex.codecogs.com/png.latex?g(x)%20=%20x%5E3-x"> pula ialah <img src="https://latex.codecogs.com/png.latex?(-%5Cinfty,%20%5Cinfty)"> dengan julat <img src="https://latex.codecogs.com/png.latex?(-%5Cinfty,%20%5Cinfty)">, memandangkan <img src="https://latex.codecogs.com/png.latex?g(x)%20=%200"> pada <img src="https://latex.codecogs.com/png.latex?x=%5C%7B-1,0,1%5C%7D"> maka domain bagi <img src="https://latex.codecogs.com/png.latex?f%5Ccirc%20g(x)%20=%20%5Cfrac%7B1%7D%7Bx%5E3-x%7D"> ialah <img src="https://latex.codecogs.com/png.latex?x%20%5Cneq%20%5C%7B-1,0,1%5C%7D"> kerana <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B0%7D"> tidak tertakrif.</p>
+<!-- TODO Handle asymptotes -->
+<div class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://thaza-kun.github.io/wiki/gubahan-fungsi_files/figure-html/cell-2-output-1.png" width="526" height="268" class="figure-img"></p>
+<p></p><figcaption class="figure-caption">Lihat bagaimana domain <img src="https://latex.codecogs.com/png.latex?f%5Ccirc%20g"> dipengaruhi oleh kedua-dua <img src="https://latex.codecogs.com/png.latex?f"> dan <img src="https://latex.codecogs.com/png.latex?g">. (Aku belum ada cara nak uruskan asimptot pada <img src="https://latex.codecogs.com/png.latex?x=%5C%7B-1,0,1%5C%7D"> jadi andaikan sahaja garis di situ tidak wujud.)</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="mencari-fungsi-asal" class="level2">
+<h2 class="anchored" data-anchor-id="mencari-fungsi-asal">Mencari Fungsi Asal</h2>
+<p>Katalah yang diketahui ialah <img src="https://latex.codecogs.com/png.latex?g(x)"> dan <img src="https://latex.codecogs.com/png.latex?f%5Ccirc%20g%20(x)"> dan kita ingin memperoleh fungsi asal <img src="https://latex.codecogs.com/png.latex?f(x)">. Kita boleh lakukan sedemikian dengan menggunakan songsangan fungsi <img src="https://latex.codecogs.com/png.latex?g(x)"> iaitu <img src="https://latex.codecogs.com/png.latex?g%5E%7B-1%7D(x)">, <img src="https://latex.codecogs.com/png.latex?%0A%20%20f(x)%20=%20f%5Ccirc%20g%20%5Ccirc%20g%5E%7B-1%7D%20(x).%0A"></p>
+<p>Katakan pula yang diketahui ialah <img src="https://latex.codecogs.com/png.latex?g(x)"> dan <img src="https://latex.codecogs.com/png.latex?g%5Ccirc%20f(x)"> dan kita ingin memperoleh fungsi asal <img src="https://latex.codecogs.com/png.latex?f(x)">. Sama juga, kita gunakan fungsi songsangan, <img src="https://latex.codecogs.com/png.latex?g%5E%7B-1%7D(x)">, tetapi kali ini kita letakkannya di sebelah kiri. <img src="https://latex.codecogs.com/png.latex?%0A%20%20f(x)%20=%20g%5E%7B-1%7D%5Ccirc%20g%20%5Ccirc%20f%20(x).%0A"></p>
+<div id="exm-perolehan-f-dari-fg" class="theorem example">
+<p><span class="theorem-title"><strong>Contoh 2 </strong></span>Diberi <img src="https://latex.codecogs.com/png.latex?g(x)=x%5E2+3"> dan <img src="https://latex.codecogs.com/png.latex?f%5Ccirc%20g(x)=x%5E2"> maka <img src="https://latex.codecogs.com/png.latex?f(x)"> ialah, <span id="eq-cth-2"><img src="https://latex.codecogs.com/png.latex?%0A%20%20f%20(x)%20=%20f%5Ccirc%20g%20%5Ccirc%20g%5E%7B-1%7D%20(x).%0A%5Ctag%7B1%7D"></span> Mula-mula kita cari songsangan <img src="https://latex.codecogs.com/png.latex?g(x)">, <img src="https://latex.codecogs.com/png.latex?g%5E%7B-1%7D(x)%20=%20%5Csqrt%7Bx-3%7D"> lalu kita ganti masuk dalam pers.&nbsp;1, <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign%7D%0A%20%20f%20(x)%20&amp;=%20(%5Csqrt%7Bx-3%7D)%5E2%5C%5C%0A%20%20%20%20%20%20%20%20&amp;=%20x%20-%203.%0A%5Cend%7Balign%7D%0A"></p>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em> (Semakan). </span>Jika benar <img src="https://latex.codecogs.com/png.latex?f(x)=x-3">, maka <img src="https://latex.codecogs.com/png.latex?f%5Ccirc%20g%20(x)"> akan hasilkan semula <img src="https://latex.codecogs.com/png.latex?f%5Ccirc%20g(x)=x%5E2">, <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign%7D%0A%20%20f%20%5Ccirc%20g%20(x)%20&amp;=%20g(x)%20-%203%5C%5C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20&amp;=%20(x%5E2%20+%203)%20-%203%5C%5C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20&amp;=%20x%5E2.%0A%5Cend%7Balign%7D%0A"></p>
+<p>Kita peroleh hasil yang sama maka benarlah pers.&nbsp;1 seperti yang dinyatakan.</p>
+</div>
+</div>
+<div id="exm-perolehan-f-dari-gf" class="theorem example">
+<p><span class="theorem-title"><strong>Contoh 3 </strong></span>Diberi <img src="https://latex.codecogs.com/png.latex?g(x)=x%5E2+3"> dan <img src="https://latex.codecogs.com/png.latex?g%5Ccirc%20f(x)=x%5E%7B2/3%7D+3"> maka <img src="https://latex.codecogs.com/png.latex?f(x)"> ialah, <span id="eq-cth-3"><img src="https://latex.codecogs.com/png.latex?%0A%20%20f%20(x)%20=%20g%5E%7B-1%7D%5Ccirc%20g%5Ccirc%20f%20(x).%0A%5Ctag%7B2%7D"></span> Mula-mula kita cari songsangan <img src="https://latex.codecogs.com/png.latex?g(x)">, <img src="https://latex.codecogs.com/png.latex?g%5E%7B-1%7D(x)%20=%20%5Csqrt%7Bx-3%7D"> lalu kita ganti masuk dalam pers.&nbsp;2, <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign%7D%0A%20%20f%20(x)%20&amp;=%20%5Csqrt%7B(x%5E%7B2/3%7D+3)-3%7D%5C%5C%0A%20%20%20%20%20%20%20%20&amp;=%20%5Csqrt%5B3%5D%7Bx%7D.%0A%5Cend%7Balign%7D%0A"></p>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em> (Semakan). </span>Jika benar <img src="https://latex.codecogs.com/png.latex?f(x)=%5Csqrt%5B3%5D%7Bx%7D">, maka <img src="https://latex.codecogs.com/png.latex?g%5Ccirc%20f%20(x)"> akan hasilkan semula <img src="https://latex.codecogs.com/png.latex?g%5Ccirc%20f(x)=x%5E%7B2/3%7D+3">, <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign%7D%0A%20%20g%5Ccirc%20f%20(x)%20&amp;=%20(f(x))%5E2%20+%203%5C%5C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20&amp;=%20(%5Csqrt%5B3%5D%7Bx%7D)%5E2%20+%203%5C%5C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20&amp;=%20x%5E%7B2/3%7D+3.%0A%5Cend%7Balign%7D%0A"></p>
+<p>Kita peroleh hasil yang sama maka benarlah pers.&nbsp;2 seperti yang dinyatakan.</p>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>Fungsi</category>
+  <guid>https://thaza-kun.github.io/wiki/gubahan-fungsi.html</guid>
+  <pubDate>Mon, 16 Jan 2023 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
