@@ -4,7 +4,7 @@ title: "Petua Menulis Soalan Aneka Jawapan"
 subtitle: "Bertanya Soalan Adalah Satu Kemahiran"
 date: "now"
 categories: ["🎓 Pendidikan"]
-image: "mcq.png"
+# image: "mcq.png"
 authors: ["Murthadza Aznam"]
 # canonical:
 #   date: "2016-11-28"
