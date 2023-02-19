@@ -35,7 +35,7 @@ $$
 \end{align}
 $$
 
-Walaupun domain bagi $g(x) = x^3-x$ pula ialah $(-\infty, \infty)$ dengan julat $(-\infty, \infty)$, memandangkan $g(x) = 0$ pada $x=\{-1,0,1\}$ maka domain bagi $f\circ g(x) = \frac{1}{x^3-x}$ ialah $x \neq \{-1,0,1\}$ kerana $\frac{1}{0}$ tidak tertakrif.
+Walaupun domain bagi $g(x) = x^3-x$ ialah $(-\infty, \infty)$ dengan julat $(-\infty, \infty)$, memandangkan $g(x) = 0$ pada $x=\{-1,0,1\}$ maka domain bagi $f\circ g(x) = \frac{1}{x^3-x}$ ialah $x \neq \{-1,0,1\}$ kerana $\frac{1}{0}$ tidak tertakrif.
 
 <!-- TODO Handle asymptotes -->
 ```{python}
